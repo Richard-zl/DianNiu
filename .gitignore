@@ -1,60 +1,88 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+*~# Node.js modules
+node_modules/*
 
-## Build generated
-build/
-DerivedData/
+# Compiled Python files
+*.pyc
 
-## Various settings
-*.pbxuser
-!default.pbxuser
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Exclude the Podspecs
+Pods/*
+
+# Exclude any PSD/AI source
+#*.psd
+#*.ai
+
+# Exclude generated files
+VersionX-revision.h
+
+# Exclude the build products
+build/*
+build_ipa/
+build.output
+pkg/*
+*.o
+*.log
+ 
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+*~
+
+# Sparkle distribution Private Key (Don't check me in!)
+dsa_priv.pem
+ 
+# Exclude user-specific XCode 3 and 4 files
+*.mode1
 *.mode1v3
-!default.mode1v3
 *.mode2v3
-!default.mode2v3
+*.perspective
 *.perspectivev3
-!default.perspectivev3
-xcuserdata/
+*.pbxuser
+*.xcuserdatad
+*.xccheckout
+xcuserdata
+DerivedData
 
-## Other
-*.moved-aside
-*.xcuserstate
+# Exclude ReleaseNotes
+RELEASENOTES
+RELEASENOTES.*
+release_notes
+release_notes.*
 
-## Obj-C/Swift specific
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+# idea project files
+.idea
 *.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
+# twistd pid files
+twistd.pid
 
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+# Rails
+# Ignore bundler config.
+.bundle
 
-Carthage/Build
+# Ignore the default SQLite database.
+db/*.sqlite3
+db/*.sqlite3-journal
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+# Ignore all logfiles and templates.
+log/*.log
+tmp
 
-fastlane/report.xml
-fastlane/screenshots
-
-#Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
+# Ignore vendor cache
+vendor/cache

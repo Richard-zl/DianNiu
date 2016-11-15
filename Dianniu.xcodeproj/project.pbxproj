@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9818C1051DDAE345001B16E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1041DDAE345001B16E9 /* main.m */; };
+		9818C1081DDAE345001B16E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1071DDAE345001B16E9 /* AppDelegate.m */; };
+		9818C10B1DDAE345001B16E9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C10A1DDAE345001B16E9 /* RootViewController.m */; };
+		9818C10E1DDAE345001B16E9 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C10D1DDAE345001B16E9 /* DataViewController.m */; };
+		9818C1111DDAE345001B16E9 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1101DDAE345001B16E9 /* ModelController.m */; };
+		9818C1141DDAE345001B16E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1121DDAE345001B16E9 /* Main.storyboard */; };
+		9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1151DDAE345001B16E9 /* Assets.xcassets */; };
+		9818C1191DDAE345001B16E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */; };
+		9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C13B1DDAE961001B16E9 /* LoginViewC.m */; };
+		9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9818C13C1DDAE961001B16E9 /* LoginViewC.xib */; };
+		D7295A960ACAAD4316FC45C1 /* libPods-Dianniu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1CE3DC50328C9C9B96ECFE /* Pods-Dianniu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dianniu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dianniu/Pods-Dianniu.release.xcconfig"; sourceTree = "<group>"; };
+		9818C1001DDAE345001B16E9 /* Dianniu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dianniu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9818C1041DDAE345001B16E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9818C1061DDAE345001B16E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9818C1071DDAE345001B16E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9818C1091DDAE345001B16E9 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9818C10A1DDAE345001B16E9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9818C10C1DDAE345001B16E9 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		9818C10D1DDAE345001B16E9 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		9818C10F1DDAE345001B16E9 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		9818C1101DDAE345001B16E9 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		9818C1131DDAE345001B16E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9818C1151DDAE345001B16E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9818C1181DDAE345001B16E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9818C11A1DDAE345001B16E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9818C13A1DDAE961001B16E9 /* LoginViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewC.h; sourceTree = "<group>"; };
+		9818C13B1DDAE961001B16E9 /* LoginViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewC.m; sourceTree = "<group>"; };
+		9818C13C1DDAE961001B16E9 /* LoginViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewC.xib; sourceTree = "<group>"; };
+		ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dianniu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dianniu/Pods-Dianniu.debug.xcconfig"; sourceTree = "<group>"; };
+		B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dianniu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9818C0FD1DDAE345001B16E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7295A960ACAAD4316FC45C1 /* libPods-Dianniu.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DEE739CAB041440647388C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9818C0F71DDAE345001B16E9 = {
+			isa = PBXGroup;
+			children = (
+				9818C1021DDAE345001B16E9 /* Dianniu */,
+				9818C1011DDAE345001B16E9 /* Products */,
+				F0E0EE20B1AFED2F8EBAB44F /* Pods */,
+				7DEE739CAB041440647388C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9818C1011DDAE345001B16E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1001DDAE345001B16E9 /* Dianniu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9818C1021DDAE345001B16E9 /* Dianniu */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1301DDAE600001B16E9 /* Login */,
+				9818C12C1DDAE5F9001B16E9 /* Home */,
+				9818C1281DDAE5F2001B16E9 /* Discover */,
+				9818C1241DDAE5E6001B16E9 /* Profile */,
+				9818C1201DDAE5DD001B16E9 /* Message */,
+				9818C1061DDAE345001B16E9 /* AppDelegate.h */,
+				9818C1071DDAE345001B16E9 /* AppDelegate.m */,
+				9818C1391DDAE839001B16E9 /* DNNetWorking */,
+				9818C1341DDAE803001B16E9 /* DNUtility */,
+				9818C1091DDAE345001B16E9 /* RootViewController.h */,
+				9818C10A1DDAE345001B16E9 /* RootViewController.m */,
+				9818C10C1DDAE345001B16E9 /* DataViewController.h */,
+				9818C10D1DDAE345001B16E9 /* DataViewController.m */,
+				9818C10F1DDAE345001B16E9 /* ModelController.h */,
+				9818C1101DDAE345001B16E9 /* ModelController.m */,
+				9818C1121DDAE345001B16E9 /* Main.storyboard */,
+				9818C1151DDAE345001B16E9 /* Assets.xcassets */,
+				9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */,
+				9818C11A1DDAE345001B16E9 /* Info.plist */,
+				9818C1031DDAE345001B16E9 /* Supporting Files */,
+			);
+			path = Dianniu;
+			sourceTree = "<group>";
+		};
+		9818C1031DDAE345001B16E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1041DDAE345001B16E9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9818C1201DDAE5DD001B16E9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1211DDAE5DD001B16E9 /* Controllers */,
+				9818C1221DDAE5DD001B16E9 /* Models */,
+				9818C1231DDAE5DD001B16E9 /* Views */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		9818C1211DDAE5DD001B16E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9818C1221DDAE5DD001B16E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9818C1231DDAE5DD001B16E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9818C1241DDAE5E6001B16E9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1251DDAE5E6001B16E9 /* Controllers */,
+				9818C1261DDAE5E6001B16E9 /* Models */,
+				9818C1271DDAE5E6001B16E9 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9818C1251DDAE5E6001B16E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9818C1261DDAE5E6001B16E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9818C1271DDAE5E6001B16E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9818C1281DDAE5F2001B16E9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1291DDAE5F2001B16E9 /* Controllers */,
+				9818C12A1DDAE5F2001B16E9 /* Models */,
+				9818C12B1DDAE5F2001B16E9 /* Views */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		9818C1291DDAE5F2001B16E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9818C12A1DDAE5F2001B16E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9818C12B1DDAE5F2001B16E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9818C12C1DDAE5F9001B16E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9818C12D1DDAE5F9001B16E9 /* Controllers */,
+				9818C12E1DDAE5F9001B16E9 /* Models */,
+				9818C12F1DDAE5F9001B16E9 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9818C12D1DDAE5F9001B16E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9818C12E1DDAE5F9001B16E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9818C12F1DDAE5F9001B16E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9818C1301DDAE600001B16E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1311DDAE600001B16E9 /* Controllers */,
+				9818C1321DDAE600001B16E9 /* Models */,
+				9818C1331DDAE600001B16E9 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9818C1311DDAE600001B16E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9818C13A1DDAE961001B16E9 /* LoginViewC.h */,
+				9818C13B1DDAE961001B16E9 /* LoginViewC.m */,
+				9818C13C1DDAE961001B16E9 /* LoginViewC.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9818C1321DDAE600001B16E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9818C1331DDAE600001B16E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9818C1341DDAE803001B16E9 /* DNUtility */ = {
+			isa = PBXGroup;
+			children = (
+				9818C1351DDAE803001B16E9 /* Defines */,
+				9818C1361DDAE803001B16E9 /* Expand */,
+				9818C1371DDAE803001B16E9 /* External */,
+			);
+			path = DNUtility;
+			sourceTree = "<group>";
+		};
+		9818C1351DDAE803001B16E9 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		9818C1361DDAE803001B16E9 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		9818C1371DDAE803001B16E9 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		9818C1391DDAE839001B16E9 /* DNNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DNNetWorking;
+			sourceTree = "<group>";
+		};
+		F0E0EE20B1AFED2F8EBAB44F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */,
+				3A1CE3DC50328C9C9B96ECFE /* Pods-Dianniu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9818C0FF1DDAE345001B16E9 /* Dianniu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9818C11D1DDAE345001B16E9 /* Build configuration list for PBXNativeTarget "Dianniu" */;
+			buildPhases = (
+				2D9DE225EC1E4BFBE9A48548 /* [CP] Check Pods Manifest.lock */,
+				9818C0FC1DDAE345001B16E9 /* Sources */,
+				9818C0FD1DDAE345001B16E9 /* Frameworks */,
+				9818C0FE1DDAE345001B16E9 /* Resources */,
+				6E2360B947DFFC91C88B2E33 /* [CP] Embed Pods Frameworks */,
+				581915D19544B225F765BD10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dianniu;
+			productName = Dianniu;
+			productReference = 9818C1001DDAE345001B16E9 /* Dianniu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9818C0F81DDAE345001B16E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Dianniu;
+				TargetAttributes = {
+					9818C0FF1DDAE345001B16E9 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 9818C0FB1DDAE345001B16E9 /* Build configuration list for PBXProject "Dianniu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9818C0F71DDAE345001B16E9;
+			productRefGroup = 9818C1011DDAE345001B16E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9818C0FF1DDAE345001B16E9 /* Dianniu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9818C0FE1DDAE345001B16E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9818C1191DDAE345001B16E9 /* LaunchScreen.storyboard in Resources */,
+				9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */,
+				9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */,
+				9818C1141DDAE345001B16E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D9DE225EC1E4BFBE9A48548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		581915D19544B225F765BD10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dianniu/Pods-Dianniu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E2360B947DFFC91C88B2E33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dianniu/Pods-Dianniu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9818C0FC1DDAE345001B16E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9818C10E1DDAE345001B16E9 /* DataViewController.m in Sources */,
+				9818C1081DDAE345001B16E9 /* AppDelegate.m in Sources */,
+				9818C1111DDAE345001B16E9 /* ModelController.m in Sources */,
+				9818C1051DDAE345001B16E9 /* main.m in Sources */,
+				9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */,
+				9818C10B1DDAE345001B16E9 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9818C1121DDAE345001B16E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9818C1131DDAE345001B16E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9818C1181DDAE345001B16E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9818C11B1DDAE345001B16E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9818C11C1DDAE345001B16E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9818C11E1DDAE345001B16E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Dianniu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dianniu.Dianniu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9818C11F1DDAE345001B16E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1CE3DC50328C9C9B96ECFE /* Pods-Dianniu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Dianniu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dianniu.Dianniu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9818C0FB1DDAE345001B16E9 /* Build configuration list for PBXProject "Dianniu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9818C11B1DDAE345001B16E9 /* Debug */,
+				9818C11C1DDAE345001B16E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9818C11D1DDAE345001B16E9 /* Build configuration list for PBXNativeTarget "Dianniu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9818C11E1DDAE345001B16E9 /* Debug */,
+				9818C11F1DDAE345001B16E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9818C0F81DDAE345001B16E9 /* Project object */;
+}
