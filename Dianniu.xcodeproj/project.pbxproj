@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		9818C1051DDAE345001B16E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1041DDAE345001B16E9 /* main.m */; };
 		9818C1081DDAE345001B16E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1071DDAE345001B16E9 /* AppDelegate.m */; };
-		9818C10B1DDAE345001B16E9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C10A1DDAE345001B16E9 /* RootViewController.m */; };
-		9818C10E1DDAE345001B16E9 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C10D1DDAE345001B16E9 /* DataViewController.m */; };
-		9818C1111DDAE345001B16E9 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1101DDAE345001B16E9 /* ModelController.m */; };
-		9818C1141DDAE345001B16E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1121DDAE345001B16E9 /* Main.storyboard */; };
 		9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1151DDAE345001B16E9 /* Assets.xcassets */; };
 		9818C1191DDAE345001B16E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */; };
 		9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C13B1DDAE961001B16E9 /* LoginViewC.m */; };
 		9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9818C13C1DDAE961001B16E9 /* LoginViewC.xib */; };
+		9843C5071DE2C7C900B6CA61 /* DNPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9843C5061DE2C7C900B6CA61 /* DNPhone.m */; };
+		9843C50A1DE2CC1700B6CA61 /* DNWebServiceBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9843C5091DE2CC1700B6CA61 /* DNWebServiceBaseModel.m */; };
+		9843C50D1DE2D15D00B6CA61 /* DNWebServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9843C50C1DE2D15D00B6CA61 /* DNWebServiceConfig.m */; };
+		9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */; };
 		D7295A960ACAAD4316FC45C1 /* libPods-Dianniu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */; };
 /* End PBXBuildFile section */
 
@@ -26,19 +26,21 @@
 		9818C1041DDAE345001B16E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9818C1061DDAE345001B16E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9818C1071DDAE345001B16E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9818C1091DDAE345001B16E9 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		9818C10A1DDAE345001B16E9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		9818C10C1DDAE345001B16E9 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		9818C10D1DDAE345001B16E9 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		9818C10F1DDAE345001B16E9 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		9818C1101DDAE345001B16E9 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
-		9818C1131DDAE345001B16E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9818C1151DDAE345001B16E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9818C1181DDAE345001B16E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9818C11A1DDAE345001B16E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9818C13A1DDAE961001B16E9 /* LoginViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewC.h; sourceTree = "<group>"; };
 		9818C13B1DDAE961001B16E9 /* LoginViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewC.m; sourceTree = "<group>"; };
 		9818C13C1DDAE961001B16E9 /* LoginViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewC.xib; sourceTree = "<group>"; };
+		9843C5051DE2C7C900B6CA61 /* DNPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPhone.h; sourceTree = "<group>"; };
+		9843C5061DE2C7C900B6CA61 /* DNPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPhone.m; sourceTree = "<group>"; };
+		9843C5081DE2CC1700B6CA61 /* DNWebServiceBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNWebServiceBaseModel.h; sourceTree = "<group>"; };
+		9843C5091DE2CC1700B6CA61 /* DNWebServiceBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebServiceBaseModel.m; sourceTree = "<group>"; };
+		9843C50B1DE2D15D00B6CA61 /* DNWebServiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNWebServiceConfig.h; sourceTree = "<group>"; };
+		9843C50C1DE2D15D00B6CA61 /* DNWebServiceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebServiceConfig.m; sourceTree = "<group>"; };
+		9863B4FF1DE2F4E800375CD0 /* DNWebServiceKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNWebServiceKeys.h; sourceTree = "<group>"; };
+		9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebServiceKeys.m; sourceTree = "<group>"; };
+		98717C7E1DE29907009C357B /* DNPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPrefixHeader.pch; sourceTree = "<group>"; };
 		ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dianniu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dianniu/Pods-Dianniu.debug.xcconfig"; sourceTree = "<group>"; };
 		B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dianniu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,25 +86,16 @@
 		9818C1021DDAE345001B16E9 /* Dianniu */ = {
 			isa = PBXGroup;
 			children = (
+				9843C5021DE2C78D00B6CA61 /* Common */,
+				9818C1061DDAE345001B16E9 /* AppDelegate.h */,
+				9818C1071DDAE345001B16E9 /* AppDelegate.m */,
 				9818C1301DDAE600001B16E9 /* Login */,
 				9818C12C1DDAE5F9001B16E9 /* Home */,
 				9818C1281DDAE5F2001B16E9 /* Discover */,
 				9818C1241DDAE5E6001B16E9 /* Profile */,
 				9818C1201DDAE5DD001B16E9 /* Message */,
-				9818C1061DDAE345001B16E9 /* AppDelegate.h */,
-				9818C1071DDAE345001B16E9 /* AppDelegate.m */,
 				9818C1391DDAE839001B16E9 /* DNNetWorking */,
 				9818C1341DDAE803001B16E9 /* DNUtility */,
-				9818C1091DDAE345001B16E9 /* RootViewController.h */,
-				9818C10A1DDAE345001B16E9 /* RootViewController.m */,
-				9818C10C1DDAE345001B16E9 /* DataViewController.h */,
-				9818C10D1DDAE345001B16E9 /* DataViewController.m */,
-				9818C10F1DDAE345001B16E9 /* ModelController.h */,
-				9818C1101DDAE345001B16E9 /* ModelController.m */,
-				9818C1121DDAE345001B16E9 /* Main.storyboard */,
-				9818C1151DDAE345001B16E9 /* Assets.xcassets */,
-				9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */,
-				9818C11A1DDAE345001B16E9 /* Info.plist */,
 				9818C1031DDAE345001B16E9 /* Supporting Files */,
 			);
 			path = Dianniu;
@@ -111,6 +104,10 @@
 		9818C1031DDAE345001B16E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */,
+				9818C1151DDAE345001B16E9 /* Assets.xcassets */,
+				98717C7E1DE29907009C357B /* DNPrefixHeader.pch */,
+				9818C11A1DDAE345001B16E9 /* Info.plist */,
 				9818C1041DDAE345001B16E9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -308,8 +305,39 @@
 		9818C1391DDAE839001B16E9 /* DNNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				9843C5081DE2CC1700B6CA61 /* DNWebServiceBaseModel.h */,
+				9843C5091DE2CC1700B6CA61 /* DNWebServiceBaseModel.m */,
+				9843C50B1DE2D15D00B6CA61 /* DNWebServiceConfig.h */,
+				9843C50C1DE2D15D00B6CA61 /* DNWebServiceConfig.m */,
+				9863B4FF1DE2F4E800375CD0 /* DNWebServiceKeys.h */,
+				9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */,
 			);
 			path = DNNetWorking;
+			sourceTree = "<group>";
+		};
+		9843C5021DE2C78D00B6CA61 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9843C5031DE2C78D00B6CA61 /* Models */,
+				9843C5041DE2C78D00B6CA61 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9843C5031DE2C78D00B6CA61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9843C5051DE2C7C900B6CA61 /* DNPhone.h */,
+				9843C5061DE2C7C900B6CA61 /* DNPhone.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9843C5041DE2C78D00B6CA61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F0E0EE20B1AFED2F8EBAB44F /* Pods */ = {
@@ -385,7 +413,6 @@
 				9818C1191DDAE345001B16E9 /* LaunchScreen.storyboard in Resources */,
 				9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */,
 				9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */,
-				9818C1141DDAE345001B16E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,26 +471,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9818C10E1DDAE345001B16E9 /* DataViewController.m in Sources */,
+				9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */,
+				9843C5071DE2C7C900B6CA61 /* DNPhone.m in Sources */,
+				9843C50A1DE2CC1700B6CA61 /* DNWebServiceBaseModel.m in Sources */,
+				9843C50D1DE2D15D00B6CA61 /* DNWebServiceConfig.m in Sources */,
 				9818C1081DDAE345001B16E9 /* AppDelegate.m in Sources */,
-				9818C1111DDAE345001B16E9 /* ModelController.m in Sources */,
 				9818C1051DDAE345001B16E9 /* main.m in Sources */,
 				9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */,
-				9818C10B1DDAE345001B16E9 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9818C1121DDAE345001B16E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9818C1131DDAE345001B16E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -518,6 +538,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -558,6 +579,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -569,9 +592,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dianniu/DNPrefixHeader.pch;
 				INFOPLIST_FILE = Dianniu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dianniu.Dianniu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -583,9 +610,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dianniu/DNPrefixHeader.pch;
 				INFOPLIST_FILE = Dianniu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dianniu.Dianniu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

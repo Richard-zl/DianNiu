@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewC.h"
+#import "DNWebServiceConfig.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,8 @@
     self.window.rootViewController = [[LoginViewC alloc] initWithNibName:@"LoginViewC" bundle:nil];
     [self.window makeKeyAndVisible];
     
+    [[DNWebServiceConfig shared] confirmENV:DNWebServiceENV_Release];
+
     return YES;
 }
 
