@@ -34,7 +34,7 @@ DNWebServiceConfig *instance;
     self = [super init];
     if (self) {
         _normalHttpManager = [AFHTTPSessionManager manager];
-        _normalHttpManager.requestSerializer  = [AFHTTPRequestSerializer serializer];
+        _normalHttpManager.requestSerializer  = [AFJSONRequestSerializer serializer];
         _normalHttpManager.responseSerializer = [AFJSONResponseSerializer serializer];
         
         //使用http的时候再设置安全策略 先预留

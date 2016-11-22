@@ -17,6 +17,7 @@
 		9843C50A1DE2CC1700B6CA61 /* DNWebServiceBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9843C5091DE2CC1700B6CA61 /* DNWebServiceBaseModel.m */; };
 		9843C50D1DE2D15D00B6CA61 /* DNWebServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9843C50C1DE2D15D00B6CA61 /* DNWebServiceConfig.m */; };
 		9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */; };
+		98B613B01DE42794000F79B8 /* DNLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B613AF1DE42794000F79B8 /* DNLoginModel.m */; };
 		D7295A960ACAAD4316FC45C1 /* libPods-Dianniu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,9 @@
 		9863B4FF1DE2F4E800375CD0 /* DNWebServiceKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNWebServiceKeys.h; sourceTree = "<group>"; };
 		9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebServiceKeys.m; sourceTree = "<group>"; };
 		98717C7E1DE29907009C357B /* DNPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPrefixHeader.pch; sourceTree = "<group>"; };
+		98B613AE1DE42794000F79B8 /* DNLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNLoginModel.h; sourceTree = "<group>"; };
+		98B613AF1DE42794000F79B8 /* DNLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNLoginModel.m; sourceTree = "<group>"; };
+		98E058D91DE3E103009CF374 /* DNDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNDefines.h; sourceTree = "<group>"; };
 		ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dianniu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dianniu/Pods-Dianniu.debug.xcconfig"; sourceTree = "<group>"; };
 		B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dianniu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -260,6 +264,8 @@
 		9818C1321DDAE600001B16E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				98B613AE1DE42794000F79B8 /* DNLoginModel.h */,
+				98B613AF1DE42794000F79B8 /* DNLoginModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 		9818C1351DDAE803001B16E9 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
+				98E058D91DE3E103009CF374 /* DNDefines.h */,
 			);
 			path = Defines;
 			sourceTree = "<group>";
@@ -476,6 +483,7 @@
 				9843C50A1DE2CC1700B6CA61 /* DNWebServiceBaseModel.m in Sources */,
 				9843C50D1DE2D15D00B6CA61 /* DNWebServiceConfig.m in Sources */,
 				9818C1081DDAE345001B16E9 /* AppDelegate.m in Sources */,
+				98B613B01DE42794000F79B8 /* DNLoginModel.m in Sources */,
 				9818C1051DDAE345001B16E9 /* main.m in Sources */,
 				9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */,
 			);

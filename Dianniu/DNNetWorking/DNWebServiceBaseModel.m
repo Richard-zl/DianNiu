@@ -75,7 +75,7 @@
     [paramDict setValue:[self requestActionString] forKey:kDNRReqAction];
     [paramDict setValue:[self requestArguement] forKey:kDNReqArgs];
     
-    return @{kDNReqCommand:paramDict};
+    return @{kDNReqCommand:paramDict,@"token":@""};
 }
 - (NSString *)packageRequestURL{
     NSString *reqUrl = [self requestAddressUrl];
@@ -97,7 +97,7 @@
 
 - (void)preprocessRespond:(id _Nullable)respondObjc session:(NSURLSessionDataTask *)sessionTask success:(DNNetWorkSuccess) successB failed:(DNNetWorkFailed)faildB{
     if (respondObjc) {
-        if ([respondObjc[kDNRespCode] isEqualToString:@"0"]) {
+        if ([respondObjc[kDNRespCode] integerValue] == 0 ) {
             //返回码是0代表成功
             [self requestSuccess:sessionTask respond:respondObjc[kDNRespData]];
             if (successB) {
@@ -105,7 +105,7 @@
             }
         }else{
             //返回码不为0为失败
-            [self handleFailByRespondCode:respondObjc[kDNRespData] respond:respondObjc];
+            [self handleFailByRespondCode:respondObjc[kDNRespCode] respond:respondObjc];
             [self requestFailed:sessionTask error:nil];
         }
     }else{

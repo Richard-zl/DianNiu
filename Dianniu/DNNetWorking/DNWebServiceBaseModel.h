@@ -19,6 +19,7 @@ typedef void(^DNNetWorkFailed)(NSURLSessionDataTask *sessionTask, NSError *error
 
 @interface DNWebServiceBaseModel : NSObject
 
+- (void)handleFailByRespondCode:(id)redpCode respond:(id)respondObjc;//服务器返回不为0的失败,如果不想基类做处理可重写该方法
 - (NSString *)requestAddressUrl;
 - (NSString *)requestActionString;
 - (NSDictionary *)requestArguement;
