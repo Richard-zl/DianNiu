@@ -7,6 +7,7 @@
 //
 
 #import "DNLoginModel.h"
+#import "DNUserModel.h"
 
 @implementation DNLoginModel
 
@@ -30,7 +31,9 @@
 }
 
 - (void)requestSuccess:(NSURLSessionDataTask *)sessionTask respond:(id)respObjc{
-    
+    DNUserModel *userModel = [DNUserModel modelWithUserDictionary:respObjc];
+    [[DNUser sheared] configurDNUser:userModel];
+    [DNKeychain save:kDNKeychainLastUserId data:[DNUser sheared].userId];
 }
 
 

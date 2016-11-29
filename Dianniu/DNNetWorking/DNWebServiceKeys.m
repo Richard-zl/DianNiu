@@ -14,9 +14,10 @@ NSString *const kDNRespMsg  = @"return_msg";
 
 
 
-NSString *const kDNReqCommand = @"comand";
+NSString *const kDNReqCommand = @"command";
 NSString *const kDNRReqAction = @"action";
 NSString *const kDNReqArgs    = @"args";
+NSString *const kDNReqToken   = @"token";
 //Json字符串,如
 //{"command":{"action":"account.login","args":{"mobile":"18108122310"}}}
 

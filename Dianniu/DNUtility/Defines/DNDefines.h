@@ -6,8 +6,12 @@
 //  Copyright © 2016年 Dianniu. All rights reserved.
 //
 
+#import "DNAppDelegate.h"
+
 #ifndef DNDefines_h
 #define DNDefines_h
+
+#define DNSharedDelegate ((DNAppDelegate *)[[UIApplication sharedApplication] delegate])
 
 /***
  ***rgb颜色转换（16进制->10进制）
@@ -22,5 +26,6 @@
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height //设备的宽度
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
 
+#define DNWeakself typeof(self) __weak weakSelf = self;
 
 #endif /* DNDefines_h */

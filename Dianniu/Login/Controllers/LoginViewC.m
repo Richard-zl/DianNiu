@@ -8,6 +8,7 @@
 
 #import "LoginViewC.h"
 #import "DNLoginModel.h"
+#import "RigisterViewC.h"
 
 
 #define defaultHeaderCenterY -180
@@ -36,8 +37,8 @@
 }
 
 - (void)dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+    DNForgetEvent(UIKeyboardWillShowNotification, self);
+    DNForgetEvent(UIKeyboardWillHideNotification, self);
 }
 
 #pragma mark - privite
@@ -47,18 +48,11 @@
 }
 
 - (void)registerNotification{
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(changeContentViewPosition:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(changeContentViewPosition:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
+    DNListenEvent(UIKeyboardWillShowNotification, self, @selector(changeContentViewPosition:));
+    DNListenEvent(UIKeyboardWillHideNotification, self, @selector(changeContentViewPosition:));
 }
 
-- (void) changeContentViewPosition:(NSNotification *)notification{
+- (void)changeContentViewPosition:(NSNotification *)notification{
     NSDictionary *userInfo = [notification userInfo];
     NSValue *value         = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGFloat keyBoardEndY   = value.CGRectValue.origin.y;
@@ -82,26 +76,15 @@
     return frame.origin.y + frame.size.height;
 }
 
-- (BOOL)verifyPhoneNumber:(NSString *)phoneNumber{
-    BOOL isPass = NO;
-    NSString *pattern = @"^1[34578]\\d{9}$";
-    NSError  *error;
-    NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
-    NSArray *results = [regex matchesInString:phoneNumber options:NSMatchingReportProgress range:NSMakeRange(0, phoneNumber.length)];
-    
-    for (NSInteger i = 0 ; i < results.count; i ++) {
-        isPass =YES;
-    }
-    return isPass;
-}
 
 - (void)doLogin{
     DNLoginModel *loginModel = [[DNLoginModel alloc] init];
     loginModel.mobileNum = self.phoneTf.text;
     loginModel.pwd       = self.passwordTf.text;
-    
-    [loginModel httpRequest:20 success:^(NSURLSessionDataTask *sessionTask, id respondObj) {
-        NSLog(@"%@",respondObj);
+    [SVProgressHUD show];
+    [loginModel httpRequest:20 success:^(NSURLSessionDataTask *sessionTask, id respondObj) {        
+        [SVProgressHUD dismiss];
+        [DNSharedDelegate showHomeViewC];
     } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
         //网络请求的基类已经对该类失败做了处理
     }];
@@ -109,7 +92,7 @@
 
 - (BOOL)verifyLoginParam{
     BOOL isPass = YES;
-    if (![self verifyPhoneNumber:self.phoneTf.text]) {
+    if (!verifyPhoneNumber(self.phoneTf.text)) {
         isPass = NO;
         [SVProgressHUD showErrorWithStatus:@"请输入正确的手机号码"];
     }else if (self.passwordTf.text.length < 4){
@@ -129,6 +112,8 @@
 }
 
 - (IBAction)rigisterButtonAction:(id)sender {
+    
+    [self presentViewController:[[RigisterViewC alloc] initWithNibName:@"RigisterViewC" bundle:nil]  animated:YES completion:nil];
 }
 
 - (IBAction)forgetPasswordButtonAction:(id)sender {
@@ -146,7 +131,7 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     if ([self.phoneTf isEqual:textField]) {
         if (textField.text.length + string.length > 11) {
-            if (![self verifyPhoneNumber:self.phoneTf.text]) {
+            if (!verifyPhoneNumber(self.phoneTf.text)) {
                 [SVProgressHUD showErrorWithStatus:@"请输入正确的手机号码"];
             }else{
                 [self.passwordTf becomeFirstResponder];

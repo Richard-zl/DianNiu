@@ -9,7 +9,7 @@
 #import "DNPhone.h"
 #import <AdSupport/AdSupport.h>
 
-DNPhone *inst = nil;
+static DNPhone *inst = nil;
 
 @implementation DNPhone
 

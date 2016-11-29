@@ -20,8 +20,8 @@
 #pragma mark - public
 - (void)httpRequest:(NSInteger)timeout success:(DNNetWorkSuccess)successBlock failed:(DNNetWorkFailed)failedBlock{
     
-    AFHTTPSessionManager *manager = [DNWebServiceConfig shared].normalHttpManager;
-    NSError  *serializationError = nil;
+    AFHTTPSessionManager *manager       = [DNWebServiceConfig shared].normalHttpManager;
+    NSError  *serializationError        = nil;
     
     NSMutableURLRequest *mutableRequest = [manager.requestSerializer requestWithMethod:[self requestMethod] URLString:[self packageRequestURL] parameters:[self packgeRequestParam] error:&serializationError];
     
@@ -71,11 +71,14 @@
 
 #pragma mark - privite
 - (NSDictionary *)packgeRequestParam{
-    NSMutableDictionary *paramDict = [NSMutableDictionary dictionary];
+    NSMutableDictionary *requestDict = [NSMutableDictionary dictionary];
+    NSMutableDictionary *paramDict   = [NSMutableDictionary dictionary];
     [paramDict setValue:[self requestActionString] forKey:kDNRReqAction];
     [paramDict setValue:[self requestArguement] forKey:kDNReqArgs];
+    [requestDict setValue:paramDict forKey:kDNReqCommand];
+    [requestDict setValue:[DNUser sheared].token forKey:kDNReqToken];
     
-    return @{kDNReqCommand:paramDict,@"token":@""};
+    return requestDict;
 }
 - (NSString *)packageRequestURL{
     NSString *reqUrl = [self requestAddressUrl];
@@ -105,6 +108,9 @@
             }
         }else{
             //返回码不为0为失败
+            if (faildB) {
+                faildB(sessionTask,nil);
+            }
             [self handleFailByRespondCode:respondObjc[kDNRespCode] respond:respondObjc];
             [self requestFailed:sessionTask error:nil];
         }
@@ -118,7 +124,9 @@
     NSString *respMsg = respondObjc[kDNRespMsg];
     switch ([redpCode integerValue]) {
         case 804:
+        case 800:
         //这儿做退出登录 并且回到登录页的逻辑
+        DNEvent(kDNKeyNoticeLogout, nil);
         break;
         
         default:

@@ -12,7 +12,4 @@
 @interface DNLoginModel : DNWebServiceBaseModel
 @property (nonatomic, copy) NSString *mobileNum;
 @property (nonatomic, copy) NSString *pwd;
-
-
-
 @end

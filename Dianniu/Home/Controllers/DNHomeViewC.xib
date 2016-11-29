@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DNHomeViewC">
+            <connections>
+                <outlet property="firstBut" destination="zxv-CD-22r" id="PKb-bP-f2Q"/>
+                <outlet property="searchDisplayController" destination="RLd-F0-K44" id="Ggf-Wt-5dB"/>
+                <outlet property="secondBut" destination="OR5-ld-WDv" id="e1l-K7-3FB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nko-Hr-AWR">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb1-TD-wTK">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="TME-XG-s0M"/>
+                                <constraint firstAttribute="width" constant="20" id="oxD-nR-FXn"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="home_release_icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-7a-jQo">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Bl4-Xh-bfZ"/>
+                                <constraint firstAttribute="height" constant="20" id="mWo-eA-Nr8"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="home_release_icon"/>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxv-CD-22r" customClass="DNHomeButton">
+                            <frame key="frameInset" minX="72" minY="41" width="82" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="电钮问答">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="requestButtonAction:" destination="-1" eventType="touchUpInside" id="LTV-YM-szC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OR5-ld-WDv" customClass="DNHomeButton">
+                            <frame key="frameInset" minX="216" minY="41" width="82" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="匿名逼格">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="requestButtonAction:" destination="-1" eventType="touchUpInside" id="xD3-Ou-Lg3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.28235294119999998" green="0.78823529410000004" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hb1-TD-wTK" secondAttribute="trailing" constant="22" id="J6C-Y4-bCy"/>
+                        <constraint firstAttribute="bottom" secondItem="hb1-TD-wTK" secondAttribute="bottom" constant="15" id="Uyc-aw-anI"/>
+                        <constraint firstItem="A4e-7a-jQo" firstAttribute="leading" secondItem="nko-Hr-AWR" secondAttribute="leading" constant="22" id="kcg-3M-Kem"/>
+                        <constraint firstAttribute="height" constant="74" id="tnw-Gi-DJ1"/>
+                        <constraint firstAttribute="bottom" secondItem="A4e-7a-jQo" secondAttribute="bottom" constant="15" id="w4z-wK-dFf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nko-Hr-AWR" secondAttribute="trailing" id="FEZ-8w-SaN"/>
+                <constraint firstItem="nko-Hr-AWR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lmy-cJ-WSX"/>
+                <constraint firstItem="nko-Hr-AWR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fZx-Zm-beZ"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+        <searchDisplayController id="RLd-F0-K44">
+            <connections>
+                <outlet property="delegate" destination="-1" id="M56-6A-RYv"/>
+                <outlet property="searchContentsController" destination="-1" id="cgN-D8-4AX"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="RDE-bn-7gr"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="dd3-WV-F7O"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="home_release_icon" width="17" height="17"/>
+    </resources>
+</document>
