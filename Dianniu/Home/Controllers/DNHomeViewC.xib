@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,8 +23,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nko-Hr-AWR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb1-TD-wTK">
+                            <rect key="frame" x="333" y="39" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="TME-XG-s0M"/>
                                 <constraint firstAttribute="width" constant="20" id="oxD-nR-FXn"/>
@@ -29,15 +34,18 @@
                             <state key="normal" backgroundImage="home_release_icon"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-7a-jQo">
+                            <rect key="frame" x="22" y="39" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="Bl4-Xh-bfZ"/>
                                 <constraint firstAttribute="height" constant="20" id="mWo-eA-Nr8"/>
                             </constraints>
                             <state key="normal" backgroundImage="home_release_icon"/>
                         </button>
-                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxv-CD-22r" customClass="DNHomeButton">
-                            <frame key="frameInset" minX="72" minY="41" width="82" height="20"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxv-CD-22r" customClass="DNHomeButton">
+                            <rect key="frame" x="42" y="41" width="145.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ehN-al-cMh"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <state key="normal" title="电钮问答">
@@ -50,9 +58,11 @@
                                 <action selector="requestButtonAction:" destination="-1" eventType="touchUpInside" id="LTV-YM-szC"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OR5-ld-WDv" customClass="DNHomeButton">
-                            <frame key="frameInset" minX="216" minY="41" width="82" height="20"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OR5-ld-WDv" customClass="DNHomeButton">
+                            <rect key="frame" x="187.5" y="41" width="145.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="3Fo-8P-uNB"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <state key="normal" title="匿名逼格">
@@ -68,7 +78,13 @@
                     </subviews>
                     <color key="backgroundColor" red="0.28235294119999998" green="0.78823529410000004" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="hb1-TD-wTK" firstAttribute="leading" secondItem="OR5-ld-WDv" secondAttribute="trailing" id="50F-uV-BAd"/>
+                        <constraint firstAttribute="bottom" secondItem="zxv-CD-22r" secondAttribute="bottom" constant="12" id="5cH-4f-LHF"/>
+                        <constraint firstItem="OR5-ld-WDv" firstAttribute="width" secondItem="zxv-CD-22r" secondAttribute="width" id="7v4-N8-GLf"/>
+                        <constraint firstAttribute="bottom" secondItem="OR5-ld-WDv" secondAttribute="bottom" constant="12" id="9EZ-2Z-bEw"/>
                         <constraint firstAttribute="trailing" secondItem="hb1-TD-wTK" secondAttribute="trailing" constant="22" id="J6C-Y4-bCy"/>
+                        <constraint firstItem="OR5-ld-WDv" firstAttribute="leading" secondItem="zxv-CD-22r" secondAttribute="trailing" id="SVF-m6-fIH"/>
+                        <constraint firstItem="zxv-CD-22r" firstAttribute="leading" secondItem="A4e-7a-jQo" secondAttribute="trailing" id="UGZ-cI-Sy7"/>
                         <constraint firstAttribute="bottom" secondItem="hb1-TD-wTK" secondAttribute="bottom" constant="15" id="Uyc-aw-anI"/>
                         <constraint firstItem="A4e-7a-jQo" firstAttribute="leading" secondItem="nko-Hr-AWR" secondAttribute="leading" constant="22" id="kcg-3M-Kem"/>
                         <constraint firstAttribute="height" constant="74" id="tnw-Gi-DJ1"/>

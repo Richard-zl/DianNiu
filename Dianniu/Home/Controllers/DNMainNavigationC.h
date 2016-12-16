@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DNMainNavigationC : UINavigationController
-
+@property (nonatomic, strong) NSArray *dnControllers;
 @end

@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, DNTabSelectItem){
 };
 
 @interface DNTabBarController : UITabBarController
+@property (nonatomic, strong) NSArray *dnControllers;
 
 - (void)selectItemIndex:(DNTabSelectItem)itemIndex;
 

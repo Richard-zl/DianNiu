@@ -17,6 +17,9 @@
 #import "UIViewExt.h"
 #import "DNKit.h"
 #import "DNUser.h"
+#import "DNAliSDKManager.h"
+#import "UIImage+imageWithColor.h"
+
 
 //external
 #import <SVProgressHUD.h>

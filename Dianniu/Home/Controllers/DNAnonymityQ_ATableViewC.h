@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DNHomeListRequestModel.h"
+#import "DNQ_ATableViewC.h"
 
 //匿名问答tableViewController
-@interface DNAnonymityQ_ATableViewC : UITableViewController
-@property (nonatomic, assign) DNHomeListType type;
+@interface DNAnonymityQ_ATableViewC : DNQ_ATableViewC
 
 @end

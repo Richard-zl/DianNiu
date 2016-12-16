@@ -16,22 +16,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configurBarColor];
+    [self configurBackButton];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configurBarColor{
+    self.navigationBar.barTintColor = DNThemeColor;
+    self.navigationBar.translucent = YES;
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],
+                                                          NSFontAttributeName:[UIFont boldSystemFontOfSize:18]};
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)configurBackButton{
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[[UIImage imageNamed:@"back_icon"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 15, 0, 0)] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
 }
-*/
+
+- (void)backAction{
+    [self popViewControllerAnimated:YES];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+  
+    if (animated) viewController.hidesBottomBarWhenPushed = YES;
+    self.navigationBarHidden = NO;
+    [super pushViewController:viewController animated:animated];
+}
+
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated{
+    UIViewController *controller = [super popViewControllerAnimated:animated];
+    if (self.viewControllers.count == 1) {
+        [self setNavigationBarHidden:YES animated:YES];
+    }
+    return controller;
+}
+
 
 @end

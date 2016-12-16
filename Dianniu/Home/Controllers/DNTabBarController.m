@@ -17,7 +17,6 @@
 @property (nonatomic, strong) NSArray *unSelectImageNames;
 @property (nonatomic, strong) NSArray *selectedImageNames;
 @property (nonatomic, strong) NSArray *itemTitles;
-@property (nonatomic, strong) NSArray *dnControllers;
 
 @end
 

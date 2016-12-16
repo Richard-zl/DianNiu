@@ -9,6 +9,7 @@
 #import "DNAppDelegate.h"
 #import "LoginViewC.h"
 #import "DNWebServiceConfig.h"
+#import <ALBBMediaService/ALBBMediaService.h>
 
 @interface DNAppDelegate ()
 
@@ -34,8 +35,10 @@
 
 - (void)configurGlobal{
     [[DNWebServiceConfig shared] confirmENV:DNWebServiceENV_product];
+    
     [SVProgressHUD setBackgroundColor:[DNThemeColor colorWithAlphaComponent:0.9]];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+
 }
 
 - (void)listenNotifications{

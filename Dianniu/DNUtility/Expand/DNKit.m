@@ -12,12 +12,13 @@
 
 @implementation DNKit
 
-
 id DNAlert(NSString *title, NSString *msg, NSString *buttonText, void (^cancelBlock) ()){
     if ([[DNPhone shared].osver doubleValue] >= 8.0) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:msg  preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:buttonText style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            cancelBlock();
+            if (cancelBlock) {
+                cancelBlock();
+            }
         }];
         [alertController addAction:cancelAction];
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
@@ -60,6 +61,8 @@ BOOL verifyPhoneNumber(NSString *num){
     }
     return isPass;
 }
+
+
 
 #pragma mark 数据处理相关
 + (NSString *)MD5:(NSString *)s {

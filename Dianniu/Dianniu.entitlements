@@ -4,7 +4,7 @@
 <dict>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.Dianniu.Dianniu</string>
+		<string>$(AppIdentifierPrefix)com.ycherry.dianniu</string>
 	</array>
 </dict>
 </plist>

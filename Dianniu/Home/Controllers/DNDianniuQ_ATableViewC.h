@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DNHomeListRequestModel.h"
-#import "DNDianniuQ_AViewModel.h"
+#import "DNQ_ATableViewC.h"
+
 
 //电钮问答tableViewController
-@interface DNDianniuQ_ATableViewC : UITableViewController
-@property (nonatomic, assign) DNHomeListType type;
-
-- (void)tableViewDidReload:(NSMutableDictionary *)dataDict;
+@interface DNDianniuQ_ATableViewC : DNQ_ATableViewC
 
 @end

@@ -27,5 +27,10 @@
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
 
 #define DNWeakself typeof(self) __weak weakSelf = self;
-
+#define DNWeakObject(o) typeof(o) __weak weakObject = o;
 #endif /* DNDefines_h */
+typedef enum : NSUInteger {
+    DNCellToolBarButton_Forwarded = 0,///转发
+    DNCellToolBarButton_Praise,       ///点赞
+    DNCellToolBarButton_Comment,      ///评论
+} DNCellToolBarButton;

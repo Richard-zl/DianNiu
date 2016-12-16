@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DNAnswerCell" rowHeight="73" id="KGk-i7-Jjw" customClass="DNAnswerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JTF-1h-DQs">
+                        <rect key="frame" x="20" y="8" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="JHD-cv-FPw"/>
+                            <constraint firstAttribute="height" constant="27" id="k6C-5c-afF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隔壁小刘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-Cu-7Oy">
+                        <rect key="frame" x="55" y="8" width="49.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淘宝/母婴/店长|浙江杭州" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUh-BK-QyW">
+                        <rect key="frame" x="55" y="21" width="124" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSF-gc-gvi">
+                        <rect key="frame" x="262" y="12" width="45" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="NCC-k2-v1p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" title="0" image="home_click_praise_icon_nor">
+                            <color key="titleColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="home_click_praise_icon_sel"/>
+                        <connections>
+                            <action selector="praiseButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UYZ-fb-QNI"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jtk-UO-Izf" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="71.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="TPu-WS-ZtF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是可以自适应的内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3W-Km-5e5">
+                        <rect key="frame" x="55" y="43" width="180" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="rF6-ip-V6E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y1z-Cu-7Oy" firstAttribute="top" secondItem="JTF-1h-DQs" secondAttribute="top" id="0jS-d0-lrj"/>
+                    <constraint firstAttribute="bottom" secondItem="Jtk-UO-Izf" secondAttribute="bottom" id="3pq-RK-PBh"/>
+                    <constraint firstAttribute="trailing" secondItem="Jtk-UO-Izf" secondAttribute="trailing" id="4aa-Vi-fNG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tSF-gc-gvi" secondAttribute="trailing" constant="5" id="5T9-6U-tam"/>
+                    <constraint firstItem="y1z-Cu-7Oy" firstAttribute="leading" secondItem="JTF-1h-DQs" secondAttribute="trailing" constant="8" id="AYo-fx-AL2"/>
+                    <constraint firstItem="tSF-gc-gvi" firstAttribute="centerY" secondItem="JTF-1h-DQs" secondAttribute="centerY" id="XUW-Ny-f00"/>
+                    <constraint firstItem="C3W-Km-5e5" firstAttribute="leading" secondItem="y1z-Cu-7Oy" secondAttribute="leading" id="XUk-To-cPU"/>
+                    <constraint firstItem="C3W-Km-5e5" firstAttribute="top" secondItem="uUh-BK-QyW" secondAttribute="bottom" constant="8" id="ccb-cX-XXw"/>
+                    <constraint firstItem="uUh-BK-QyW" firstAttribute="leading" secondItem="JTF-1h-DQs" secondAttribute="trailing" constant="8" id="eS3-f2-mDb"/>
+                    <constraint firstItem="JTF-1h-DQs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="nII-zB-BPo"/>
+                    <constraint firstItem="Jtk-UO-Izf" firstAttribute="top" secondItem="C3W-Km-5e5" secondAttribute="bottom" constant="8" id="tBx-BR-i6K"/>
+                    <constraint firstItem="JTF-1h-DQs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tJq-B7-ttS"/>
+                    <constraint firstItem="Jtk-UO-Izf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tbQ-Rg-77K"/>
+                    <constraint firstItem="uUh-BK-QyW" firstAttribute="bottom" secondItem="JTF-1h-DQs" secondAttribute="bottom" id="xRY-OY-tVv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLb" destination="C3W-Km-5e5" id="VqL-D4-70c"/>
+                <outlet property="contentLbWidthCons" destination="rF6-ip-V6E" id="9O0-ux-nQ6"/>
+                <outlet property="hedaerImageView" destination="JTF-1h-DQs" id="v7T-wl-hz2"/>
+                <outlet property="nameLb" destination="y1z-Cu-7Oy" id="fEO-oU-ytM"/>
+                <outlet property="praiseBut" destination="tSF-gc-gvi" id="MZc-3o-LE9"/>
+                <outlet property="tagLb" destination="uUh-BK-QyW" id="bKK-HZ-TqI"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="66.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_head_icon" width="51" height="51"/>
+        <image name="home_click_praise_icon_nor" width="20" height="19"/>
+        <image name="home_click_praise_icon_sel" width="20" height="19"/>
+    </resources>
+</document>
