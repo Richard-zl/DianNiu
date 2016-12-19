@@ -18,7 +18,7 @@
         [model setValuesForKeysWithDictionary:userDic];
     }
     model.token = dict[kDNReqToken];
-    model.userId = [userDic[@"id"] stringValue];
+    model.userId = userDic[@"id"];
     return model;
 }
 

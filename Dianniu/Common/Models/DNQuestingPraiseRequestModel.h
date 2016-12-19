@@ -9,6 +9,6 @@
 #import "DNWebServiceBaseModel.h"
 //问题点赞
 @interface DNQuestingPraiseRequestModel : DNWebServiceBaseModel
-@property (nonatomic, copy) NSString *accountId;
-@property (nonatomic, copy) NSString *questingId;
+@property (nonatomic, copy) NSNumber *accountId;
+@property (nonatomic, copy) NSNumber *questingId;
 @end

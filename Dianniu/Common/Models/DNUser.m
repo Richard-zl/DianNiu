@@ -34,11 +34,11 @@ static DNUser *sharedUser;
     return self;
 }
 
-- (DNUser *)load:(NSString *)userId{
-    if (userId.length < 1) {
+- (DNUser *)load:(NSNumber *)userId{
+    if (userId.intValue < 1) {
         return  self;
     }
-    NSString *fileName = [NSString stringWithFormat:@"%@/dn.temp",[DNKit MD5:userId]];
+    NSString *fileName = [NSString stringWithFormat:@"%@/dn.temp",[DNKit MD5:[NSString stringWithFormat:@"%@",userId]]];
     NSString *filePath = [DNKit docmentsFilePath:fileName];
     DNUser *user;
     user = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
@@ -61,7 +61,7 @@ static DNUser *sharedUser;
         return NO;
     }
     
-    NSString *dirPath  = [DNKit docmentsFilePath:[DNKit MD5:self.userId]];
+    NSString *dirPath  = [DNKit docmentsFilePath:[DNKit MD5:[NSString stringWithFormat:@"%@",self.userId]]];
     NSString *filePath = [NSString stringWithFormat:@"%@/dn.temp",dirPath];
     NSFileManager *fileManager = [[NSFileManager alloc] init];
     NSError *err;

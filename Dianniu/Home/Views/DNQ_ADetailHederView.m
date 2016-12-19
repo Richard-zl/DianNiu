@@ -45,6 +45,7 @@
     self.addFriendBut.layer.borderWidth = 1.0;
     self.addFriendBut.layer.borderColor = DNThemeColor.CGColor;
     self.contentLbWidthCons.constant = ScreenWidth - 50;
+    self.width = ScreenWidth;
 }
 
 - (void)setType:(DNHomeListType)type{
@@ -81,12 +82,12 @@
         //电钮问答详情
         [self configurDianniuQ_ASubViews:model];
     }
-    [self configCollectionView];
     [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:model.hedaerImageStr]
                             placeholderImage:[UIImage imageNamed:@"default_head_icon"]];
     self.contentLb.text     = model.text;
     self.praiseValueLb.text = [NSString stringWithFormat:@"%ld",(long)model.praiseCount];
     self.answerValueLb.text = [NSString stringWithFormat:@"%ld",(long)model.answerCount];
+    [self configCollectionView];
 }
 
 - (void)configurDianniuQ_ASubViews:(DNDianniuQ_AViewModel *)model{
@@ -104,7 +105,12 @@
 
 - (void)configCollectionView{
     CGSize size = [self calculaImages:_model.contentImageStrs];
-    self.collectionView.imageStrs = _model.contentImageStrs;
+    if (size.width == 0 && size.height == 0) {
+        self.collectionView.hidden = YES;
+    }else{
+        self.collectionView.hidden = NO;
+        self.collectionView.imageStrs = _model.contentImageStrs;
+    }
     self.collectionViewWidthCons.constant  = size.width;
     self.collectionViewHeightCons.constant = size.height;
 }
@@ -124,7 +130,15 @@
 
 - (CGFloat)calculateViewHeight{
     //计算出来比实际要高五十 这个问题待解决
-    return [self systemLayoutSizeFittingSize:UILayoutFittingExpandedSize].height - 50;
+    /*(已解决) 因为XIB创建出来时宽度是按照iphone6的尺寸，显示在6plus上高度就会多，显示在iphone5上宽度就不够*/
+    return [self systemLayoutSizeFittingSize:UILayoutFittingExpandedSize].height + 1;
+}
+
+#pragma mark - Event
+- (IBAction)cilickHederView:(id)sender {
+    if (self.didClickDetailView) {
+        self.didClickDetailView();
+    }
 }
 
 @end

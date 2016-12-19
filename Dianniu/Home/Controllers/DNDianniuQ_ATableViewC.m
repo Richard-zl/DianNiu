@@ -9,7 +9,7 @@
 #import "DNDianniuQ_ATableViewC.h"
 #import "DNDianniuQ_ACell.h"
 #import "DNQ_ADetailViewC.h"
-
+#import "DNUserDetailC.h"
 
 @interface DNDianniuQ_ATableViewC ()
 @end
@@ -33,11 +33,18 @@
     }else{
         viewModel = content[indexPath.row];
     }
+    cell.didClickDetailView = [self pushUserDetailViewBlock];
     cell.dianniuQ_AViewModel = viewModel;
     return cell;
 }
 
-
+- (void (^)(DNDianniuQ_AViewModel *viewModel))pushUserDetailViewBlock{
+    return ^(DNDianniuQ_AViewModel *viewModel){
+        DNUserDetailC *detailC = [[DNUserDetailC alloc] initWithNibName:@"DNUserDetailC" bundle:nil];
+        detailC.accountId = viewModel.q_aModel.accountId;
+        [self.navigationController pushViewController:detailC animated:YES];
+    };
+}
 
 
 @end

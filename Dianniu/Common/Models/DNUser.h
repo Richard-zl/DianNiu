@@ -19,13 +19,13 @@ typedef enum : NSUInteger {
 @interface DNUser : NSObject<NSCoding>
 
 @property (nonatomic, copy)   NSString *token;
-@property (nonatomic, copy)   NSString *userId;
+@property (nonatomic, copy)   NSNumber *userId;
 @property (nonatomic, copy)   NSString *joinDate;
 @property (nonatomic, strong) NSURL    *headerImgURL;
 @property (nonatomic, copy)   NSString *realName;
 @property (nonatomic, assign) DNUSerAuthLevel authLevel;
 @property (nonatomic, copy)   NSString *userDesription;
-@property (nonatomic, copy)   NSString *mobile;
+@property (nonatomic, copy)   NSNumber *mobile;
 
 
 + (instancetype)sheared;

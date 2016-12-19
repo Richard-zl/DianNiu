@@ -12,7 +12,7 @@
 
 
 @interface DNDianniuQ_ACell : UITableViewCell
-
 @property (nonatomic, strong)DNDianniuQ_AViewModel *dianniuQ_AViewModel;
+@property (nonatomic, copy) void(^didClickDetailView)(DNDianniuQ_AViewModel *viewModel);
 
 @end

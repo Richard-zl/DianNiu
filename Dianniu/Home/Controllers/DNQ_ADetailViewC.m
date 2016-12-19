@@ -10,9 +10,10 @@
 #import "DNQ_ADetailHederView.h"
 #import "DNAnswerCell.h"
 #import "DNAnswerViewModel.h"
+#import "DNUserDetailC.h"
 
 @interface DNQ_ADetailViewC ()<UITableViewDelegate,UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray<DNAnswerViewModel *>* dataSource;
 @end
 
@@ -24,13 +25,16 @@
 }
 
 - (void)configurSubViews{
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self.view addSubview:self.tableView];
     [self configurTableView];
     [self configurMjrefresh];
 }
 
 - (void)configurTableView{
-   __block DNQ_ADetailHederView *hederView = [[[NSBundle mainBundle] loadNibNamed:@"DNQ_ADetailHederView" owner:nil options:nil] firstObject];
+    DNQ_ADetailHederView *hederView = [[[NSBundle mainBundle] loadNibNamed:@"DNQ_ADetailHederView" owner:nil options:nil] firstObject];
+    hederView.didClickDetailView = ^{
+        [self pushUserDetailCWithAccountId:self.q_aModel.q_aModel.accountId];
+    };
     hederView.type = self.type;
     hederView.model = self.q_aModel;
     [self.tableView setTableHeaderView:hederView];
@@ -94,6 +98,15 @@
     [((MJRefreshNormalHeader *)self.tableView.mj_footer) setTitle:@"" forState:MJRefreshStateNoMoreData];
 }
 
+#pragma mark - private
+- (void)pushUserDetailCWithAccountId:(NSNumber *)accountId{
+    if (self.type == DNHomeListType_questions) {
+        DNUserDetailC *detailC = [[DNUserDetailC alloc] initWithNibName:@"DNUserDetailC" bundle:nil];
+        detailC.accountId = accountId;
+        [self.navigationController pushViewController:detailC animated:YES];
+    }
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -105,7 +118,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 80.0;
+    return self.dataSource[indexPath.row].cellHeight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -113,16 +126,31 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([DNAnswerCell class]) owner:nil options:nil] firstObject];
     }
+    cell.type      = self.type;
     cell.viewModel = self.dataSource[indexPath.row];
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self pushUserDetailCWithAccountId:self.dataSource[indexPath.row].accountId];
+}
+
 #pragma mark - getter and setter
+
+- (UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - self.navigationController.navigationBar.height) style:UITableViewStylePlain];
+        _tableView.delegate   = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+}
+
 - (NSMutableArray<DNAnswerViewModel *> *)dataSource{
     if (!_dataSource) {
         _dataSource = [NSMutableArray array];
     }
     return _dataSource;
 }
-
 @end

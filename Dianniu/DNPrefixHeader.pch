@@ -19,7 +19,8 @@
 #import "DNUser.h"
 #import "DNAliSDKManager.h"
 #import "UIImage+imageWithColor.h"
-
+#import "NSArray+FixNilBug.h"
+#import "NSDictionary+FixNilBug.h"
 
 //external
 #import <SVProgressHUD.h>

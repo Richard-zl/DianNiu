@@ -29,6 +29,9 @@
 - (void)setViewModel:(DNAnswerViewModel *)viewModel{
     _viewModel = viewModel;
     [self configurSunViews];
+    if (_viewModel.cellHeight == 0) {
+        _viewModel.cellHeight = [self.contentView systemLayoutSizeFittingSize:UILayoutFittingExpandedSize].height + 1;
+    }
 }
 
 - (void)configurSunViews{
@@ -48,14 +51,14 @@
     self.tagLb.hidden = NO;
     self.tagLb.text = _viewModel.label;
     self.nameLb.text = _viewModel.realName;
-    NSURL *hederURL = [NSURL URLWithString:[DNAliSDKManager aliMediaSDKImagePath:_viewModel.aliasHeadPic]];
+    NSURL *hederURL = [NSURL URLWithString:[DNAliSDKManager aliMediaSDKImagePath:_viewModel.headPic]];
     [self.hedaerImageView sd_setImageWithURL:hederURL placeholderImage:[UIImage imageNamed:@"default_head_icon"]];
 }
 
 - (void)configurAnonymityAnswerViews{
     self.tagLb.hidden = YES;
     self.nameLb.text = _viewModel.aliasName;
-    NSURL *hederURL = [NSURL URLWithString:[DNAliSDKManager aliMediaSDKImagePath:_viewModel.headPic]];
+    NSURL *hederURL = [NSURL URLWithString:[DNAliSDKManager aliMediaSDKImagePath:_viewModel.aliasHeadPic]];
     [self.hedaerImageView sd_setImageWithURL:hederURL placeholderImage:[UIImage imageNamed:@"default_head_icon"]];
 }
 

@@ -50,9 +50,6 @@
     self.collectionView.scrollEnabled = NO;
     if (ScreenWidth == 320) {
         //小屏
-        self.contentTextLb.font = [UIFont systemFontOfSize:16];
-        self.tagLabel.font      = [UIFont systemFontOfSize:12];
-        self.nameLb.font        = [UIFont systemFontOfSize:15];
         self.tagLabelWidthCons.constant = 180;
     }else{
         self.tagLabelWidthCons.constant = 220;
@@ -137,6 +134,13 @@
             break;
     }
 }
+
+- (IBAction)clickHederDetailView:(UITapGestureRecognizer *)sender {
+    if (self.didClickDetailView) {
+        self.didClickDetailView(self.dianniuQ_AViewModel);
+    }
+}
+
 
 #pragma mark netWork
 - (void)praiseRequest{

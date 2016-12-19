@@ -13,9 +13,14 @@
 		9818C1051DDAE345001B16E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1041DDAE345001B16E9 /* main.m */; };
 		9818C1081DDAE345001B16E9 /* DNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1071DDAE345001B16E9 /* DNAppDelegate.m */; };
 		9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1151DDAE345001B16E9 /* Assets.xcassets */; };
-		9818C1191DDAE345001B16E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */; };
 		9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C13B1DDAE961001B16E9 /* LoginViewC.m */; };
 		9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9818C13C1DDAE961001B16E9 /* LoginViewC.xib */; };
+		982607B41E078CEE0056FAFD /* DNUserDetailC.m in Sources */ = {isa = PBXBuildFile; fileRef = 982607B21E078CEE0056FAFD /* DNUserDetailC.m */; };
+		982607B51E078CEE0056FAFD /* DNUserDetailC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 982607B31E078CEE0056FAFD /* DNUserDetailC.xib */; };
+		982607BB1E07D7A80056FAFD /* DNUserDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 982607BA1E07D7A80056FAFD /* DNUserDetailRequest.m */; };
+		982607BE1E07D8930056FAFD /* DNUserDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 982607BD1E07D8930056FAFD /* DNUserDetailModel.m */; };
+		982607C31E07F25F0056FAFD /* NSArray+FixNilBug.m in Sources */ = {isa = PBXBuildFile; fileRef = 982607C01E07F25F0056FAFD /* NSArray+FixNilBug.m */; };
+		982607C41E07F25F0056FAFD /* NSDictionary+FixNilBug.m in Sources */ = {isa = PBXBuildFile; fileRef = 982607C21E07F25F0056FAFD /* NSDictionary+FixNilBug.m */; };
 		98346CA61E03E74F001C5A45 /* DNQ_ATableViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98346CA51E03E74F001C5A45 /* DNQ_ATableViewC.m */; };
 		98346CAA1E03EFFF001C5A45 /* DNAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98346CA81E03EFFF001C5A45 /* DNAnswerCell.m */; };
 		98346CAB1E03EFFF001C5A45 /* DNAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98346CA91E03EFFF001C5A45 /* DNAnswerCell.xib */; };
@@ -95,11 +100,21 @@
 		9818C1061DDAE345001B16E9 /* DNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAppDelegate.h; sourceTree = "<group>"; };
 		9818C1071DDAE345001B16E9 /* DNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAppDelegate.m; sourceTree = "<group>"; };
 		9818C1151DDAE345001B16E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9818C1181DDAE345001B16E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9818C11A1DDAE345001B16E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9818C13A1DDAE961001B16E9 /* LoginViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewC.h; sourceTree = "<group>"; };
 		9818C13B1DDAE961001B16E9 /* LoginViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewC.m; sourceTree = "<group>"; };
 		9818C13C1DDAE961001B16E9 /* LoginViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewC.xib; sourceTree = "<group>"; };
+		982607B11E078CEE0056FAFD /* DNUserDetailC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNUserDetailC.h; sourceTree = "<group>"; };
+		982607B21E078CEE0056FAFD /* DNUserDetailC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNUserDetailC.m; sourceTree = "<group>"; };
+		982607B31E078CEE0056FAFD /* DNUserDetailC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNUserDetailC.xib; sourceTree = "<group>"; };
+		982607B91E07D7A80056FAFD /* DNUserDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNUserDetailRequest.h; sourceTree = "<group>"; };
+		982607BA1E07D7A80056FAFD /* DNUserDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNUserDetailRequest.m; sourceTree = "<group>"; };
+		982607BC1E07D8930056FAFD /* DNUserDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNUserDetailModel.h; sourceTree = "<group>"; };
+		982607BD1E07D8930056FAFD /* DNUserDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNUserDetailModel.m; sourceTree = "<group>"; };
+		982607BF1E07F25F0056FAFD /* NSArray+FixNilBug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FixNilBug.h"; sourceTree = "<group>"; };
+		982607C01E07F25F0056FAFD /* NSArray+FixNilBug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FixNilBug.m"; sourceTree = "<group>"; };
+		982607C11E07F25F0056FAFD /* NSDictionary+FixNilBug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FixNilBug.h"; sourceTree = "<group>"; };
+		982607C21E07F25F0056FAFD /* NSDictionary+FixNilBug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FixNilBug.m"; sourceTree = "<group>"; };
 		98346CA41E03E74F001C5A45 /* DNQ_ATableViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNQ_ATableViewC.h; sourceTree = "<group>"; };
 		98346CA51E03E74F001C5A45 /* DNQ_ATableViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNQ_ATableViewC.m; sourceTree = "<group>"; };
 		98346CA71E03EFFF001C5A45 /* DNAnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAnswerCell.h; sourceTree = "<group>"; };
@@ -297,7 +312,6 @@
 			isa = PBXGroup;
 			children = (
 				98B9643D1DE8016200E6ABF6 /* Dianniu.entitlements */,
-				9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */,
 				9818C1151DDAE345001B16E9 /* Assets.xcassets */,
 				98717C7E1DE29907009C357B /* DNPrefixHeader.pch */,
 				9818C11A1DDAE345001B16E9 /* Info.plist */,
@@ -541,6 +555,10 @@
 		9818C1361DDAE803001B16E9 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				982607BF1E07F25F0056FAFD /* NSArray+FixNilBug.h */,
+				982607C01E07F25F0056FAFD /* NSArray+FixNilBug.m */,
+				982607C11E07F25F0056FAFD /* NSDictionary+FixNilBug.h */,
+				982607C21E07F25F0056FAFD /* NSDictionary+FixNilBug.m */,
 				986586E91DE53FEF00562815 /* UIViewExt.h */,
 				986586EA1DE53FEF00562815 /* UIViewExt.m */,
 				98B3F1251DF7EED900DAED69 /* UIImage+imageWithColor.h */,
@@ -613,6 +631,8 @@
 			children = (
 				9809C17F1DE6D16100050505 /* DNUserModel.h */,
 				9809C1801DE6D16100050505 /* DNUserModel.m */,
+				982607BC1E07D8930056FAFD /* DNUserDetailModel.h */,
+				982607BD1E07D8930056FAFD /* DNUserDetailModel.m */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -634,6 +654,8 @@
 				98346CB31E040F71001C5A45 /* DNAnswerPraiseRequest.m */,
 				98346CAC1E03F7CD001C5A45 /* DNAnswerListRequest.h */,
 				98346CAD1E03F7CD001C5A45 /* DNAnswerListRequest.m */,
+				982607B91E07D7A80056FAFD /* DNUserDetailRequest.h */,
+				982607BA1E07D7A80056FAFD /* DNUserDetailRequest.m */,
 			);
 			name = NetWorkModel;
 			sourceTree = "<group>";
@@ -647,6 +669,9 @@
 				98B9641E1DE7DBCF00E6ABF6 /* DNMainNavigationC.m */,
 				98B3F1291DF8149E00DAED69 /* DNPicturebrowsingC.h */,
 				98B3F12A1DF8149E00DAED69 /* DNPicturebrowsingC.m */,
+				982607B11E078CEE0056FAFD /* DNUserDetailC.h */,
+				982607B21E078CEE0056FAFD /* DNUserDetailC.m */,
+				982607B31E078CEE0056FAFD /* DNUserDetailC.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -729,11 +754,11 @@
 			files = (
 				98B964331DE7DC4A00E6ABF6 /* DNMessageViewC.xib in Resources */,
 				98BF786B1DEF1E7400C8B49C /* DNDianniuQ_ACell.xib in Resources */,
-				9818C1191DDAE345001B16E9 /* LaunchScreen.storyboard in Resources */,
 				98B613B51DE44B8C000F79B8 /* RigisterViewC.xib in Resources */,
 				98B9642E1DE7DC3000E6ABF6 /* DNProfileViewC.xib in Resources */,
 				9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */,
 				98346CAB1E03EFFF001C5A45 /* DNAnswerCell.xib in Resources */,
+				982607B51E078CEE0056FAFD /* DNUserDetailC.xib in Resources */,
 				98ED49051DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib in Resources */,
 				98B964291DE7DC1500E6ABF6 /* DNDiscoverViewC.xib in Resources */,
 				9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */,
@@ -804,7 +829,9 @@
 				98D2F0B21E01452B001CD57D /* DNQ_ADetailViewC.m in Sources */,
 				98ED49081DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m in Sources */,
 				98ED49041DFFC8C700C4A47E /* DNAnonymityQ_ACell.m in Sources */,
+				982607C41E07F25F0056FAFD /* NSDictionary+FixNilBug.m in Sources */,
 				98B9643C1DE7E51A00E6ABF6 /* DNConstantKeys.m in Sources */,
+				982607BB1E07D7A80056FAFD /* DNUserDetailRequest.m in Sources */,
 				98BF785F1DEF0D9700C8B49C /* DNDianniuQ_ATableViewC.m in Sources */,
 				98B964461DE83AB200E6ABF6 /* DNHomeListRequestModel.m in Sources */,
 				98B613B41DE44B8C000F79B8 /* RigisterViewC.m in Sources */,
@@ -820,6 +847,7 @@
 				98346CAA1E03EFFF001C5A45 /* DNAnswerCell.m in Sources */,
 				9843C5071DE2C7C900B6CA61 /* DNPhone.m in Sources */,
 				98346CAE1E03F7CD001C5A45 /* DNAnswerListRequest.m in Sources */,
+				982607BE1E07D8930056FAFD /* DNUserDetailModel.m in Sources */,
 				9809C17B1DE6BD9700050505 /* DNRigisterModel.m in Sources */,
 				98346CA61E03E74F001C5A45 /* DNQ_ATableViewC.m in Sources */,
 				98346CB11E03FB7B001C5A45 /* DNAnswerViewModel.m in Sources */,
@@ -827,7 +855,9 @@
 				98B3F1241DF7B0DF00DAED69 /* DNContentImageCollectionView.m in Sources */,
 				98B964391DE7E40400E6ABF6 /* DNKeychain.m in Sources */,
 				9843C50A1DE2CC1700B6CA61 /* DNWebServiceBaseModel.m in Sources */,
+				982607B41E078CEE0056FAFD /* DNUserDetailC.m in Sources */,
 				98BF78781DEF3B2500C8B49C /* DNAnonymityQ_ATableViewC.m in Sources */,
+				982607C31E07F25F0056FAFD /* NSArray+FixNilBug.m in Sources */,
 				98B3F12B1DF8149E00DAED69 /* DNPicturebrowsingC.m in Sources */,
 				98B964231DE7DBF400E6ABF6 /* DNHomeViewC.m in Sources */,
 				98E4BC651DEEB30D00F805B5 /* DNDianniuQ_ACell.m in Sources */,
@@ -846,17 +876,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9818C1171DDAE345001B16E9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9818C1181DDAE345001B16E9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9818C11B1DDAE345001B16E9 /* Debug */ = {
@@ -955,8 +974,9 @@
 			baseConfigurationReference = ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Dianniu/Dianniu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 455749528@qq.com (J6298UE63P)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Qfpay Technology Company Limited";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E65EHHBW35;
 				ENABLE_BITCODE = NO;
@@ -976,6 +996,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ycherry.dianniu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -984,7 +1006,9 @@
 			baseConfigurationReference = 3A1CE3DC50328C9C9B96ECFE /* Pods-Dianniu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Dianniu/Dianniu.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Qfpay Technology Company Limited (V7WST9CUNZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E65EHHBW35;
 				ENABLE_BITCODE = NO;
@@ -1004,6 +1028,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ycherry.dianniu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

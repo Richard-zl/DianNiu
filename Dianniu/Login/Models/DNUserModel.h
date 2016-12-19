@@ -10,12 +10,12 @@
 
 @interface DNUserModel : NSObject
 @property (nonatomic, copy) NSString *token;
-@property (nonatomic, copy) NSString *userId;
+@property (nonatomic, copy) NSNumber *userId;
 @property (nonatomic, copy) NSString *headPc;
 @property (nonatomic, copy) NSString *realName;
 @property (nonatomic, copy) NSString *createDate;
 @property (nonatomic, copy) NSString *describe;
-@property (nonatomic, copy) NSString *mobile;
+@property (nonatomic, copy) NSNumber *mobile;
 @property (nonatomic, assign) NSInteger authLevel;
 
 + (instancetype)modelWithUserDictionary:(NSDictionary *)dict;

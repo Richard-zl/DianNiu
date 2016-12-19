@@ -10,7 +10,7 @@
 
 ///回答点赞
 @interface DNAnswerPraiseRequest : DNWebServiceBaseModel
-@property (nonatomic, copy) NSString *accountId;
-@property (nonatomic, copy) NSString *questId;
-@property (nonatomic, copy) NSString *answerId;
+@property (nonatomic, copy) NSNumber *accountId;
+@property (nonatomic, copy) NSNumber *questId;
+@property (nonatomic, copy) NSNumber *answerId;
 @end

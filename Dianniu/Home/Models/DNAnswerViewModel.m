@@ -14,8 +14,9 @@
      self =  [super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
-        self.answerId = [dict[@"id"] stringValue];
+        self.answerId = dict[@"id"];
         [self dealPraiseCount];
+        self.cellHeight = 0;
     }
     return self;
 }

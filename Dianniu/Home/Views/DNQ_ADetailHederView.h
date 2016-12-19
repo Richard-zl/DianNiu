@@ -14,5 +14,5 @@
 
 @property (nonatomic,assign)DNHomeListType type;
 @property (nonatomic,strong)DNDianniuQ_AViewModel *model;
-@property (nonatomic, copy) void(^didCalculatedHeight)(CGFloat height);
+@property (nonatomic, copy) void(^didClickDetailView)();
 @end

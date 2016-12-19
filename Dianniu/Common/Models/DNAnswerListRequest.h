@@ -10,7 +10,7 @@
 
 //问题回答列表
 @interface DNAnswerListRequest : DNWebServiceBaseModel
-@property (nonatomic, copy) NSString *accountId;
-@property (nonatomic, copy) NSString *questId;
+@property (nonatomic, copy) NSNumber *accountId;
+@property (nonatomic, copy) NSNumber *questId;
 @property (nonatomic, assign) NSInteger page;
 @end
