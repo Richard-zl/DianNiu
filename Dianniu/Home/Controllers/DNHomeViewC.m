@@ -13,6 +13,7 @@
 #import "DNHomeListRequestModel.h"
 #import "DNHomeButton.h"
 #import "DNDianniuQ_AViewModel.h"
+#import "DNAddQuestionView.h"
 
 
 #define DNHomeNavigationBarHeight 74
@@ -137,6 +138,7 @@
 }
 
 #pragma mark - Event
+///主页问题切换按钮点击事件
 - (IBAction)requestButtonAction:(UIButton *)sender {
     [self requestHomeListWithPage:0 counts:20 listType:sender.tag successBlock:^(NSURLSessionDataTask *sessionTask, id respondObj) {
         [self reSetHomeButtonState];
@@ -144,6 +146,16 @@
         [self replaceController:self.currentVC newController:newC];
     } faledBlock:nil];
 }
+
+//发布按钮点击事件
+- (IBAction)postButtonAction:(id)sender {
+    DNAddQuestionView *view = [[DNAddQuestionView alloc] initWithClickIndex:^(DNHomeListType type) {
+        
+    }];
+    [DNSharedDelegate.window addSubview:view];
+    [view show];
+}
+
 
 - (void)showContentImage:(NSNotification *)notification{
     NSArray     *dataSource = [notification.object objectForKey:@"DNImageURLStrings"];

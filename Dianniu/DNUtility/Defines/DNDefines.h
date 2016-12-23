@@ -34,3 +34,9 @@ typedef enum : NSUInteger {
     DNCellToolBarButton_Praise,       ///点赞
     DNCellToolBarButton_Comment,      ///评论
 } DNCellToolBarButton;
+
+typedef enum : NSUInteger {
+    DNHomeListType_questions = 1,//电钮问答
+    DNHomeListType_anonymity,//匿名问答
+    DNHomeListType_My,       //我的问答
+} DNHomeListType;

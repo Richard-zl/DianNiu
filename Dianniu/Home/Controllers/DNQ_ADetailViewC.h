@@ -14,5 +14,5 @@
 
 @interface DNQ_ADetailViewC : UIViewController
 @property (nonatomic, assign) DNHomeListType type;
-@property (nonatomic, assign) DNDianniuQ_AViewModel *q_aModel;
+@property (nonatomic, strong) DNDianniuQ_AViewModel *q_aModel;
 @end

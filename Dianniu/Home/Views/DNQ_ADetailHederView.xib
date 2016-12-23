@@ -103,7 +103,7 @@
                         <outletCollection property="gestureRecognizers" destination="hDP-Qx-joC" appends="YES" id="BOj-4i-veb"/>
                     </connections>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKB-aJ-Sxt">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="pKB-aJ-Sxt">
                     <rect key="frame" x="25" y="79" width="240" height="54"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="tJ7-tM-7xQ"/>
@@ -257,7 +257,7 @@
         </view>
         <tapGestureRecognizer id="hDP-Qx-joC">
             <connections>
-                <action selector="cilickHederView:" destination="iN0-l3-epB" id="8RJ-5l-MDV"/>
+                <action selector="cilickHederView:" destination="iN0-l3-epB" id="0vp-Vc-tTy"/>
                 <outlet property="delegate" destination="-1" id="s6b-ya-XK7"/>
             </connections>
         </tapGestureRecognizer>

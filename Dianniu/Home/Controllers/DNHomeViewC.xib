@@ -32,6 +32,9 @@
                                 <constraint firstAttribute="width" constant="20" id="oxD-nR-FXn"/>
                             </constraints>
                             <state key="normal" backgroundImage="home_release_icon"/>
+                            <connections>
+                                <action selector="postButtonAction:" destination="-1" eventType="touchUpInside" id="u7b-ZT-gSI"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-7a-jQo">
                             <rect key="frame" x="22" y="39" width="20" height="20"/>

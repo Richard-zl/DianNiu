@@ -31,7 +31,7 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="听说名字长" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqB-Nd-UJ4" userLabel="nameLabel">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="听说名字长" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="120" translatesAutoresizingMaskIntoConstraints="NO" id="ZqB-Nd-UJ4" userLabel="nameLabel">
                         <rect key="frame" x="76" y="22" width="120" height="18"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="120" id="00Z-CZ-qsm"/>
@@ -41,7 +41,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淘宝/母婴/店长|浙江杭州" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-Mi-oQV" userLabel="tagLabel">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淘宝/母婴/店长|浙江杭州" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="180" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-Mi-oQV" userLabel="tagLabel">
                         <rect key="frame" x="76" y="45" width="180" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="ZU5-b9-Ylb"/>
@@ -51,7 +51,7 @@
                         <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一天前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHG-sJ-yVB" userLabel="timeLabel">
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一天前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="93" translatesAutoresizingMaskIntoConstraints="NO" id="BHG-sJ-yVB" userLabel="timeLabel">
                         <rect key="frame" x="191" y="30" width="93" height="10"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="DJ4-zZ-0jl"/>
@@ -80,7 +80,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是可以自适应的正文哦哦哦哦哦哦哦哦哦00000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVY-3M-Veo">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是可以自适应的正文哦哦哦哦哦哦哦哦哦00000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="191" translatesAutoresizingMaskIntoConstraints="NO" id="BVY-3M-Veo">
                         <rect key="frame" x="30" y="84" width="191" height="24.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="191" id="Id9-J9-HkP"/>
@@ -96,6 +96,7 @@
                                 <rect key="frame" x="0.0" y="1" width="106.5" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" image="home_forward_icon">
                                     <color key="titleColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -247,7 +248,7 @@
         </tableViewCell>
         <tapGestureRecognizer id="PvR-rJ-xjI">
             <connections>
-                <action selector="clickHederDetailView:" destination="KGk-i7-Jjw" id="M3t-2s-99i"/>
+                <action selector="clickHederDetailView:" destination="KGk-i7-Jjw" id="8Lz-Cw-OW5"/>
                 <outlet property="delegate" destination="-1" id="6dR-Zv-KiN"/>
             </connections>
         </tapGestureRecognizer>

@@ -10,7 +10,7 @@
 #import "LoginViewC.h"
 #import "DNWebServiceConfig.h"
 #import <ALBBMediaService/ALBBMediaService.h>
-
+#import "DNShareSDKManager.h"
 @interface DNAppDelegate ()
 
 @end
@@ -33,9 +33,36 @@
     return YES;
 }
 
+//分享
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [ShareSDK handleOpenURL:url
+                        wxDelegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [ShareSDK handleOpenURL:url
+                 sourceApplication:sourceApplication
+                        annotation:annotation
+                        wxDelegate:self];
+}
+
+#pragma mark - public
+- (void)showHomeViewC{
+    if (!self.tableBarC) {
+        self.tableBarC = [[DNTabBarController alloc] init];
+    }
+    self.window.rootViewController = self.tableBarC;
+}
+
+- (void)showLoginViewC{
+    LoginViewC *loginViewC = [[LoginViewC alloc] initWithNibName:@"LoginViewC" bundle:nil];
+    self.window.rootViewController = loginViewC;
+}
+
+#pragma mark -private
 - (void)configurGlobal{
     [[DNWebServiceConfig shared] confirmENV:DNWebServiceENV_product];
-    
+    [[DNShareSDKManager shared] configurSDK];
     [SVProgressHUD setBackgroundColor:[DNThemeColor colorWithAlphaComponent:0.9]];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
 
@@ -47,18 +74,6 @@
 
 - (BOOL)isLogin{
     return [DNUser sheared].token;
-}
-
-- (void)showHomeViewC{
-    if (!self.tableBarC) {
-        self.tableBarC = [[DNTabBarController alloc] init];
-    }
-    self.window.rootViewController = self.tableBarC;
-}
-
-- (void)showLoginViewC{
-    LoginViewC *loginViewC = [[LoginViewC alloc] initWithNibName:@"LoginViewC" bundle:nil];
-    self.window.rootViewController = loginViewC;
 }
 
 - (void)logout{

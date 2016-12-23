@@ -88,6 +88,9 @@
     self.praiseValueLb.text = [NSString stringWithFormat:@"%ld",(long)model.praiseCount];
     self.answerValueLb.text = [NSString stringWithFormat:@"%ld",(long)model.answerCount];
     [self configCollectionView];
+    if (model.isHot) {
+        self.contentLb.textColor = UIColorFromRGB(0x7D72FA);
+    }
 }
 
 - (void)configurDianniuQ_ASubViews:(DNDianniuQ_AViewModel *)model{

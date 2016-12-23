@@ -36,7 +36,11 @@
 		986586EB1DE53FEF00562815 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586EA1DE53FEF00562815 /* UIViewExt.m */; };
 		986586EE1DE54AE600562815 /* DNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586ED1DE54AE600562815 /* DNKit.m */; };
 		986586F51DE571AC00562815 /* DNVerifyCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586F41DE571AC00562815 /* DNVerifyCodeModel.m */; };
+		9888B5761E0BCF090077CE9A /* DNShareCountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9888B5751E0BCF090077CE9A /* DNShareCountRequest.m */; };
 		98976EB51DF16104001355BC /* DNAliSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98976EB41DF16104001355BC /* DNAliSDKManager.m */; };
+		98ABD70D1E0A2127002C5E36 /* DNFollowRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABD70C1E0A2127002C5E36 /* DNFollowRequest.m */; };
+		98ABD7101E0A21CE002C5E36 /* DNAddFirendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABD70F1E0A21CE002C5E36 /* DNAddFirendRequest.m */; };
+		98ABD7131E0A3423002C5E36 /* DNShareSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABD7121E0A3423002C5E36 /* DNShareSDKManager.m */; };
 		98B3F1241DF7B0DF00DAED69 /* DNContentImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F1231DF7B0DF00DAED69 /* DNContentImageCollectionView.m */; };
 		98B3F1271DF7EED900DAED69 /* UIImage+imageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F1261DF7EED900DAED69 /* UIImage+imageWithColor.m */; };
 		98B3F12B1DF8149E00DAED69 /* DNPicturebrowsingC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F12A1DF8149E00DAED69 /* DNPicturebrowsingC.m */; };
@@ -83,6 +87,7 @@
 		98ED49041DFFC8C700C4A47E /* DNAnonymityQ_ACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ED49021DFFC8C700C4A47E /* DNAnonymityQ_ACell.m */; };
 		98ED49051DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98ED49031DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib */; };
 		98ED49081DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ED49071DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m */; };
+		98EEC7791E0BDA390060B7C5 /* DNAddQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EEC7781E0BDA390060B7C5 /* DNAddQuestionView.m */; };
 		98FBE55B1DFFF22E00FF0311 /* DNQuestingPraiseRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FBE55A1DFFF22E00FF0311 /* DNQuestingPraiseRequestModel.m */; };
 		D7295A960ACAAD4316FC45C1 /* libPods-Dianniu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B39081FFADC51FB8DA462ECB /* libPods-Dianniu.a */; };
 /* End PBXBuildFile section */
@@ -145,8 +150,16 @@
 		986586F31DE571AC00562815 /* DNVerifyCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNVerifyCodeModel.h; path = ../../Login/Models/DNVerifyCodeModel.h; sourceTree = "<group>"; };
 		986586F41DE571AC00562815 /* DNVerifyCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNVerifyCodeModel.m; path = ../../Login/Models/DNVerifyCodeModel.m; sourceTree = "<group>"; };
 		98717C7E1DE29907009C357B /* DNPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPrefixHeader.pch; sourceTree = "<group>"; };
+		9888B5741E0BCF090077CE9A /* DNShareCountRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNShareCountRequest.h; sourceTree = "<group>"; };
+		9888B5751E0BCF090077CE9A /* DNShareCountRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNShareCountRequest.m; sourceTree = "<group>"; };
 		98976EB31DF16104001355BC /* DNAliSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAliSDKManager.h; sourceTree = "<group>"; };
 		98976EB41DF16104001355BC /* DNAliSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAliSDKManager.m; sourceTree = "<group>"; };
+		98ABD70B1E0A2127002C5E36 /* DNFollowRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNFollowRequest.h; sourceTree = "<group>"; };
+		98ABD70C1E0A2127002C5E36 /* DNFollowRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNFollowRequest.m; sourceTree = "<group>"; };
+		98ABD70E1E0A21CE002C5E36 /* DNAddFirendRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAddFirendRequest.h; sourceTree = "<group>"; };
+		98ABD70F1E0A21CE002C5E36 /* DNAddFirendRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAddFirendRequest.m; sourceTree = "<group>"; };
+		98ABD7111E0A3423002C5E36 /* DNShareSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNShareSDKManager.h; sourceTree = "<group>"; };
+		98ABD7121E0A3423002C5E36 /* DNShareSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNShareSDKManager.m; sourceTree = "<group>"; };
 		98B3F1221DF7B0DF00DAED69 /* DNContentImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNContentImageCollectionView.h; sourceTree = "<group>"; };
 		98B3F1231DF7B0DF00DAED69 /* DNContentImageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNContentImageCollectionView.m; sourceTree = "<group>"; };
 		98B3F1251DF7EED900DAED69 /* UIImage+imageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageWithColor.h"; sourceTree = "<group>"; };
@@ -217,6 +230,8 @@
 		98ED49031DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNAnonymityQ_ACell.xib; sourceTree = "<group>"; };
 		98ED49061DFFD33300C4A47E /* DNAnonymityQ_AViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAnonymityQ_AViewModel.h; sourceTree = "<group>"; };
 		98ED49071DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAnonymityQ_AViewModel.m; sourceTree = "<group>"; };
+		98EEC7771E0BDA390060B7C5 /* DNAddQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAddQuestionView.h; sourceTree = "<group>"; };
+		98EEC7781E0BDA390060B7C5 /* DNAddQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAddQuestionView.m; sourceTree = "<group>"; };
 		98FBE5591DFFF22E00FF0311 /* DNQuestingPraiseRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNQuestingPraiseRequestModel.h; sourceTree = "<group>"; };
 		98FBE55A1DFFF22E00FF0311 /* DNQuestingPraiseRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNQuestingPraiseRequestModel.m; sourceTree = "<group>"; };
 		ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dianniu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dianniu/Pods-Dianniu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -485,6 +500,8 @@
 				98346CA71E03EFFF001C5A45 /* DNAnswerCell.h */,
 				98346CA81E03EFFF001C5A45 /* DNAnswerCell.m */,
 				98346CA91E03EFFF001C5A45 /* DNAnswerCell.xib */,
+				98EEC7771E0BDA390060B7C5 /* DNAddQuestionView.h */,
+				98EEC7781E0BDA390060B7C5 /* DNAddQuestionView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -529,6 +546,8 @@
 		9818C1341DDAE803001B16E9 /* DNUtility */ = {
 			isa = PBXGroup;
 			children = (
+				98ABD7111E0A3423002C5E36 /* DNShareSDKManager.h */,
+				98ABD7121E0A3423002C5E36 /* DNShareSDKManager.m */,
 				98976EB31DF16104001355BC /* DNAliSDKManager.h */,
 				98976EB41DF16104001355BC /* DNAliSDKManager.m */,
 				98B964371DE7E40400E6ABF6 /* DNKeychain.h */,
@@ -656,6 +675,12 @@
 				98346CAD1E03F7CD001C5A45 /* DNAnswerListRequest.m */,
 				982607B91E07D7A80056FAFD /* DNUserDetailRequest.h */,
 				982607BA1E07D7A80056FAFD /* DNUserDetailRequest.m */,
+				98ABD70B1E0A2127002C5E36 /* DNFollowRequest.h */,
+				98ABD70C1E0A2127002C5E36 /* DNFollowRequest.m */,
+				98ABD70E1E0A21CE002C5E36 /* DNAddFirendRequest.h */,
+				98ABD70F1E0A21CE002C5E36 /* DNAddFirendRequest.m */,
+				9888B5741E0BCF090077CE9A /* DNShareCountRequest.h */,
+				9888B5751E0BCF090077CE9A /* DNShareCountRequest.m */,
 			);
 			name = NetWorkModel;
 			sourceTree = "<group>";
@@ -714,7 +739,7 @@
 		9818C0F81DDAE345001B16E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Dianniu;
 				TargetAttributes = {
 					9818C0FF1DDAE345001B16E9 = {
@@ -783,7 +808,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		581915D19544B225F765BD10 /* [CP] Copy Pods Resources */ = {
@@ -838,6 +863,8 @@
 				98B9641C1DE7D87600E6ABF6 /* DNTabBarController.m in Sources */,
 				9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */,
 				984495261DED363100DA8F38 /* DNDianniuQ_AModel.m in Sources */,
+				98ABD7101E0A21CE002C5E36 /* DNAddFirendRequest.m in Sources */,
+				98ABD7131E0A3423002C5E36 /* DNShareSDKManager.m in Sources */,
 				98B9641F1DE7DBCF00E6ABF6 /* DNMainNavigationC.m in Sources */,
 				98B964281DE7DC1500E6ABF6 /* DNDiscoverViewC.m in Sources */,
 				9809C17E1DE6C60D00050505 /* DNUser.m in Sources */,
@@ -847,9 +874,11 @@
 				98346CAA1E03EFFF001C5A45 /* DNAnswerCell.m in Sources */,
 				9843C5071DE2C7C900B6CA61 /* DNPhone.m in Sources */,
 				98346CAE1E03F7CD001C5A45 /* DNAnswerListRequest.m in Sources */,
+				98ABD70D1E0A2127002C5E36 /* DNFollowRequest.m in Sources */,
 				982607BE1E07D8930056FAFD /* DNUserDetailModel.m in Sources */,
 				9809C17B1DE6BD9700050505 /* DNRigisterModel.m in Sources */,
 				98346CA61E03E74F001C5A45 /* DNQ_ATableViewC.m in Sources */,
+				9888B5761E0BCF090077CE9A /* DNShareCountRequest.m in Sources */,
 				98346CB11E03FB7B001C5A45 /* DNAnswerViewModel.m in Sources */,
 				98346CB41E040F71001C5A45 /* DNAnswerPraiseRequest.m in Sources */,
 				98B3F1241DF7B0DF00DAED69 /* DNContentImageCollectionView.m in Sources */,
@@ -857,6 +886,7 @@
 				9843C50A1DE2CC1700B6CA61 /* DNWebServiceBaseModel.m in Sources */,
 				982607B41E078CEE0056FAFD /* DNUserDetailC.m in Sources */,
 				98BF78781DEF3B2500C8B49C /* DNAnonymityQ_ATableViewC.m in Sources */,
+				98EEC7791E0BDA390060B7C5 /* DNAddQuestionView.m in Sources */,
 				982607C31E07F25F0056FAFD /* NSArray+FixNilBug.m in Sources */,
 				98B3F12B1DF8149E00DAED69 /* DNPicturebrowsingC.m in Sources */,
 				98B964231DE7DBF400E6ABF6 /* DNHomeViewC.m in Sources */,
@@ -896,6 +926,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -918,7 +949,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -944,6 +975,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -960,7 +992,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
@@ -973,6 +1005,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABF2B1C146887960840CAD88 /* Pods-Dianniu.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Dianniu/Dianniu.entitlements;
@@ -998,6 +1031,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -1005,6 +1039,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A1CE3DC50328C9C9B96ECFE /* Pods-Dianniu.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Dianniu/Dianniu.entitlements;
@@ -1030,6 +1065,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};

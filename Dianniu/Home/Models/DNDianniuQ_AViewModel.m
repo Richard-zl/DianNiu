@@ -24,7 +24,9 @@
         self.isPraise    = model.isGood;
         self.contentImageStrs  = [self parserImageUrlstring:model.questImgs];
         self.hedaerImageStr = [self createURLString:model.headPic];
+        self.shareCount = model.forwardCount;
         self.q_aModel    = model;
+        self.isHot = model.top;
         [self dealPraiseCount];
     }
     

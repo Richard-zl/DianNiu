@@ -7,8 +7,10 @@
 //
 
 #import "DNDianniuQ_ACell.h"
+#import "DNShareCountRequest.h"
 #import <UIImageView+WebCache.h>
 #import "DNContentImageCollectionView.h"
+#import "DNShareSDKManager.h"
 
 #define DNDianniuQ_ACellEdgemargin 30
 #define DNContentImageMargin   5
@@ -74,7 +76,13 @@
     }else{
         self.addFriendBut.hidden = NO;
     }
+    if (_dianniuQ_AViewModel.isHot) {
+        self.contentTextLb.textColor = UIColorFromRGB(0x7D72FA);
+    }else{
+        self.contentTextLb.textColor = [UIColor blackColor];
+    }
     self.praiseButn.selected = _dianniuQ_AViewModel.isPraise;
+    [self.moerButn setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.shareCount] forState:UIControlStateNormal];
     [self.praiseButn setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.allPraiseCount] forState:UIControlStateSelected];
     [self.praiseButn setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.praiseCount] forState:UIControlStateNormal];
     [self.commentButn setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.answerCount] forState:UIControlStateNormal];
@@ -122,7 +130,8 @@
 - (IBAction)buttonAction:(UIButton *)sender {
     switch (sender.tag) {
         case DNCellToolBarButton_Forwarded:
-            
+            //分享
+            [self dianniuShareRequest];
             break;
             
         case DNCellToolBarButton_Praise:
@@ -134,6 +143,8 @@
             break;
     }
 }
+
+
 
 - (IBAction)clickHederDetailView:(UITapGestureRecognizer *)sender {
     if (self.didClickDetailView) {
@@ -154,6 +165,19 @@
     }];
 }
 
+- (void)dianniuShareRequest{
+    [[DNShareSDKManager shared] shareContentWithType:DNShareType_QA content:self.dianniuQ_AViewModel.text shareId:self.dianniuQ_AViewModel.q_aModel.q_aId imagePath:[self.dianniuQ_AViewModel.contentImageStrs firstObject] success:^(NSInteger platform){
+        DNShareCountRequest *request = [[DNShareCountRequest alloc] init];
+        request.accountId = [DNUser sheared].userId;
+        request.questId   = self.dianniuQ_AViewModel.q_aModel.q_aId;
+        request.platform  = platform;
+        [request httpRequest:15 success:^(NSURLSessionDataTask *sessionTask, id respondObj) {
+            [self.moerButn setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.shareCount + 1] forState:UIControlStateNormal];
+        } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
+            
+        }];
+    }];
+}
 
 
 @end

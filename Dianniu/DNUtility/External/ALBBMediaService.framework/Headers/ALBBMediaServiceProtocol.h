@@ -106,12 +106,12 @@ typedef NS_ENUM(NSInteger, TFETaskStatus) {
  *  直接上传接口
  *
  *  @param data         文件data
- *  @param ns           space
+ *  @param space           space
  *  @param fileName     服务器上存储的文件名
  *  @param dir          服务器上存储的路径
  *  @param progress     上传进度
  *  @param success      上传成功通知
- *  @param upload       上传失败通知
+ *  @param failed       上传失败通知
  *
  *  @return 任务唯一标识
  */
@@ -125,17 +125,11 @@ typedef NS_ENUM(NSInteger, TFETaskStatus) {
 
 /**
  * 上传接口
- * @param parameters
- * @param notification
- * @return uniqueId
  */
 - (NSString *)upload:(TFEUploadParameters *)parameters notification:(TFEUploadNotification *)notification;
 
 /**
  * 上传接口
- * @param parameters
- * @param options
- * @param notification
  * @return uniqueId
  */
 - (NSString *)upload:(TFEUploadParameters *)parameters options:(TFEUploadOptions *)options notification:(TFEUploadNotification *)notification;

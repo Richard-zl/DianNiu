@@ -1,27 +1,27 @@
 //
-//  DNQuestingPraiseRequestModel.m
+//  DNFollowRequest.m
 //  Dianniu
 //
-//  Created by RIMI on 2016/12/13.
+//  Created by RIMI on 2016/12/21.
 //  Copyright © 2016年 Dianniu. All rights reserved.
 //
 
-#import "DNQuestingPraiseRequestModel.h"
+#import "DNFollowRequest.h"
 
-@implementation DNQuestingPraiseRequestModel
+//关注某人
+@implementation DNFollowRequest
 - (NSString *)requestAddressUrl{
     return @"";
 }
 
 - (NSString *)requestActionString{
-    return @"account.quest.good.add";
+    return @"account.follow.addOrDel";
 }
 
 - (NSDictionary *)requestArguement{
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
     [param setObject:self.accountId forKey:@"accountId"];
-    [param setObject:self.questingId forKey:@"questId"];
-    
+    [param setObject:self.friendAccountId forKey:@"followAccountId"];
     return param;
 }
 

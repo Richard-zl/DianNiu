@@ -8,6 +8,8 @@
 
 #import "DNAnonymityQ_ACell.h"
 #import "DNContentImageCollectionView.h"
+#import "DNShareCountRequest.h"
+#import "DNShareSDKManager.h"
 
 @interface DNAnonymityQ_ACell ()
 #define DNDianniuQ_ACellEdgemargin 25
@@ -43,14 +45,10 @@
 }
 
 - (void)configurCell{
-    if (self.dianniuQ_AViewModel.isPraise) {
-        [self.praiseBut setSelected:YES];
-        [self.transpondBut setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.q_aModel.forwardCount] forState:UIControlStateSelected];
-    }else{
-        [self.praiseBut setSelected:NO];
-    }
-    [self.transpondBut setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.q_aModel.forwardCount] forState:UIControlStateNormal];
+    self.praiseBut.selected = self.dianniuQ_AViewModel.isPraise;
+    [self.transpondBut setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.shareCount] forState:UIControlStateNormal];
     [self.praiseBut setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.praiseCount] forState:UIControlStateNormal];
+    [self.praiseBut setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.allPraiseCount] forState:UIControlStateSelected];
     [self.commentBut setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.answerCount] forState:UIControlStateNormal];
     [self configurCollectionView];
 }
@@ -95,7 +93,7 @@
 - (IBAction)buttonAction:(UIButton *)sender {
     switch (sender.tag) {
         case DNCellToolBarButton_Forwarded:
-            
+            [self shareRequest];
             break;
             
         case DNCellToolBarButton_Praise:
@@ -107,7 +105,6 @@
             break;
     }
 }
-
 
 #pragma mark netWork
 - (void)praiseRequest{
@@ -121,6 +118,20 @@
         }
     } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
         ///基类已经做了处理
+    }];
+}
+
+- (void)shareRequest{
+    [[DNShareSDKManager shared] shareContentWithType:DNShareType_QA content:self.dianniuQ_AViewModel.text shareId:self.dianniuQ_AViewModel.q_aModel.q_aId imagePath:[self.dianniuQ_AViewModel.contentImageStrs firstObject] success:^(NSInteger platform){
+        DNShareCountRequest *request = [[DNShareCountRequest alloc] init];
+        request.accountId = [DNUser sheared].userId;
+        request.questId   = self.dianniuQ_AViewModel.q_aModel.q_aId;
+        request.platform  = platform;
+        [request httpRequest:15 success:^(NSURLSessionDataTask *sessionTask, id respondObj) {
+            [self.transpondBut setTitle:[NSString stringWithFormat:@"%ld",(long)self.dianniuQ_AViewModel.shareCount + 1] forState:UIControlStateNormal];
+        } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
+            
+        }];
     }];
 }
 

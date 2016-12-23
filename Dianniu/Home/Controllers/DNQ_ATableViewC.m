@@ -96,6 +96,15 @@
     return rows;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    NSString *title = @"";
+    NSArray *hotContent = self.dianniuQ_ADataSource[@"hotContent"];
+    if (hotContent.count > 0 && section == 0) {
+        title = @"热门置顶";
+    }
+    return title;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     DNDianniuQ_AViewModel *viewModel;
     NSArray *hotContent = self.dianniuQ_ADataSource[@"hotContent"];
