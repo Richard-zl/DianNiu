@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ALBBMediaServiceProtocol.h"
 #import "TFEModel.h"
+#import "ALBBMediaEnums.h"
 
 @class TFEUploadParameters;
 

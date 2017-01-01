@@ -11,8 +11,9 @@
 #import "DNAnswerCell.h"
 #import "DNAnswerViewModel.h"
 #import "DNUserDetailC.h"
+#import "DNCollectRequest.h"
 
-@interface DNQ_ADetailViewC ()<UITableViewDelegate,UITableViewDataSource>
+@interface DNQ_ADetailViewC ()<UITableViewDelegate,UITableViewDataSource,UIActionSheetDelegate>
 @property (strong, nonatomic) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray<DNAnswerViewModel *>* dataSource;
 @end
@@ -28,6 +29,15 @@
     [self.view addSubview:self.tableView];
     [self configurTableView];
     [self configurMjrefresh];
+    [self creatRightCollecBut];
+}
+
+- (void)creatRightCollecBut{
+    if (self.type == DNHomeListType_questions) {
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sandian"] style:UIBarButtonItemStylePlain target:self action:@selector(navigationRightButAction)];
+        rightItem.tintColor = [UIColor whiteColor];
+        self.navigationItem.rightBarButtonItem = rightItem;
+    }
 }
 
 - (void)configurTableView{
@@ -105,6 +115,24 @@
         detailC.accountId = accountId;
         [self.navigationController pushViewController:detailC animated:YES];
     }
+}
+
+#pragma mark -Event
+- (void)navigationRightButAction{
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"收藏",nil];
+    [sheet bk_setDidDismissBlock:^(UIActionSheet *actionSheet, NSInteger index) {
+        if ([actionSheet cancelButtonIndex] != index) {
+            DNCollectRequest *request = [[DNCollectRequest alloc] init];
+            request.accountId = [DNUser sheared].userId;
+            request.questId   = self.q_aModel.q_aModel.q_aId;
+            [request httpRequest:15 success:^(NSURLSessionDataTask *sessionTask, id respondObj) {
+                [SVProgressHUD showSuccessWithStatus:@"收藏成功"];
+            } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
+               //基类已经处理
+            }];
+        };
+    }];
+    [sheet showInView:self.view];
 }
 
 #pragma mark - UITableViewDataSource

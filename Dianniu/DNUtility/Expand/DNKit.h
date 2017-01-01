@@ -13,7 +13,8 @@
 
 /** 快速弹出提醒窗口 */
 id DNAlert(NSString *title, NSString *msg, NSString *buttonText, void (^cancelBlock) ());
-
+/** 快速弹出提醒窗口 多个按钮*/
+id DNTextAlert(NSString *title, NSString *msg, NSArray *texts, void(^actionBlock)(NSInteger index));
 /** 快速发送一个事件 */
 void DNEvent(NSString *eventName, id data);
 

@@ -5,9 +5,7 @@
 //  Copyright (c) 2015年 alibaba. All rights reserved.
 //
 
-
-
-#import "ALBBMediaServiceProtocol.h"
+#import "ALBBMediaEnums.h"
 
 @interface TFELoadSession : NSObject
 

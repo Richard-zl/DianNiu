@@ -52,8 +52,10 @@
 #pragma mark - configurUI
 - (void)configurSubViews{
     [self.view addSubview:self.collectionView];
-    [self.view addSubview:self.pageControl];
-    [self.collectionView scrollToItemAtIndexPath:self.currentIndex atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    if (self.dataSource.count > 1) {
+        [self.view addSubview:self.pageControl];
+        [self.collectionView scrollToItemAtIndexPath:self.currentIndex atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    }
 }
 
 #pragma mark - private func
@@ -108,7 +110,7 @@
 
 - (UIPageControl *)pageControl{
     if (!_pageControl) {
-        _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, ScreenHeight - 70, ScreenWidth, 40)];
+        _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, ScreenHeight - 60, ScreenWidth, 40)];
         _pageControl.numberOfPages = self.dataSource.count;
         _pageControl.currentPage   = self.currentIndex.row;
     }

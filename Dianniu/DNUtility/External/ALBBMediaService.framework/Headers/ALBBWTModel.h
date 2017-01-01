@@ -10,7 +10,6 @@
 #import "ALBBWTMTLModel.h"
 #import "ALBBWTMTLJSONAdapter.h"
 
-
 /*-------------------------------------------------------------*/
 //上传进度的Block定义，即闭包定义
 typedef void (^ALBBWTUploadProgressBlock) (int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend);
@@ -37,7 +36,20 @@ typedef NS_ENUM(NSInteger, ALBBWTUploadType) {
 
 @property (nonatomic, copy)  ALBBWTUploadProgressBlock uploadProgress;
 
+/**
+ *  文件内容 or 文件路径
+ */
 @property (nonatomic, strong) id content;
+
+/**
+ *  服务端的路径，以'/'开头
+ */
+@property (nonatomic, strong) id dir;
+
+/**
+ *  服务端的文件名
+ */
+@property (nonatomic, strong) id fileName;
 
 @property(nonatomic, assign, readonly) ALBBWTUploadType uploadType;
 /**
@@ -211,8 +223,6 @@ typedef NS_ENUM(NSInteger, ALBBWTUploadType) {
 @property (nonatomic, strong) NSString *id;
 
 @property (nonatomic, strong) NSString *uploadId;
-
-@property(nonatomic, strong) NSString *fileId;
 
 @end
 

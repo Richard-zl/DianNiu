@@ -1,22 +1,33 @@
 //
+//  ALBBMediaService.h
+//  ALBBMediaService
 //
-//  Created by huamulou on 14-11-27.
-//  Copyright (c) 2014年 alibaba. All rights reserved.
+//  Created by XuPeng on 16/9/8.
+//  Copyright © 2016年 Alipay. All rights reserved.
 //
 
-@protocol ALBBMediaServiceProtocol;
+#import <Foundation/Foundation.h>
+#import "MediaLoadProtocol.h"
 
-#import <ALBBMediaService/ALBBMediaServiceProtocol.h>
-#import <ALBBMediaService/TFEImageTransferOptions.h>
-#import <ALBBMediaService/TFEImageAdvanceCut.h>
-#import <ALBBMediaService/TFEImageWatermark.h>
-#import <ALBBMediaService/TFELoadSession.h>
-#import <ALBBMediaService/TFELoadOptions.h>
-#import <ALBBMediaService/TFELoadNotification.h>
-#import <ALBBMediaService/TFEUploadNotification.h>
-#import <ALBBMediaService/TFEUploadSession.h>
-#import <ALBBMediaService/TFEUploadParameters.h>
-#import <ALBBMediaService/TFEUploadPolicy.h>
-#import <ALBBMediaService/TFEUploadOptions.h>
-#import <ALBBMediaService/TFEUploadRemoteCall.h>
-#import <ALBBMediaService/TFEModel.h>
+@interface ALBBMediaService : NSObject<MediaLoadProtocol>
+
+/**
+ * 配置是否使用spdy来加载图片
+ */
+@property(nonatomic) BOOL useSpdy;
+
+/**
+ * ALBBMediaService初始化，同步执行
+ */
++ (void)syncInit;
+
+/**
+ *  返回单例
+ */
++ (instancetype)sharedInstance;
+
+/**
+ *  设置是否开启Debug，显示Debug日志
+ */
++ (void)setDebug:(BOOL)debug;
+@end

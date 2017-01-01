@@ -20,6 +20,7 @@ id DNAlert(NSString *title, NSString *msg, NSString *buttonText, void (^cancelBl
                 cancelBlock();
             }
         }];
+        [cancelAction setValue:DNThemeColor forKey:@"_titleTextColor"];
         [alertController addAction:cancelAction];
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
         return alertController;
@@ -31,8 +32,34 @@ id DNAlert(NSString *title, NSString *msg, NSString *buttonText, void (^cancelBl
                 }
             }
         }];
-        [alertView show];
-        
+        [alertView bk_setWillShowBlock:^(UIAlertView *alert) {
+            
+        }];
+        return alertView;
+    }
+}
+
+id DNTextAlert(NSString *title, NSString *msg, NSArray *texts, void(^actionBlock)(NSInteger index)){
+    
+    if ([[DNPhone shared].osver doubleValue] >= 8.0) {
+         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:msg  preferredStyle:UIAlertControllerStyleAlert];
+        for (NSString *text in texts) {
+            UIAlertAction *action = [UIAlertAction actionWithTitle:text style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                if (actionBlock) {
+                    actionBlock([texts indexOfObject:text]);
+                }
+            }];
+            [action setValue:DNThemeColor forKey:@"_titleTextColor"];
+            [alertController addAction:action];
+        }
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return alertController;
+    }else{
+        UIAlertView *alertView = [UIAlertView bk_showAlertViewWithTitle:title message:msg cancelButtonTitle:nil otherButtonTitles:texts handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+            if (actionBlock) {
+                actionBlock(buttonIndex);
+            }
+        }];
         return alertView;
     }
 }
@@ -87,5 +114,15 @@ BOOL verifyPhoneNumber(NSString *num){
     NSString *path = paths[0];
     return [path stringByAppendingPathComponent:fileNameOrRelPath];
 }
+
+//        unsigned int count = 0;
+//        Ivar *ivars = class_copyIvarList([UIAlertView class], &count);
+//        for (int i = 0; i<count; i++) {
+//            // 取出成员变量
+//            // Ivar ivar = (ivars + i);
+//            Ivar ivar = ivars[i];
+//            // 打印成员变量名字
+//            NSLog(@"%s------%s", ivar_getName(ivar),ivar_getTypeEncoding(ivar));
+//        }
 
 @end
