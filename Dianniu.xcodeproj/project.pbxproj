@@ -12,6 +12,7 @@
 		9809C1811DE6D16100050505 /* DNUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9809C1801DE6D16100050505 /* DNUserModel.m */; };
 		98160E6D1E1210530009C869 /* DNAskquestionViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98160E6B1E1210530009C869 /* DNAskquestionViewC.m */; };
 		98160E6E1E1210530009C869 /* DNAskquestionViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98160E6C1E1210530009C869 /* DNAskquestionViewC.xib */; };
+		9817FBCC1E1B5A0200213948 /* DNAddAnswerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9817FBCB1E1B5A0200213948 /* DNAddAnswerRequest.m */; };
 		9818C1051DDAE345001B16E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1041DDAE345001B16E9 /* main.m */; };
 		9818C1081DDAE345001B16E9 /* DNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C1071DDAE345001B16E9 /* DNAppDelegate.m */; };
 		9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1151DDAE345001B16E9 /* Assets.xcassets */; };
@@ -34,6 +35,9 @@
 		9843C50D1DE2D15D00B6CA61 /* DNWebServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9843C50C1DE2D15D00B6CA61 /* DNWebServiceConfig.m */; };
 		984495261DED363100DA8F38 /* DNDianniuQ_AModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 984495251DED363100DA8F38 /* DNDianniuQ_AModel.m */; };
 		9844952C1DED657E00DA8F38 /* DNDianniuQ_AViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9844952B1DED657D00DA8F38 /* DNDianniuQ_AViewModel.m */; };
+		9846DACE1E1E21690082CAD0 /* DNInformationViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9846DACC1E1E21690082CAD0 /* DNInformationViewC.m */; };
+		9846DACF1E1E21690082CAD0 /* DNInformationViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9846DACD1E1E21690082CAD0 /* DNInformationViewC.xib */; };
+		9846DAD21E1E4AA90082CAD0 /* DNProfileModifyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9846DAD11E1E4AA90082CAD0 /* DNProfileModifyRequest.m */; };
 		9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */; };
 		986586EB1DE53FEF00562815 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586EA1DE53FEF00562815 /* UIViewExt.m */; };
 		986586EE1DE54AE600562815 /* DNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586ED1DE54AE600562815 /* DNKit.m */; };
@@ -111,6 +115,8 @@
 		98160E6A1E1210530009C869 /* DNAskquestionViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAskquestionViewC.h; sourceTree = "<group>"; };
 		98160E6B1E1210530009C869 /* DNAskquestionViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAskquestionViewC.m; sourceTree = "<group>"; };
 		98160E6C1E1210530009C869 /* DNAskquestionViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNAskquestionViewC.xib; sourceTree = "<group>"; };
+		9817FBCA1E1B5A0200213948 /* DNAddAnswerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAddAnswerRequest.h; sourceTree = "<group>"; };
+		9817FBCB1E1B5A0200213948 /* DNAddAnswerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAddAnswerRequest.m; sourceTree = "<group>"; };
 		9818C1001DDAE345001B16E9 /* Dianniu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dianniu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9818C1041DDAE345001B16E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9818C1061DDAE345001B16E9 /* DNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +158,11 @@
 		984495251DED363100DA8F38 /* DNDianniuQ_AModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDianniuQ_AModel.m; sourceTree = "<group>"; };
 		9844952A1DED657D00DA8F38 /* DNDianniuQ_AViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDianniuQ_AViewModel.h; sourceTree = "<group>"; };
 		9844952B1DED657D00DA8F38 /* DNDianniuQ_AViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDianniuQ_AViewModel.m; sourceTree = "<group>"; };
+		9846DACB1E1E21690082CAD0 /* DNInformationViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNInformationViewC.h; sourceTree = "<group>"; };
+		9846DACC1E1E21690082CAD0 /* DNInformationViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNInformationViewC.m; sourceTree = "<group>"; };
+		9846DACD1E1E21690082CAD0 /* DNInformationViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNInformationViewC.xib; sourceTree = "<group>"; };
+		9846DAD01E1E4AA90082CAD0 /* DNProfileModifyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNProfileModifyRequest.h; sourceTree = "<group>"; };
+		9846DAD11E1E4AA90082CAD0 /* DNProfileModifyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNProfileModifyRequest.m; sourceTree = "<group>"; };
 		9863B4FF1DE2F4E800375CD0 /* DNWebServiceKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNWebServiceKeys.h; sourceTree = "<group>"; };
 		9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebServiceKeys.m; sourceTree = "<group>"; };
 		986586E91DE53FEF00562815 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
@@ -408,6 +419,9 @@
 				98B9642A1DE7DC3000E6ABF6 /* DNProfileViewC.h */,
 				98B9642B1DE7DC3000E6ABF6 /* DNProfileViewC.m */,
 				98B9642C1DE7DC3000E6ABF6 /* DNProfileViewC.xib */,
+				9846DACB1E1E21690082CAD0 /* DNInformationViewC.h */,
+				9846DACC1E1E21690082CAD0 /* DNInformationViewC.m */,
+				9846DACD1E1E21690082CAD0 /* DNInformationViewC.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -717,6 +731,10 @@
 				98EEC78F1E11279D0060B7C5 /* DNReportRequest.m */,
 				98D2035A1E128AA700F55022 /* DNReleaseQuestRequest.h */,
 				98D2035B1E128AA700F55022 /* DNReleaseQuestRequest.m */,
+				9817FBCA1E1B5A0200213948 /* DNAddAnswerRequest.h */,
+				9817FBCB1E1B5A0200213948 /* DNAddAnswerRequest.m */,
+				9846DAD01E1E4AA90082CAD0 /* DNProfileModifyRequest.h */,
+				9846DAD11E1E4AA90082CAD0 /* DNProfileModifyRequest.m */,
 			);
 			name = NetWorkModel;
 			sourceTree = "<group>";
@@ -815,6 +833,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9846DACF1E1E21690082CAD0 /* DNInformationViewC.xib in Resources */,
 				98B964331DE7DC4A00E6ABF6 /* DNMessageViewC.xib in Resources */,
 				98BF786B1DEF1E7400C8B49C /* DNDianniuQ_ACell.xib in Resources */,
 				98B613B51DE44B8C000F79B8 /* RigisterViewC.xib in Resources */,
@@ -891,6 +910,7 @@
 				98B964401DE8382E00E6ABF6 /* DNHomeButton.m in Sources */,
 				98976EB51DF16104001355BC /* DNAliSDKManager.m in Sources */,
 				98EEC7841E10ADDE0060B7C5 /* DNCollectRequest.m in Sources */,
+				9846DACE1E1E21690082CAD0 /* DNInformationViewC.m in Sources */,
 				98D2F0B21E01452B001CD57D /* DNQ_ADetailViewC.m in Sources */,
 				98ED49081DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m in Sources */,
 				98ED49041DFFC8C700C4A47E /* DNAnonymityQ_ACell.m in Sources */,
@@ -918,12 +938,14 @@
 				9843C5071DE2C7C900B6CA61 /* DNPhone.m in Sources */,
 				98346CAE1E03F7CD001C5A45 /* DNAnswerListRequest.m in Sources */,
 				98ABD70D1E0A2127002C5E36 /* DNFollowRequest.m in Sources */,
+				9817FBCC1E1B5A0200213948 /* DNAddAnswerRequest.m in Sources */,
 				982607BE1E07D8930056FAFD /* DNUserDetailModel.m in Sources */,
 				9809C17B1DE6BD9700050505 /* DNRigisterModel.m in Sources */,
 				98346CA61E03E74F001C5A45 /* DNQ_ATableViewC.m in Sources */,
 				98EEC78A1E11010E0060B7C5 /* DNBlacklistRequest.m in Sources */,
 				9888B5761E0BCF090077CE9A /* DNShareCountRequest.m in Sources */,
 				98346CB11E03FB7B001C5A45 /* DNAnswerViewModel.m in Sources */,
+				9846DAD21E1E4AA90082CAD0 /* DNProfileModifyRequest.m in Sources */,
 				98346CB41E040F71001C5A45 /* DNAnswerPraiseRequest.m in Sources */,
 				98B3F1241DF7B0DF00DAED69 /* DNContentImageCollectionView.m in Sources */,
 				98B964391DE7E40400E6ABF6 /* DNKeychain.m in Sources */,

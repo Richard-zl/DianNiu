@@ -27,6 +27,7 @@ static DNUser *sharedUser;
     self = [super init];
     if (self) {
         NSString *userid = [DNKeychain load:kDNKeychainLastUserId];
+        self.sex = 3;
         if (userid) {
             [self load:userid];
         }
@@ -80,6 +81,7 @@ static DNUser *sharedUser;
     self.userDesription = userModel.describe == nil? @"这家伙很懒,什么都没留下":userModel.describe;
     self.realName = userModel.realName;
     self.mobile = userModel.mobile;
+    self.tag    = userModel.label;
     [self dump];
 }
 
@@ -104,6 +106,8 @@ static DNUser *sharedUser;
         self.authLevel    = [aDecoder decodeIntegerForKey:@"level"];
         self.userDesription = [aDecoder decodeObjectForKey:@"userD"];
         self.mobile       = [aDecoder decodeObjectForKey:@"mobile"];
+        self.tag          = [aDecoder decodeObjectForKey:@"tag"];
+        self.sex          = [aDecoder decodeIntegerForKey:@"sex"];
     }
     return self;
 }
@@ -117,6 +121,18 @@ static DNUser *sharedUser;
     [aCoder encodeInteger:self.authLevel forKey:@"level"];
     [aCoder encodeObject:self.userDesription forKey:@"userD"];
     [aCoder encodeObject:self.mobile forKey:@"mobile"];
+    [aCoder encodeObject:self.tag forKey:@"tag"];
+    [aCoder encodeInteger:self.sex forKey:@"sex"];
+}
+
+#pragma mark - getter
+- (NSString *)sexString{
+    if (self.sex == 0) {
+        return @"女";
+    }else if(self.sex == 1){
+        return @"男";
+    }
+    return @"";
 }
 
 @end

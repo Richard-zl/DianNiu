@@ -21,12 +21,14 @@ typedef enum : NSUInteger {
 @property (nonatomic, copy)   NSString *token;
 @property (nonatomic, copy)   NSNumber *userId;
 @property (nonatomic, copy)   NSString *joinDate;
+@property (nonatomic, copy)   NSString *tag;
 @property (nonatomic, strong) NSURL    *headerImgURL;
 @property (nonatomic, copy)   NSString *realName;
 @property (nonatomic, assign) DNUSerAuthLevel authLevel;
 @property (nonatomic, copy)   NSString *userDesription;
 @property (nonatomic, copy)   NSNumber *mobile;
-
+@property (nonatomic, assign) NSInteger sex;
+@property (nonatomic, copy)   NSString * sexString;
 
 + (instancetype)sheared;
 - (void)clearDNUser;

@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DNQ_ADetailViewC">
             <connections>
+                <outlet property="commentBut" destination="t4R-Vi-rmI" id="L06-fX-Laa"/>
+                <outlet property="commentTf" destination="nVP-H3-ITU" id="7bn-ef-eQI"/>
+                <outlet property="commentViewBottomCons" destination="2A9-6f-5wX" id="wAK-QR-2AS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,12 +34,19 @@
                             <state key="normal" title="评论">
                                 <color key="titleColor" red="0.28235294119999998" green="0.78823529410000004" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <state key="disabled" title="评论"/>
+                            <connections>
+                                <action selector="commentButtonAction:" destination="-1" eventType="touchUpInside" id="em9-k0-czH"/>
+                            </connections>
                         </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nVP-H3-ITU">
                             <rect key="frame" x="15" y="9" width="310" height="32"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="qTX-Fi-ofg"/>
+                            </connections>
                         </textView>
                     </subviews>
                     <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>

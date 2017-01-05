@@ -15,6 +15,7 @@
 @property (nonatomic, copy) NSString *realName;
 @property (nonatomic, copy) NSString *createDate;
 @property (nonatomic, copy) NSString *describe;
+@property (nonatomic, copy) NSString *label;
 @property (nonatomic, copy) NSNumber *mobile;
 @property (nonatomic, assign) NSInteger authLevel;
 

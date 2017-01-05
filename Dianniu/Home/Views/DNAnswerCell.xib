@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JTF-1h-DQs">
@@ -33,8 +33,8 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隔壁小刘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="49.5" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-Cu-7Oy">
-                        <rect key="frame" x="55" y="8" width="49.5" height="15"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <rect key="frame" x="55" y="8" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -71,8 +71,8 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="180" id="rF6-ip-V6E"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.2196078431372549" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>

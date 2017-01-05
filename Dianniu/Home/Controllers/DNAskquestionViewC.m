@@ -195,6 +195,10 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.textView resignFirstResponder];
 }

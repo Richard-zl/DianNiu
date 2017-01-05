@@ -15,6 +15,7 @@
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
         self.unableBeFriend = [dict[@"beFriend"] boolValue];
+        self.sex = [dict[@"sex"] isKindOfClass:[NSNull class]] ? 3 : self.sex;
         self.userId = dict[@"id"];
         [self dealHederImage];
     }
