@@ -44,12 +44,17 @@
 }
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated{
+   
     UIViewController *controller = [super popViewControllerAnimated:animated];
+    if ([self.delegate respondsToSelector:@selector(navigationController:willShowViewController:animated:)]) {
+        [self.delegate navigationController:self willShowViewController:controller animated:animated];
+    }
     if (self.viewControllers.count == 1) {
         [self setNavigationBarHidden:YES animated:YES];
     }
     return controller;
 }
+
 
 
 @end

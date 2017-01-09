@@ -30,6 +30,7 @@
     [self configurGlobal];
     [self listenNotifications];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -13,6 +13,7 @@
 #import "DNUserDetailC.h"
 #import "DNCollectRequest.h"
 #import "DNAddAnswerRequest.h"
+#import "DNInformationViewC.h"
 
 @interface DNQ_ADetailViewC ()<UITableViewDelegate,UITableViewDataSource,UIActionSheetDelegate,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *commentTf;
@@ -181,6 +182,8 @@
         DNTextAlert(nil, @"您还未完成认证，请先验证！", @[@"确认",@"取消"], ^(NSInteger index) {
             if (index == 0) {
                 //跳转权限认证
+                DNInformationViewC *viewC = [[DNInformationViewC alloc] initWithNibName:@"DNInformationViewC" bundle:[NSBundle mainBundle]];
+                [self.navigationController pushViewController:viewC animated:YES];
             }
         });
         return;

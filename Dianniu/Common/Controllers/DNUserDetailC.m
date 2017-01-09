@@ -14,6 +14,7 @@
 #import "DNShieldRequest.h"
 #import "DNBlacklistRequest.h"
 #import "DNReportViewC.h"
+#import "DNInformationViewC.h"
 
 typedef NS_ENUM(NSUInteger, DNUserDetailActionSheetIndex) {
     DNUserDetailActionSheetIndex_Shared = 0, //分享名片
@@ -125,6 +126,11 @@ typedef NS_ENUM(NSUInteger, DNUserDetailActionSheetIndex) {
         request = [[DNFollowRequest alloc] init];
     }else{
         //加好友
+        if ([DNUser sheared].authLevel < DNUSerAuthLevel_ONE) {
+            DNInformationViewC *viewC = [[DNInformationViewC alloc] initWithNibName:@"DNInformationViewC" bundle:[NSBundle mainBundle]];
+            [self.navigationController pushViewController:viewC animated:YES];
+            return;
+        }
         request = [[DNAddFirendRequest alloc] init];
     }
     ((DNFollowRequest *)request).accountId       = [DNUser sheared].userId;

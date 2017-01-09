@@ -11,6 +11,10 @@
 #import "DNProfileModifyRequest.h"
 #import "DNUserDetailModel.h"
 #import <UIImageView+WebCache.h>
+#import "DNNicknameModifyViewC.h"
+#import "DNDescriptionModifyViewC.h"
+#import "DNSexModifyViewC.h"
+#import "DNLabelSetViewC.h"
 
 @interface DNInformationViewC ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property(nonatomic, strong)NSMutableArray *dataSource;
@@ -21,12 +25,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"编辑资料";
+    self.tableView.tableFooterView = [UIView new];
     [self updateDataSource];
     [self userDetailRequest];
 }
 
-#pragma mark - private func
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self reload];
+}
 
+#pragma mark - private func
 - (void)userDetailRequest{
     DNUserDetailRequest *request = [[DNUserDetailRequest alloc] init];
     request.accountId = [DNUser sheared].userId;
@@ -41,7 +50,6 @@
         [[DNUser sheared] dump];
         [self reload];
     } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
-        [self.navigationController popViewControllerAnimated:YES];
     }];
 }
 
@@ -132,7 +140,6 @@
         attributedStr = [[NSMutableAttributedString alloc] initWithString:title];
     }
     cell.textLabel.attributedText = attributedStr;
-    
     if (indexPath.section == 0) {
         //image
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth - 70 - 30, 5, 70, 70)];
@@ -163,20 +170,26 @@
         }];
         [sheet showInView:self.view];
     }else {
+        UIViewController *viewC;
         switch (indexPath.row) {
             case 0:
             //昵称
+                viewC = [[DNNicknameModifyViewC alloc] initWithNibName:@"DNNicknameModifyViewC" bundle:[NSBundle mainBundle]];
             break;
             case 3:
             //标签
+                viewC = [[DNLabelSetViewC alloc] initWithNibName:@"DNLabelSetViewC" bundle:[NSBundle mainBundle]];
             break;
             case 4:
             //性别
+                viewC = [[DNSexModifyViewC alloc] initWithNibName:@"DNSexModifyViewC" bundle:[NSBundle mainBundle]];
             break;
             case 5:
             //个性签名
+                viewC = [[DNDescriptionModifyViewC alloc] initWithNibName:@"DNDescriptionModifyViewC" bundle:[NSBundle mainBundle]];
             break;
         }
+        viewC ? [self.navigationController pushViewController:viewC animated:YES] : nil;
     }
 }
 

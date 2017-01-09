@@ -14,7 +14,8 @@ typedef enum : NSUInteger {
     DNProfileModifyType_BeFirend,    //谁可以加我好友
     DNProfileModifyType_Sex,         //性别 0女 1男
     DNProfileModifyType_Describe,    //个性签名
-    DNProfileModifyType_Label       //标签   XX／XX／XX／
+    DNProfileModifyType_Label,       //标签   XX／XX／XX／
+    DNProfileModifyType_Realname     //昵称
 } DNProfileModifyType;
 
 @interface DNProfileModifyRequest : DNWebServiceBaseModel

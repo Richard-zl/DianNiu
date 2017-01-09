@@ -50,6 +50,9 @@
         case DNProfileModifyType_DataPrivacy:
         key = @"dataPrivacy";
         break;
+        case DNProfileModifyType_Realname:
+        key = @"realName";
+        break;
     }
     return key;
 }

@@ -15,6 +15,7 @@
 #import "DNDianniuQ_AViewModel.h"
 #import "DNAddQuestionView.h"
 #import "DNAskquestionViewC.h"
+#import "DNInformationViewC.h"
 
 
 #define DNHomeNavigationBarHeight 74
@@ -156,6 +157,8 @@
             DNTextAlert(nil, @"您还未完成认证，请先验证！", @[@"确认",@"取消"], ^(NSInteger index) {
                 if (index == 0) {
                     //跳转权限认证
+                    DNInformationViewC *viewC = [[DNInformationViewC alloc] initWithNibName:@"DNInformationViewC" bundle:[NSBundle mainBundle]];
+                    [self.navigationController pushViewController:viewC animated:YES];
                 }
             });
             return ;
