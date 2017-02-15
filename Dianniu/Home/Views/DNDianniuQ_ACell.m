@@ -12,7 +12,7 @@
 #import "DNContentImageCollectionView.h"
 #import "DNShareSDKManager.h"
 
-#define DNDianniuQ_ACellEdgemargin 30
+#define DNDianniuQ_ACellEdgemargin 10
 #define DNContentImageMargin   5
 
 @interface DNDianniuQ_ACell ()
@@ -52,7 +52,7 @@
     self.collectionView.scrollEnabled = NO;
     if (ScreenWidth == 320) {
         //小屏
-        self.tagLabelWidthCons.constant = 180;
+        self.tagLabelWidthCons.constant = 190;
     }else{
         self.tagLabelWidthCons.constant = 220;
     }

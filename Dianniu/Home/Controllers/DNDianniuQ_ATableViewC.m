@@ -10,6 +10,7 @@
 #import "DNDianniuQ_ACell.h"
 #import "DNQ_ADetailViewC.h"
 #import "DNUserDetailC.h"
+#import "DNInformationViewC.h"
 
 @interface DNDianniuQ_ATableViewC ()
 @end
@@ -40,9 +41,15 @@
 
 - (void (^)(DNDianniuQ_AViewModel *viewModel))pushUserDetailViewBlock{
     return ^(DNDianniuQ_AViewModel *viewModel){
-        DNUserDetailC *detailC = [[DNUserDetailC alloc] initWithNibName:@"DNUserDetailC" bundle:nil];
-        detailC.accountId = viewModel.q_aModel.accountId;
-        [self.navigationController pushViewController:detailC animated:YES];
+        if ([viewModel.q_aModel.accountId integerValue] == [[DNUser sheared].userId integerValue]) {
+            //我的资料
+            DNInformationViewC *infoC = [[DNInformationViewC alloc] init];
+            [self.navigationController pushViewController:infoC animated:YES];
+        }else{
+            DNUserDetailC *detailC = [[DNUserDetailC alloc] initWithNibName:@"DNUserDetailC" bundle:nil];
+            detailC.accountId = viewModel.q_aModel.accountId;
+            [self.navigationController pushViewController:detailC animated:YES];
+        }
     };
 }
 

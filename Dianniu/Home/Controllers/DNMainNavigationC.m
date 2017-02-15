@@ -7,6 +7,7 @@
 //
 
 #import "DNMainNavigationC.h"
+#import "DNDiscoverViewC.h"
 
 @interface DNMainNavigationC ()
 
@@ -49,7 +50,8 @@
     if ([self.delegate respondsToSelector:@selector(navigationController:willShowViewController:animated:)]) {
         [self.delegate navigationController:self willShowViewController:controller animated:animated];
     }
-    if (self.viewControllers.count == 1) {
+    if (self.viewControllers.count == 1 &&
+        ![self.topViewController isKindOfClass:[DNDiscoverViewC class]]) {
         [self setNavigationBarHidden:YES animated:YES];
     }
     return controller;

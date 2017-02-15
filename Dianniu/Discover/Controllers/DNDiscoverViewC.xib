@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,7 +18,99 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0C-df-eZl">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="160"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLi-lD-rJn">
+                            <rect key="frame" x="49" y="35" width="90" height="90"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-Es-hgF">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <state key="normal" title="人才试用">
+                                        <color key="titleColor" red="0.0" green="0.86274509799999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="homeButtonAction:" destination="-1" eventType="touchUpInside" id="ENu-eM-ZRH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="ypr-Es-hgF" firstAttribute="leading" secondItem="dLi-lD-rJn" secondAttribute="leading" id="4b2-ZK-5G7"/>
+                                <constraint firstAttribute="height" constant="90" id="HUA-QO-gaP"/>
+                                <constraint firstAttribute="trailing" secondItem="ypr-Es-hgF" secondAttribute="trailing" id="Wwb-5N-yPk"/>
+                                <constraint firstAttribute="width" constant="90" id="hj2-1j-loS"/>
+                                <constraint firstAttribute="bottom" secondItem="ypr-Es-hgF" secondAttribute="bottom" id="plS-oB-Wyq"/>
+                                <constraint firstItem="ypr-Es-hgF" firstAttribute="top" secondItem="dLi-lD-rJn" secondAttribute="top" id="vD0-oL-WHG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="45"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="dLi-lD-rJn" firstAttribute="centerX" secondItem="H0C-df-eZl" secondAttribute="centerX" id="azh-ts-cp0"/>
+                        <constraint firstItem="dLi-lD-rJn" firstAttribute="centerY" secondItem="H0C-df-eZl" secondAttribute="centerY" id="deI-aB-bY0"/>
+                        <constraint firstAttribute="height" constant="160" id="pwo-ry-dpP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfV-Jg-SwG">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="160"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axq-AW-pt8">
+                            <rect key="frame" x="49.5" y="35" width="90" height="90"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKv-eN-Uio">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <state key="normal" title="线下活动">
+                                        <color key="titleColor" red="0.0" green="0.86274509799999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="homeButtonAction:" destination="-1" eventType="touchUpInside" id="GWI-m4-KJu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="CKv-eN-Uio" secondAttribute="trailing" id="48P-vQ-EKX"/>
+                                <constraint firstItem="CKv-eN-Uio" firstAttribute="leading" secondItem="Axq-AW-pt8" secondAttribute="leading" id="E7J-Ud-4TE"/>
+                                <constraint firstAttribute="bottom" secondItem="CKv-eN-Uio" secondAttribute="bottom" id="I0V-5C-ifJ"/>
+                                <constraint firstAttribute="width" constant="90" id="apD-e0-Ekz"/>
+                                <constraint firstItem="CKv-eN-Uio" firstAttribute="top" secondItem="Axq-AW-pt8" secondAttribute="top" id="fl7-n6-m8r"/>
+                                <constraint firstAttribute="height" constant="90" id="rfK-FP-UnB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="45"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.86274509803921573" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Axq-AW-pt8" firstAttribute="centerY" secondItem="GfV-Jg-SwG" secondAttribute="centerY" id="HYh-4F-QKC"/>
+                        <constraint firstItem="Axq-AW-pt8" firstAttribute="centerX" secondItem="GfV-Jg-SwG" secondAttribute="centerX" id="boQ-Mz-Xdx"/>
+                        <constraint firstAttribute="height" constant="160" id="gVZ-UV-rm7"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H0C-df-eZl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5EI-5T-hM4"/>
+                <constraint firstItem="GfV-Jg-SwG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="61V-2L-Kht"/>
+                <constraint firstItem="GfV-Jg-SwG" firstAttribute="leading" secondItem="H0C-df-eZl" secondAttribute="trailing" id="9Xg-ud-AfR"/>
+                <constraint firstAttribute="trailing" secondItem="GfV-Jg-SwG" secondAttribute="trailing" id="W9z-1z-gF6"/>
+                <constraint firstItem="GfV-Jg-SwG" firstAttribute="width" secondItem="H0C-df-eZl" secondAttribute="width" id="WyZ-yf-MT3"/>
+                <constraint firstItem="GfV-Jg-SwG" firstAttribute="height" secondItem="H0C-df-eZl" secondAttribute="height" id="XkA-qh-Ver"/>
+                <constraint firstItem="H0C-df-eZl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ngt-wF-k6H"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>
 </document>

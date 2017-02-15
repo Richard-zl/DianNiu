@@ -62,7 +62,20 @@ static DNShareSDKManager *shareSDKmanager;
             title = @"应用";
             url = @"index.html";
             break;
+        case DNShareType_Job:
+            title = @"职位";
+            url = [NSString stringWithFormat:@"job.html?id=%@",kId];
+            break;
+        case DNShareType_Recruit:
+            title = @"招聘";
+            url = [NSString stringWithFormat:@"recruit.html?id=%@",kId];
+            break;
+        case DNShareType_Activity:
+            title = @"活动";
+            url = [NSString stringWithFormat:@"activity.html?id=%@",kId];
+            break;
     }
+    
     url = [NSString stringWithFormat:@"http://share.dianniuapp.com/%@",url];
     title = [NSString stringWithFormat:@"来自电钮的%@分享",title];
     

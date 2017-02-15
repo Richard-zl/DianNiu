@@ -16,7 +16,7 @@
 #import "DNAddQuestionView.h"
 #import "DNAskquestionViewC.h"
 #import "DNInformationViewC.h"
-
+#import "DNSearchViewC.h"
 
 #define DNHomeNavigationBarHeight 74
 @interface DNHomeViewC () <DNHomeRequestDelegate>
@@ -151,12 +151,13 @@
 
 //发布按钮点击事件
 - (IBAction)postButtonAction:(id)sender {
-    DNAddQuestionView *view = [[DNAddQuestionView alloc] initWithClickIndex:^(DNHomeListType type) {
+    DNAddQuestionView *view = [[DNAddQuestionView alloc] initWithDisplayType:DNAddquestionViewDisplayType_Qustion ClickIndex:^(DNHomeListType type) {
         if (type == DNHomeListType_questions && [DNUser sheared].authLevel < DNUSerAuthLevel_ONE) {
             //没有权限发提问，只能发匿名
             DNTextAlert(nil, @"您还未完成认证，请先验证！", @[@"确认",@"取消"], ^(NSInteger index) {
                 if (index == 0) {
                     //跳转权限认证
+#warning 跳转到权限认证页面
                     DNInformationViewC *viewC = [[DNInformationViewC alloc] initWithNibName:@"DNInformationViewC" bundle:[NSBundle mainBundle]];
                     [self.navigationController pushViewController:viewC animated:YES];
                 }
@@ -169,6 +170,11 @@
     }];
     [DNSharedDelegate.window addSubview:view];
     [view show];
+}
+- (IBAction)searchButAction:(id)sender {
+    DNSearchViewC *viewC = [[DNSearchViewC alloc] init];
+    viewC.type = [self.currentVC isKindOfClass:[DNDianniuQ_ATableViewC class]] ? 1 : 2;
+    [self.navigationController pushViewController:viewC animated:YES];
 }
 
 

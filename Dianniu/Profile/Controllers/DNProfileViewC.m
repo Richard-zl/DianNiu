@@ -8,6 +8,10 @@
 
 #import "DNProfileViewC.h"
 #import "DNInformationViewC.h"
+#import "DNSettingViewC.h"
+#import "DNMyCollectViewC.h"
+#import "DNAboutMeViewC.h"
+#import "DNWebViewController.h"
 
 #define DNProfileCellIdentifier @"DNProfileCell"
 @interface DNProfileViewC ()<UITableViewDataSource,UITabBarDelegate>
@@ -118,16 +122,21 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UIViewController *controller;
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if ([cell.textLabel.text isEqualToString:@"我的收藏"]) {
-        
+        controller = [[DNMyCollectViewC alloc] init];
     }else if ([cell.textLabel.text isEqualToString:@"与我相关"]){
-        
+        controller = [[DNAboutMeViewC alloc] init];
     }else if ([cell.textLabel.text isEqualToString:@"设置"]){
-        
+        controller = [[DNSettingViewC alloc] init];
     }else if ([cell.textLabel.text isEqualToString:@"联系客服"]){
+        NSString *path = [[NSBundle mainBundle].bundlePath stringByAppendingPathComponent:@"webResource/contact.html"];
+        controller = [[DNWebViewController alloc] initWithFilePath:path script:nil];
+        controller.title = @"联系客服";
         
     }
+    controller ? [self.navigationController pushViewController:controller animated:YES] : nil;
 }
 
 @end

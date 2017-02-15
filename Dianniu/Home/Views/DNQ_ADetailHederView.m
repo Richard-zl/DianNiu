@@ -60,11 +60,13 @@
     [self configurSubViewsWithModel:model];
     CGFloat height = [self calculateViewHeight];
     self.height = height;
+    _model.cellHeight = height;
 }
 
 
 #pragma mark UI Private func
 - (void)hiddenDianniuQ_AProperty{
+    if (self.nameLb.isHidden) return;
     for (UIView *subView in self.nameLb.superview.subviews) {
         if (subView.isHidden) {
             subView.hidden = NO;

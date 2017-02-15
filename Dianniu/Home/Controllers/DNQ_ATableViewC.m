@@ -138,7 +138,6 @@
     DNQ_ADetailViewC *detailC = [[DNQ_ADetailViewC alloc] init];
     detailC.type = self.type;
     detailC.q_aModel = viewModel;
-    detailC.title = @"查看问答";
     [self.navigationController pushViewController:detailC animated:YES];
 }
 #pragma mark - getter and setter

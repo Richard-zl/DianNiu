@@ -7,7 +7,7 @@
 //
 
 #import "DNUser.h"
-
+#import <objc/runtime.h>
 static DNUser *sharedUser;
 
 @implementation DNUser
@@ -44,14 +44,16 @@ static DNUser *sharedUser;
     DNUser *user;
     user = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
     if (user) {
-        self.userId = user.userId;
-        self.token  = user.token;
-        self.joinDate = user.joinDate;
-        self.headerImgURL = user.headerImgURL;
-        self.realName = user.realName;
-        self.authLevel = user.authLevel;
-        self.userDesription = user.userDesription;
-        self.mobile = user.mobile;
+        u_int count;
+        objc_property_t *properties  =class_copyPropertyList([DNUser class], &count);
+        for (int i = 0; i<count; i++){
+            const char* chars =property_getName(properties[i]);
+            NSString *property = [NSString stringWithUTF8String:chars];
+            if ([user valueForKey:property]) {
+                [self setValue:[user valueForKey:property] forKey:property];
+            }
+        }
+        free(properties);
     }
     
     return self;
@@ -82,6 +84,8 @@ static DNUser *sharedUser;
     self.realName = userModel.realName;
     self.mobile = userModel.mobile;
     self.tag    = userModel.label;
+    self.allowviewpro = !userModel.dataPrivacy;
+    self.canAddfriend = !userModel.beFriend;
     [self dump];
 }
 
@@ -108,6 +112,8 @@ static DNUser *sharedUser;
         self.mobile       = [aDecoder decodeObjectForKey:@"mobile"];
         self.tag          = [aDecoder decodeObjectForKey:@"tag"];
         self.sex          = [aDecoder decodeIntegerForKey:@"sex"];
+        self.canAddfriend = [aDecoder decodeBoolForKey:@"canAddfriend"];
+        self.allowviewpro = [aDecoder decodeBoolForKey:@"allowviewpro"];
     }
     return self;
 }
@@ -123,6 +129,8 @@ static DNUser *sharedUser;
     [aCoder encodeObject:self.mobile forKey:@"mobile"];
     [aCoder encodeObject:self.tag forKey:@"tag"];
     [aCoder encodeInteger:self.sex forKey:@"sex"];
+    [aCoder encodeBool:self.allowviewpro forKey:@"allowviewpro"];
+    [aCoder encodeBool:self.canAddfriend forKey:@"canAddfriend"];
 }
 
 #pragma mark - getter

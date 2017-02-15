@@ -30,6 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"查看问答";
     [self configurSubViews];
 }
 
@@ -54,7 +55,13 @@
 - (void)configurTableView{
     DNQ_ADetailHederView *hederView = [[[NSBundle mainBundle] loadNibNamed:@"DNQ_ADetailHederView" owner:nil options:nil] firstObject];
     hederView.didClickDetailView = ^{
-        [self pushUserDetailCWithAccountId:self.q_aModel.q_aModel.accountId];
+        if ([_q_aModel.q_aModel.accountId integerValue] == [[DNUser sheared].userId integerValue]) {
+            //我的资料
+            DNInformationViewC *infoC = [[DNInformationViewC alloc] init];
+            [self.navigationController pushViewController:infoC animated:YES];
+        }else{
+            [self pushUserDetailCWithAccountId:self.q_aModel.q_aModel.accountId];
+        }
     };
     hederView.type = self.type;
     hederView.model = self.q_aModel;
@@ -231,7 +238,13 @@
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self pushUserDetailCWithAccountId:self.dataSource[indexPath.row].accountId];
+    if ([self.dataSource[indexPath.row].accountId integerValue] == [[DNUser sheared].userId integerValue]) {
+        //我的资料
+        DNInformationViewC *infoC = [[DNInformationViewC alloc] init];
+        [self.navigationController pushViewController:infoC animated:YES];
+    }else{
+        [self pushUserDetailCWithAccountId:self.dataSource[indexPath.row].accountId];
+    }
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{

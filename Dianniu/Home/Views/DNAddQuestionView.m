@@ -13,14 +13,16 @@
 @interface DNAddQuestionView()
 @property (nonatomic, copy) void(^didClicked)(DNHomeListType type);
 @property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, assign) DNAddquestionViewDisplayType type;
 @end
 
 @implementation DNAddQuestionView
 
-- (id)initWithClickIndex:(void (^)(DNHomeListType))callback{
+- initWithDisplayType:(DNAddquestionViewDisplayType)type ClickIndex:(void(^)(DNHomeListType type))callback{
     self = [super init];
     if (self) {
         self.didClicked = [callback copy];
+        self.type = type;
         self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
         self.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
         [self addSubview:self.contentView];
@@ -66,12 +68,23 @@
     CGFloat labelheight = 20.0;
     if (type == DNHomeListType_questions) {
         frame.origin.x = 0;
-        title = @"提出问题";
-        imageName = @"tiwen_button";
+        if (self.type == DNAddquestionViewDisplayType_Qustion) {
+            title = @"提出问题";
+            imageName = @"tiwen_button";
+        }else{
+            title = @"发布求职";
+            imageName = @"qiuzhifabu_bg";
+        }
+       
     }else{
         frame.origin.x = self.contentView.center.x;
-        title = @"匿名逼格";
-        imageName = @"niming_button";
+        if (self.type == DNAddquestionViewDisplayType_Qustion) {
+            title = @"匿名逼格";
+            imageName = @"niming_button";
+        }else{
+            title = @"发布招聘";
+            imageName = @"zhaopingfabu_bg";
+        }
     }
     
     CGFloat buttonX = (self.contentView.width/2.0 - imageWH)/2.0;

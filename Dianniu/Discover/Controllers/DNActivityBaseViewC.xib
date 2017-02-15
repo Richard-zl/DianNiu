@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DNActivityBaseViewC">
+            <connections>
+                <outlet property="scrollView" destination="31d-U2-F3I" id="c5Y-a3-xIn"/>
+                <outlet property="topView" destination="A2W-aP-cAx" id="PI4-c0-3QF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2W-aP-cAx">
+                    <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" tag="500" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcQ-Kg-Okh">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="45"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.62352941179999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="附近活动">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="附近活动" backgroundImage="RecuitButtonBkImg">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="categoryButtonAction:" destination="-1" eventType="touchUpInside" id="7CL-oD-cIU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="501" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Om-dU-2dY">
+                            <rect key="frame" x="125" y="0.0" width="125" height="45"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.62352941179999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="加入的活动">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="RecuitButtonBkImg">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="categoryButtonAction:" destination="-1" eventType="touchUpInside" id="fn4-p7-nV5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qas-Xr-SfN">
+                            <rect key="frame" x="250" y="0.0" width="125" height="45"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.62352941179999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="发起的活动">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="RecuitButtonBkImg">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="categoryButtonAction:" destination="-1" eventType="touchUpInside" id="98I-Sq-31g"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Qas-Xr-SfN" secondAttribute="trailing" id="2Qc-2e-xBr"/>
+                        <constraint firstItem="Qas-Xr-SfN" firstAttribute="leading" secondItem="2Om-dU-2dY" secondAttribute="trailing" id="6wr-33-p03"/>
+                        <constraint firstItem="FcQ-Kg-Okh" firstAttribute="top" secondItem="A2W-aP-cAx" secondAttribute="top" id="9Rc-aA-pDj"/>
+                        <constraint firstItem="2Om-dU-2dY" firstAttribute="bottom" secondItem="FcQ-Kg-Okh" secondAttribute="bottom" id="JZz-xc-PLy"/>
+                        <constraint firstItem="FcQ-Kg-Okh" firstAttribute="leading" secondItem="A2W-aP-cAx" secondAttribute="leading" id="KTm-yP-mIH"/>
+                        <constraint firstItem="2Om-dU-2dY" firstAttribute="top" secondItem="FcQ-Kg-Okh" secondAttribute="top" id="Nsq-wN-jbF"/>
+                        <constraint firstItem="Qas-Xr-SfN" firstAttribute="top" secondItem="FcQ-Kg-Okh" secondAttribute="top" id="W1N-tF-J82"/>
+                        <constraint firstItem="2Om-dU-2dY" firstAttribute="leading" secondItem="FcQ-Kg-Okh" secondAttribute="trailing" id="WQk-Qu-Asc"/>
+                        <constraint firstAttribute="height" constant="45" id="av1-S4-82y"/>
+                        <constraint firstItem="2Om-dU-2dY" firstAttribute="width" secondItem="FcQ-Kg-Okh" secondAttribute="width" id="cJQ-nY-4zz"/>
+                        <constraint firstAttribute="bottom" secondItem="FcQ-Kg-Okh" secondAttribute="bottom" id="fcj-Ft-qBY"/>
+                        <constraint firstItem="Qas-Xr-SfN" firstAttribute="width" secondItem="FcQ-Kg-Okh" secondAttribute="width" id="hXk-Pq-lbv"/>
+                        <constraint firstItem="Qas-Xr-SfN" firstAttribute="bottom" secondItem="FcQ-Kg-Okh" secondAttribute="bottom" id="yQS-t5-nhS"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="500" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31d-U2-F3I">
+                    <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="V5d-4x-2gQ"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="31d-U2-F3I" secondAttribute="trailing" id="6L7-GD-RCo"/>
+                <constraint firstItem="A2W-aP-cAx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Idv-op-0nD"/>
+                <constraint firstItem="A2W-aP-cAx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="N6B-q7-L8l"/>
+                <constraint firstAttribute="trailing" secondItem="A2W-aP-cAx" secondAttribute="trailing" id="Oha-Cx-VOc"/>
+                <constraint firstItem="31d-U2-F3I" firstAttribute="top" secondItem="A2W-aP-cAx" secondAttribute="bottom" id="VkQ-iX-T4l"/>
+                <constraint firstItem="31d-U2-F3I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="agG-9d-9SI"/>
+                <constraint firstAttribute="bottom" secondItem="31d-U2-F3I" secondAttribute="bottom" id="kU0-ry-Cr7"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RecuitButtonBkImg" width="90" height="25"/>
+    </resources>
+</document>

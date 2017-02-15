@@ -17,6 +17,9 @@ typedef NS_ENUM(NSUInteger, DNShareType) {
     DNShareType_QA,//问答分享
     DNShareType_profile,//名片分享
     DNShareType_app, //app分享
+    DNShareType_Job, //职位分享
+    DNShareType_Recruit, //招聘分享
+    DNShareType_Activity   //活动分享
 };
 
 @interface DNShareSDKManager : NSObject

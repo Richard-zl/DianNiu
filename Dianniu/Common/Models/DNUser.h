@@ -29,6 +29,8 @@ typedef enum : NSUInteger {
 @property (nonatomic, copy)   NSNumber *mobile;
 @property (nonatomic, assign) NSInteger sex;
 @property (nonatomic, copy)   NSString * sexString;
+@property (nonatomic, assign) BOOL canAddfriend; //是否能添加好友
+@property (nonatomic, assign) BOOL allowviewpro;
 
 + (instancetype)sheared;
 - (void)clearDNUser;

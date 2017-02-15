@@ -32,7 +32,7 @@ static ALBBWantu *alMediaSDKInstance = nil;
     request.fileName = @"";
     request.dir = kDNKeyAliMediaSDKImageDir;
     request.fileName = retStr;
-    request.token = @"UPLOAD_AK_TOP MjM0MTA3NjI6ZXlKa1pYUmxZM1JOYVcxbElqb3hMQ0psZUhCcGNtRjBhVzl1SWpveE5EZzBOalF5TlRrMU9EUTRMQ0pwYm5ObGNuUlBibXg1SWpvd0xDSnVZVzFsYzNCaFkyVWlPaUprYVdGdWJtbDFJaXdpYzJsNlpVeHBiV2wwSWpvd2ZROmFkNjU4ZmE1OTM1YTYwNTIxYjk2OGNlNDMzOGE2NGY2OWI4MDg2ZTM";
+    request.token = @"UPLOAD_AK_TOP MjM0MTA3NjI6ZXlKa1pYUmxZM1JOYVcxbElqb3hMQ0psZUhCcGNtRjBhVzl1SWpveE5EZzNNVFE1T0RRek16STFMQ0pwYm5ObGNuUlBibXg1SWpvd0xDSnVZVzFsYzNCaFkyVWlPaUprYVdGdWJtbDFJaXdpYzJsNlpVeHBiV2wwSWpvd2ZROmU1YTAxODJhOWZmNDMxYTZlOGQ3ZDViYmM2MjNlOTFkMDVkNjE2MDU";
     request.uploadProgress = ^(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend){
         if (progress) {
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -41,6 +41,9 @@ static ALBBWantu *alMediaSDKInstance = nil;
         }else{
             dispatch_async(dispatch_get_main_queue(), ^{
                 [SVProgressHUD showProgress:totalBytesSent/totalBytesExpectedToSend status:@"正在上传"];
+                if (totalBytesSent/totalBytesExpectedToSend >= 1) {
+                    [SVProgressHUD dismiss];
+                }
             });
         }
     };

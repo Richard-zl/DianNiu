@@ -19,9 +19,12 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define UIColorFromRGBWithAlpha(rgbValue,alpha) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(alpha)]
 #define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
-//定制好的颜色
+//主题色
 #define DNThemeColor RGBColor(72,201,169)
 
+#define DNAppVersionShort [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define DNAppVersionBuild [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define DNAppVersion      [NSString stringWithFormat:@"%@.%@",DNAppVersionShort,DNAppVersionBuild]
 //设备的⾼高度
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height //设备的宽度
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width

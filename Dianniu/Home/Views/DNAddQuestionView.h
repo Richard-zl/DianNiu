@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    DNAddquestionViewDisplayType_Qustion,
+    DNAddquestionViewDisplayType_Recruit,
+} DNAddquestionViewDisplayType;
+
 @interface DNAddQuestionView : UIView
 
-- initWithClickIndex:(void(^)(DNHomeListType type))callback;
+- initWithDisplayType:(DNAddquestionViewDisplayType)type ClickIndex:(void(^)(DNHomeListType type))callback;
 
 - (void)show;
 @end

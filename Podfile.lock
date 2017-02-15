@@ -29,6 +29,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - Masonry (1.0.2)
   - MJRefresh (3.1.12)
   - MOBFoundation (2.2.3)
   - Reachability (3.1.1)
@@ -58,6 +59,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - BlocksKit (= 2.2.5)
+  - Masonry
   - MJRefresh (~> 3.1.0)
   - MOBFoundation
   - Reachability (= 3.1.1)
@@ -75,6 +77,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: 2bc5cd7011a2db75cf2b3ceacb7f4227eec88f3e
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
@@ -84,6 +87,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   UIDeviceUtil: 3fc51f3e4a92e579bacfe575b79177f6a29a6d81
 
-PODFILE CHECKSUM: 657580f89ee847be20a100f0153d1e8670b84a45
+PODFILE CHECKSUM: 469eb33939bdefbabdc4e081b9ca29f90c746fad
 
 COCOAPODS: 1.2.0.beta.1

@@ -10,6 +10,8 @@
 
 @interface NSDictionary (FixNilBug)
 
+- (id)DNObjectForKey:(id)aKey;
+
 /***
  *** 字典转jsonString
  ***/

@@ -18,6 +18,8 @@
 		9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9818C1151DDAE345001B16E9 /* Assets.xcassets */; };
 		9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9818C13B1DDAE961001B16E9 /* LoginViewC.m */; };
 		9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9818C13C1DDAE961001B16E9 /* LoginViewC.xib */; };
+		981DBF401E34A7000035C025 /* DNCitySelectTableHederView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981DBF3F1E34A7000035C025 /* DNCitySelectTableHederView.xib */; };
+		981DBF431E34A8E70035C025 /* DNCitySelectTableHederView.m in Sources */ = {isa = PBXBuildFile; fileRef = 981DBF421E34A8E60035C025 /* DNCitySelectTableHederView.m */; };
 		982607B41E078CEE0056FAFD /* DNUserDetailC.m in Sources */ = {isa = PBXBuildFile; fileRef = 982607B21E078CEE0056FAFD /* DNUserDetailC.m */; };
 		982607B51E078CEE0056FAFD /* DNUserDetailC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 982607B31E078CEE0056FAFD /* DNUserDetailC.xib */; };
 		982607BB1E07D7A80056FAFD /* DNUserDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 982607BA1E07D7A80056FAFD /* DNUserDetailRequest.m */; };
@@ -38,12 +40,53 @@
 		9846DACE1E1E21690082CAD0 /* DNInformationViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9846DACC1E1E21690082CAD0 /* DNInformationViewC.m */; };
 		9846DACF1E1E21690082CAD0 /* DNInformationViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9846DACD1E1E21690082CAD0 /* DNInformationViewC.xib */; };
 		9846DAD21E1E4AA90082CAD0 /* DNProfileModifyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9846DAD11E1E4AA90082CAD0 /* DNProfileModifyRequest.m */; };
+		984CB74D1E4C40CA007CFFF1 /* DNSingleSelectControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 984CB74C1E4C40CA007CFFF1 /* DNSingleSelectControl.m */; };
+		984CB7501E4C590D007CFFF1 /* DNAddJobRecruitRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 984CB74F1E4C590D007CFFF1 /* DNAddJobRecruitRequest.m */; };
+		984CB7531E4C8A8A007CFFF1 /* DNActivityTableViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 984CB7521E4C8A8A007CFFF1 /* DNActivityTableViewC.m */; };
+		984CB7571E4C936C007CFFF1 /* DNActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 984CB7551E4C936C007CFFF1 /* DNActivityCell.m */; };
+		984CB7581E4C936C007CFFF1 /* DNActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984CB7561E4C936C007CFFF1 /* DNActivityCell.xib */; };
+		985CCF7E1E3847A400EAD4A3 /* DNRecruitRecordViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 985CCF7D1E3847A400EAD4A3 /* DNRecruitRecordViewC.m */; };
+		985CCF811E38505200EAD4A3 /* DNMyRecruitList.m in Sources */ = {isa = PBXBuildFile; fileRef = 985CCF801E38505200EAD4A3 /* DNMyRecruitList.m */; };
+		9862F39A1E31B731007B493A /* DNSearchViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9862F3991E31B731007B493A /* DNSearchViewC.m */; };
+		9862F39D1E31BC85007B493A /* DNQuestionsSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9862F39C1E31BC85007B493A /* DNQuestionsSearchRequest.m */; };
 		9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */; };
+		98646B861E54A4C6005342D6 /* DNDateSelectControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 98646B851E54A4C6005342D6 /* DNDateSelectControl.m */; };
 		986586EB1DE53FEF00562815 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586EA1DE53FEF00562815 /* UIViewExt.m */; };
 		986586EE1DE54AE600562815 /* DNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586ED1DE54AE600562815 /* DNKit.m */; };
 		986586F51DE571AC00562815 /* DNVerifyCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586F41DE571AC00562815 /* DNVerifyCodeModel.m */; };
+		986677BA1E534E890062CCF5 /* DNActivityJoinRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 986677B91E534E890062CCF5 /* DNActivityJoinRequest.m */; };
+		986677BE1E5352060062CCF5 /* DNReleaseActivityViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 986677BC1E5352060062CCF5 /* DNReleaseActivityViewC.m */; };
+		986677BF1E5352060062CCF5 /* DNReleaseActivityViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986677BD1E5352060062CCF5 /* DNReleaseActivityViewC.xib */; };
+		986B4CA11E36FA7A00541557 /* DNJobListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B4CA01E36FA7A00541557 /* DNJobListRequest.m */; };
+		986B4CA81E36FF8700541557 /* DNJobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B4CA61E36FF8700541557 /* DNJobCell.m */; };
+		986B4CA91E36FF8700541557 /* DNJobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986B4CA71E36FF8700541557 /* DNJobCell.xib */; };
+		986B4CAC1E37339500541557 /* DNRecruitListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 986B4CAB1E37339500541557 /* DNRecruitListRequest.m */; };
+		987005F21E26097C0046BEBC /* DNSettingViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 987005F11E26097C0046BEBC /* DNSettingViewC.m */; };
+		987005F51E2617510046BEBC /* DNAccountSetingViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 987005F41E2617510046BEBC /* DNAccountSetingViewC.m */; };
+		987005F81E261B400046BEBC /* DNPrivacySettingViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 987005F71E261B400046BEBC /* DNPrivacySettingViewC.m */; };
+		987005FB1E272E4D0046BEBC /* DNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987005FA1E272E4D0046BEBC /* DNWebViewController.m */; };
+		987005FD1E273A640046BEBC /* webResource in Resources */ = {isa = PBXBuildFile; fileRef = 987005FC1E273A640046BEBC /* webResource */; };
+		987006021E27620F0046BEBC /* DNMyCollectViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 987006011E27620F0046BEBC /* DNMyCollectViewC.m */; };
+		987006061E27702E0046BEBC /* DNCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 987006041E27702E0046BEBC /* DNCollectCell.m */; };
+		987006071E27702E0046BEBC /* DNCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987006051E27702E0046BEBC /* DNCollectCell.xib */; };
+		9870060A1E27763C0046BEBC /* DNCollectListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 987006091E27763C0046BEBC /* DNCollectListRequest.m */; };
+		987006111E278A080046BEBC /* DNAboutMeViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 987006101E278A080046BEBC /* DNAboutMeViewC.m */; };
 		9888B5761E0BCF090077CE9A /* DNShareCountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9888B5751E0BCF090077CE9A /* DNShareCountRequest.m */; };
+		98939AC71E3066D000A67182 /* DNMyQuestingViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939AC61E3066D000A67182 /* DNMyQuestingViewC.m */; };
+		98939ACA1E3070EF00A67182 /* DNMyAnswerViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939AC91E3070EF00A67182 /* DNMyAnswerViewC.m */; };
+		98939ACE1E3071C200A67182 /* DNMyAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939ACC1E3071C200A67182 /* DNMyAnswerCell.m */; };
+		98939ACF1E3071C200A67182 /* DNMyAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98939ACD1E3071C200A67182 /* DNMyAnswerCell.xib */; };
+		98939AD21E308B4200A67182 /* DNMyAnswersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939AD11E308B4200A67182 /* DNMyAnswersRequest.m */; };
+		98939AD61E308E9800A67182 /* DNUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939AD41E308E9800A67182 /* DNUserCell.m */; };
+		98939AD71E308E9800A67182 /* DNUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98939AD51E308E9800A67182 /* DNUserCell.xib */; };
+		98939ADD1E3090A600A67182 /* DNBlacklistViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939ADC1E3090A600A67182 /* DNBlacklistViewC.m */; };
+		98939AE01E3095C400A67182 /* DNShieldListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98939ADF1E3095C400A67182 /* DNShieldListRequest.m */; };
 		98976EB51DF16104001355BC /* DNAliSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98976EB41DF16104001355BC /* DNAliSDKManager.m */; };
+		989E38F91E35E49C00FA7B61 /* DNRecruitBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E38F71E35E49C00FA7B61 /* DNRecruitBaseViewC.m */; };
+		989E38FA1E35E49C00FA7B61 /* DNRecruitBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989E38F81E35E49C00FA7B61 /* DNRecruitBaseViewC.xib */; };
+		989E38FD1E35E51900FA7B61 /* DNJobViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E38FC1E35E51900FA7B61 /* DNJobViewC.m */; };
+		989E39001E35E53E00FA7B61 /* DNRecruitViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E38FF1E35E53E00FA7B61 /* DNRecruitViewC.m */; };
+		989E39031E361D8000FA7B61 /* DNDiscoverCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E39021E361D8000FA7B61 /* DNDiscoverCollectionView.m */; };
 		98ABD70D1E0A2127002C5E36 /* DNFollowRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABD70C1E0A2127002C5E36 /* DNFollowRequest.m */; };
 		98ABD7101E0A21CE002C5E36 /* DNAddFirendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABD70F1E0A21CE002C5E36 /* DNAddFirendRequest.m */; };
 		98ABD7131E0A3423002C5E36 /* DNShareSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABD7121E0A3423002C5E36 /* DNShareSDKManager.m */; };
@@ -76,6 +119,16 @@
 		98D2F0B31E01452B001CD57D /* DNQ_ADetailViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D2F0B11E01452B001CD57D /* DNQ_ADetailViewC.xib */; };
 		98D2F0B61E015628001CD57D /* DNQ_ADetailHederView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D2F0B51E015628001CD57D /* DNQ_ADetailHederView.m */; };
 		98D2F0B81E015637001CD57D /* DNQ_ADetailHederView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D2F0B71E015637001CD57D /* DNQ_ADetailHederView.xib */; };
+		98D473551E4773DB00381DA1 /* DNRecruitApplyListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D473541E4773DB00381DA1 /* DNRecruitApplyListRequest.m */; };
+		98D473581E4776E300381DA1 /* DNApplyRecordViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D473571E4776E300381DA1 /* DNApplyRecordViewC.m */; };
+		98D4735C1E47796700381DA1 /* DNApplyRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4735A1E47796700381DA1 /* DNApplyRecordCell.m */; };
+		98D4735D1E47796700381DA1 /* DNApplyRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4735B1E47796700381DA1 /* DNApplyRecordCell.xib */; };
+		98D76D651E49DE9D00744727 /* DNReleaseRecruitViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D76D641E49DE9D00744727 /* DNReleaseRecruitViewC.m */; };
+		98D76D6A1E4A174F00744727 /* DNActivityBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D76D681E4A174F00744727 /* DNActivityBaseViewC.m */; };
+		98D76D6B1E4A174F00744727 /* DNActivityBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D76D691E4A174F00744727 /* DNActivityBaseViewC.xib */; };
+		98DD7FC11E51F36200E957AC /* DNActivityJoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7FBF1E51F36200E957AC /* DNActivityJoinCell.m */; };
+		98DD7FC21E51F36200E957AC /* DNActivityJoinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7FC01E51F36200E957AC /* DNActivityJoinCell.xib */; };
+		98DD7FC51E51F94500E957AC /* DNActivityDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD7FC41E51F94500E957AC /* DNActivityDetailRequest.m */; };
 		98DF83601DEFFD4B000B4E56 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DF835F1DEFFD4B000B4E56 /* CoreFoundation.framework */; };
 		98DF83621DEFFFB2000B4E56 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DF83611DEFFFB2000B4E56 /* ImageIO.framework */; };
 		98DF83641DEFFFE1000B4E56 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DF83631DEFFFE1000B4E56 /* CFNetwork.framework */; };
@@ -90,7 +143,20 @@
 		98DF83761DF00046000B4E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DF83751DF00046000B4E56 /* Foundation.framework */; };
 		98DF837B1DF008FA000B4E56 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DF837A1DF008FA000B4E56 /* libz.tbd */; };
 		98DF837D1DF00C0D000B4E56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DF837C1DF00C0D000B4E56 /* CoreGraphics.framework */; };
+		98E358EB1E348BB7001A2BF8 /* DNCitySelectViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E358EA1E348BB7001A2BF8 /* DNCitySelectViewC.m */; };
+		98E358ED1E348EF1001A2BF8 /* DNCitys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98E358EC1E348EF1001A2BF8 /* DNCitys.plist */; };
+		98E358F01E3491FA001A2BF8 /* DNCitysViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E358EF1E3491FA001A2BF8 /* DNCitysViewModel.m */; };
 		98E4BC651DEEB30D00F805B5 /* DNDianniuQ_ACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E4BC631DEEB30D00F805B5 /* DNDianniuQ_ACell.m */; };
+		98EA91FF1E373D20008E4D58 /* DNRecruitDetailViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA91FD1E373D20008E4D58 /* DNRecruitDetailViewC.m */; };
+		98EA92001E373D20008E4D58 /* DNRecruitDetailViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EA91FE1E373D20008E4D58 /* DNRecruitDetailViewC.xib */; };
+		98EA92031E37439B008E4D58 /* DNRecruitDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA92021E37439B008E4D58 /* DNRecruitDetailRequest.m */; };
+		98EA92071E374A85008E4D58 /* DNRecruitPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA92051E374A85008E4D58 /* DNRecruitPostCell.m */; };
+		98EA92081E374A85008E4D58 /* DNRecruitPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EA92061E374A85008E4D58 /* DNRecruitPostCell.xib */; };
+		98EA920C1E379AF7008E4D58 /* DNRecruitInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA920A1E379AF7008E4D58 /* DNRecruitInfoCell.m */; };
+		98EA920D1E379AF7008E4D58 /* DNRecruitInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EA920B1E379AF7008E4D58 /* DNRecruitInfoCell.xib */; };
+		98EA92111E37B2F8008E4D58 /* DNRecruitDesciptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA920F1E37B2F8008E4D58 /* DNRecruitDesciptionCell.m */; };
+		98EA92121E37B2F9008E4D58 /* DNRecruitDesciptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EA92101E37B2F8008E4D58 /* DNRecruitDesciptionCell.xib */; };
+		98EA92151E37C0A3008E4D58 /* DNRecruitAddRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA92141E37C0A3008E4D58 /* DNRecruitAddRequest.m */; };
 		98ED49041DFFC8C700C4A47E /* DNAnonymityQ_ACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ED49021DFFC8C700C4A47E /* DNAnonymityQ_ACell.m */; };
 		98ED49051DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98ED49031DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib */; };
 		98ED49081DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ED49071DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m */; };
@@ -100,10 +166,13 @@
 		98EEC78A1E11010E0060B7C5 /* DNBlacklistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EEC7891E11010E0060B7C5 /* DNBlacklistRequest.m */; };
 		98EEC78D1E11053A0060B7C5 /* DNReportViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EEC78C1E11053A0060B7C5 /* DNReportViewC.m */; };
 		98EEC7901E11279D0060B7C5 /* DNReportRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EEC78F1E11279D0060B7C5 /* DNReportRequest.m */; };
+		98F3A9BD1E50AC1C00D73C52 /* DNActivityDetailViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F3A9BB1E50AC1C00D73C52 /* DNActivityDetailViewC.m */; };
+		98F3A9BE1E50AC1C00D73C52 /* DNActivityDetailViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F3A9BC1E50AC1C00D73C52 /* DNActivityDetailViewC.xib */; };
 		98F6C1411E236830003C533C /* DNArea.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98F6C1401E236830003C533C /* DNArea.plist */; };
 		98F6C1441E236E7F003C533C /* DNSelectControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F6C1431E236E7F003C533C /* DNSelectControl.m */; };
 		98F6C1481E238F40003C533C /* DNMoreLabelViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F6C1461E238F40003C533C /* DNMoreLabelViewC.m */; };
 		98F6C1491E238F40003C533C /* DNMoreLabelViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F6C1471E238F40003C533C /* DNMoreLabelViewC.xib */; };
+		98F813BE1E4EECBF0020521A /* DNActivityListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F813BD1E4EECBF0020521A /* DNActivityListRequest.m */; };
 		98FA30511E1F3E3700F59168 /* DNNicknameModifyViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FA304F1E1F3E3700F59168 /* DNNicknameModifyViewC.m */; };
 		98FA30521E1F3E3700F59168 /* DNNicknameModifyViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FA30501E1F3E3700F59168 /* DNNicknameModifyViewC.xib */; };
 		98FA30561E1F63C900F59168 /* DNDescriptionModifyViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FA30541E1F63C900F59168 /* DNDescriptionModifyViewC.m */; };
@@ -140,6 +209,9 @@
 		9818C13A1DDAE961001B16E9 /* LoginViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewC.h; sourceTree = "<group>"; };
 		9818C13B1DDAE961001B16E9 /* LoginViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewC.m; sourceTree = "<group>"; };
 		9818C13C1DDAE961001B16E9 /* LoginViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewC.xib; sourceTree = "<group>"; };
+		981DBF3F1E34A7000035C025 /* DNCitySelectTableHederView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNCitySelectTableHederView.xib; sourceTree = "<group>"; };
+		981DBF411E34A8E60035C025 /* DNCitySelectTableHederView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCitySelectTableHederView.h; sourceTree = "<group>"; };
+		981DBF421E34A8E60035C025 /* DNCitySelectTableHederView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCitySelectTableHederView.m; sourceTree = "<group>"; };
 		982607B11E078CEE0056FAFD /* DNUserDetailC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNUserDetailC.h; sourceTree = "<group>"; };
 		982607B21E078CEE0056FAFD /* DNUserDetailC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNUserDetailC.m; sourceTree = "<group>"; };
 		982607B31E078CEE0056FAFD /* DNUserDetailC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNUserDetailC.xib; sourceTree = "<group>"; };
@@ -177,19 +249,93 @@
 		9846DACD1E1E21690082CAD0 /* DNInformationViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNInformationViewC.xib; sourceTree = "<group>"; };
 		9846DAD01E1E4AA90082CAD0 /* DNProfileModifyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNProfileModifyRequest.h; sourceTree = "<group>"; };
 		9846DAD11E1E4AA90082CAD0 /* DNProfileModifyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNProfileModifyRequest.m; sourceTree = "<group>"; };
+		984CB74B1E4C40CA007CFFF1 /* DNSingleSelectControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSingleSelectControl.h; sourceTree = "<group>"; };
+		984CB74C1E4C40CA007CFFF1 /* DNSingleSelectControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSingleSelectControl.m; sourceTree = "<group>"; };
+		984CB74E1E4C590D007CFFF1 /* DNAddJobRecruitRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAddJobRecruitRequest.h; sourceTree = "<group>"; };
+		984CB74F1E4C590D007CFFF1 /* DNAddJobRecruitRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAddJobRecruitRequest.m; sourceTree = "<group>"; };
+		984CB7511E4C8A8A007CFFF1 /* DNActivityTableViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityTableViewC.h; sourceTree = "<group>"; };
+		984CB7521E4C8A8A007CFFF1 /* DNActivityTableViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityTableViewC.m; sourceTree = "<group>"; };
+		984CB7541E4C936C007CFFF1 /* DNActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityCell.h; sourceTree = "<group>"; };
+		984CB7551E4C936C007CFFF1 /* DNActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityCell.m; sourceTree = "<group>"; };
+		984CB7561E4C936C007CFFF1 /* DNActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNActivityCell.xib; sourceTree = "<group>"; };
+		985CCF7C1E3847A400EAD4A3 /* DNRecruitRecordViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitRecordViewC.h; sourceTree = "<group>"; };
+		985CCF7D1E3847A400EAD4A3 /* DNRecruitRecordViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitRecordViewC.m; sourceTree = "<group>"; };
+		985CCF7F1E38505200EAD4A3 /* DNMyRecruitList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMyRecruitList.h; sourceTree = "<group>"; };
+		985CCF801E38505200EAD4A3 /* DNMyRecruitList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMyRecruitList.m; sourceTree = "<group>"; };
+		9862F3981E31B731007B493A /* DNSearchViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSearchViewC.h; sourceTree = "<group>"; };
+		9862F3991E31B731007B493A /* DNSearchViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSearchViewC.m; sourceTree = "<group>"; };
+		9862F39B1E31BC85007B493A /* DNQuestionsSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNQuestionsSearchRequest.h; sourceTree = "<group>"; };
+		9862F39C1E31BC85007B493A /* DNQuestionsSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNQuestionsSearchRequest.m; sourceTree = "<group>"; };
 		9863B4FF1DE2F4E800375CD0 /* DNWebServiceKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNWebServiceKeys.h; sourceTree = "<group>"; };
 		9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebServiceKeys.m; sourceTree = "<group>"; };
+		98646B841E54A4C6005342D6 /* DNDateSelectControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDateSelectControl.h; sourceTree = "<group>"; };
+		98646B851E54A4C6005342D6 /* DNDateSelectControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDateSelectControl.m; sourceTree = "<group>"; };
 		986586E91DE53FEF00562815 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		986586EA1DE53FEF00562815 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		986586EC1DE54AE600562815 /* DNKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNKit.h; path = Expand/DNKit.h; sourceTree = "<group>"; };
 		986586ED1DE54AE600562815 /* DNKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNKit.m; path = Expand/DNKit.m; sourceTree = "<group>"; };
 		986586F31DE571AC00562815 /* DNVerifyCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNVerifyCodeModel.h; path = ../../Login/Models/DNVerifyCodeModel.h; sourceTree = "<group>"; };
 		986586F41DE571AC00562815 /* DNVerifyCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNVerifyCodeModel.m; path = ../../Login/Models/DNVerifyCodeModel.m; sourceTree = "<group>"; };
+		986677B81E534E890062CCF5 /* DNActivityJoinRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityJoinRequest.h; sourceTree = "<group>"; };
+		986677B91E534E890062CCF5 /* DNActivityJoinRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityJoinRequest.m; sourceTree = "<group>"; };
+		986677BB1E5352060062CCF5 /* DNReleaseActivityViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNReleaseActivityViewC.h; sourceTree = "<group>"; };
+		986677BC1E5352060062CCF5 /* DNReleaseActivityViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNReleaseActivityViewC.m; sourceTree = "<group>"; };
+		986677BD1E5352060062CCF5 /* DNReleaseActivityViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNReleaseActivityViewC.xib; sourceTree = "<group>"; };
+		986B4C9F1E36FA7A00541557 /* DNJobListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNJobListRequest.h; sourceTree = "<group>"; };
+		986B4CA01E36FA7A00541557 /* DNJobListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNJobListRequest.m; sourceTree = "<group>"; };
+		986B4CA51E36FF8700541557 /* DNJobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNJobCell.h; sourceTree = "<group>"; };
+		986B4CA61E36FF8700541557 /* DNJobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNJobCell.m; sourceTree = "<group>"; };
+		986B4CA71E36FF8700541557 /* DNJobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNJobCell.xib; sourceTree = "<group>"; };
+		986B4CAA1E37339500541557 /* DNRecruitListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitListRequest.h; sourceTree = "<group>"; };
+		986B4CAB1E37339500541557 /* DNRecruitListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitListRequest.m; sourceTree = "<group>"; };
+		987005F01E26097C0046BEBC /* DNSettingViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSettingViewC.h; sourceTree = "<group>"; };
+		987005F11E26097C0046BEBC /* DNSettingViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSettingViewC.m; sourceTree = "<group>"; };
+		987005F31E2617510046BEBC /* DNAccountSetingViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAccountSetingViewC.h; sourceTree = "<group>"; };
+		987005F41E2617510046BEBC /* DNAccountSetingViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAccountSetingViewC.m; sourceTree = "<group>"; };
+		987005F61E261B400046BEBC /* DNPrivacySettingViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPrivacySettingViewC.h; sourceTree = "<group>"; };
+		987005F71E261B400046BEBC /* DNPrivacySettingViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPrivacySettingViewC.m; sourceTree = "<group>"; };
+		987005F91E272E4D0046BEBC /* DNWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNWebViewController.h; sourceTree = "<group>"; };
+		987005FA1E272E4D0046BEBC /* DNWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebViewController.m; sourceTree = "<group>"; };
+		987005FC1E273A640046BEBC /* webResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webResource; sourceTree = "<group>"; };
+		987006001E27620F0046BEBC /* DNMyCollectViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMyCollectViewC.h; sourceTree = "<group>"; };
+		987006011E27620F0046BEBC /* DNMyCollectViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMyCollectViewC.m; sourceTree = "<group>"; };
+		987006031E27702E0046BEBC /* DNCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCollectCell.h; sourceTree = "<group>"; };
+		987006041E27702E0046BEBC /* DNCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCollectCell.m; sourceTree = "<group>"; };
+		987006051E27702E0046BEBC /* DNCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNCollectCell.xib; sourceTree = "<group>"; };
+		987006081E27763C0046BEBC /* DNCollectListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCollectListRequest.h; sourceTree = "<group>"; };
+		987006091E27763C0046BEBC /* DNCollectListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCollectListRequest.m; sourceTree = "<group>"; };
+		9870060F1E278A080046BEBC /* DNAboutMeViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAboutMeViewC.h; sourceTree = "<group>"; };
+		987006101E278A080046BEBC /* DNAboutMeViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAboutMeViewC.m; sourceTree = "<group>"; };
 		98717C7E1DE29907009C357B /* DNPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPrefixHeader.pch; sourceTree = "<group>"; };
 		9888B5741E0BCF090077CE9A /* DNShareCountRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNShareCountRequest.h; sourceTree = "<group>"; };
 		9888B5751E0BCF090077CE9A /* DNShareCountRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNShareCountRequest.m; sourceTree = "<group>"; };
+		98939AC51E3066D000A67182 /* DNMyQuestingViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMyQuestingViewC.h; sourceTree = "<group>"; };
+		98939AC61E3066D000A67182 /* DNMyQuestingViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMyQuestingViewC.m; sourceTree = "<group>"; };
+		98939AC81E3070EF00A67182 /* DNMyAnswerViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMyAnswerViewC.h; sourceTree = "<group>"; };
+		98939AC91E3070EF00A67182 /* DNMyAnswerViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMyAnswerViewC.m; sourceTree = "<group>"; };
+		98939ACB1E3071C200A67182 /* DNMyAnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMyAnswerCell.h; sourceTree = "<group>"; };
+		98939ACC1E3071C200A67182 /* DNMyAnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMyAnswerCell.m; sourceTree = "<group>"; };
+		98939ACD1E3071C200A67182 /* DNMyAnswerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNMyAnswerCell.xib; sourceTree = "<group>"; };
+		98939AD01E308B4200A67182 /* DNMyAnswersRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMyAnswersRequest.h; sourceTree = "<group>"; };
+		98939AD11E308B4200A67182 /* DNMyAnswersRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMyAnswersRequest.m; sourceTree = "<group>"; };
+		98939AD31E308E9800A67182 /* DNUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNUserCell.h; sourceTree = "<group>"; };
+		98939AD41E308E9800A67182 /* DNUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNUserCell.m; sourceTree = "<group>"; };
+		98939AD51E308E9800A67182 /* DNUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNUserCell.xib; sourceTree = "<group>"; };
+		98939ADB1E3090A600A67182 /* DNBlacklistViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNBlacklistViewC.h; sourceTree = "<group>"; };
+		98939ADC1E3090A600A67182 /* DNBlacklistViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNBlacklistViewC.m; sourceTree = "<group>"; };
+		98939ADE1E3095C400A67182 /* DNShieldListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNShieldListRequest.h; sourceTree = "<group>"; };
+		98939ADF1E3095C400A67182 /* DNShieldListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNShieldListRequest.m; sourceTree = "<group>"; };
 		98976EB31DF16104001355BC /* DNAliSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAliSDKManager.h; sourceTree = "<group>"; };
 		98976EB41DF16104001355BC /* DNAliSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAliSDKManager.m; sourceTree = "<group>"; };
+		989E38F61E35E49C00FA7B61 /* DNRecruitBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitBaseViewC.h; sourceTree = "<group>"; };
+		989E38F71E35E49C00FA7B61 /* DNRecruitBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitBaseViewC.m; sourceTree = "<group>"; };
+		989E38F81E35E49C00FA7B61 /* DNRecruitBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNRecruitBaseViewC.xib; sourceTree = "<group>"; };
+		989E38FB1E35E51900FA7B61 /* DNJobViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNJobViewC.h; sourceTree = "<group>"; };
+		989E38FC1E35E51900FA7B61 /* DNJobViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNJobViewC.m; sourceTree = "<group>"; };
+		989E38FE1E35E53E00FA7B61 /* DNRecruitViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitViewC.h; sourceTree = "<group>"; };
+		989E38FF1E35E53E00FA7B61 /* DNRecruitViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitViewC.m; sourceTree = "<group>"; };
+		989E39011E361D8000FA7B61 /* DNDiscoverCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDiscoverCollectionView.h; sourceTree = "<group>"; };
+		989E39021E361D8000FA7B61 /* DNDiscoverCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDiscoverCollectionView.m; sourceTree = "<group>"; };
 		98ABD70B1E0A2127002C5E36 /* DNFollowRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNFollowRequest.h; sourceTree = "<group>"; };
 		98ABD70C1E0A2127002C5E36 /* DNFollowRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNFollowRequest.m; sourceTree = "<group>"; };
 		98ABD70E1E0A21CE002C5E36 /* DNAddFirendRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAddFirendRequest.h; sourceTree = "<group>"; };
@@ -246,6 +392,23 @@
 		98D2F0B41E015628001CD57D /* DNQ_ADetailHederView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNQ_ADetailHederView.h; sourceTree = "<group>"; };
 		98D2F0B51E015628001CD57D /* DNQ_ADetailHederView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNQ_ADetailHederView.m; sourceTree = "<group>"; };
 		98D2F0B71E015637001CD57D /* DNQ_ADetailHederView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNQ_ADetailHederView.xib; sourceTree = "<group>"; };
+		98D473531E4773DB00381DA1 /* DNRecruitApplyListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitApplyListRequest.h; sourceTree = "<group>"; };
+		98D473541E4773DB00381DA1 /* DNRecruitApplyListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitApplyListRequest.m; sourceTree = "<group>"; };
+		98D473561E4776E300381DA1 /* DNApplyRecordViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNApplyRecordViewC.h; sourceTree = "<group>"; };
+		98D473571E4776E300381DA1 /* DNApplyRecordViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNApplyRecordViewC.m; sourceTree = "<group>"; };
+		98D473591E47796700381DA1 /* DNApplyRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNApplyRecordCell.h; sourceTree = "<group>"; };
+		98D4735A1E47796700381DA1 /* DNApplyRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNApplyRecordCell.m; sourceTree = "<group>"; };
+		98D4735B1E47796700381DA1 /* DNApplyRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNApplyRecordCell.xib; sourceTree = "<group>"; };
+		98D76D631E49DE9D00744727 /* DNReleaseRecruitViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNReleaseRecruitViewC.h; sourceTree = "<group>"; };
+		98D76D641E49DE9D00744727 /* DNReleaseRecruitViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNReleaseRecruitViewC.m; sourceTree = "<group>"; };
+		98D76D671E4A174F00744727 /* DNActivityBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityBaseViewC.h; sourceTree = "<group>"; };
+		98D76D681E4A174F00744727 /* DNActivityBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityBaseViewC.m; sourceTree = "<group>"; };
+		98D76D691E4A174F00744727 /* DNActivityBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNActivityBaseViewC.xib; sourceTree = "<group>"; };
+		98DD7FBE1E51F36200E957AC /* DNActivityJoinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityJoinCell.h; sourceTree = "<group>"; };
+		98DD7FBF1E51F36200E957AC /* DNActivityJoinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityJoinCell.m; sourceTree = "<group>"; };
+		98DD7FC01E51F36200E957AC /* DNActivityJoinCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNActivityJoinCell.xib; sourceTree = "<group>"; };
+		98DD7FC31E51F94500E957AC /* DNActivityDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityDetailRequest.h; sourceTree = "<group>"; };
+		98DD7FC41E51F94500E957AC /* DNActivityDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityDetailRequest.m; sourceTree = "<group>"; };
 		98DF835F1DEFFD4B000B4E56 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		98DF83611DEFFFB2000B4E56 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		98DF83631DEFFFE1000B4E56 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -261,8 +424,29 @@
 		98DF837A1DF008FA000B4E56 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		98DF837C1DF00C0D000B4E56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		98E058D91DE3E103009CF374 /* DNDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNDefines.h; sourceTree = "<group>"; };
+		98E358E91E348BB7001A2BF8 /* DNCitySelectViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCitySelectViewC.h; sourceTree = "<group>"; };
+		98E358EA1E348BB7001A2BF8 /* DNCitySelectViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCitySelectViewC.m; sourceTree = "<group>"; };
+		98E358EC1E348EF1001A2BF8 /* DNCitys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DNCitys.plist; sourceTree = "<group>"; };
+		98E358EE1E3491FA001A2BF8 /* DNCitysViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCitysViewModel.h; sourceTree = "<group>"; };
+		98E358EF1E3491FA001A2BF8 /* DNCitysViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCitysViewModel.m; sourceTree = "<group>"; };
 		98E4BC621DEEB30D00F805B5 /* DNDianniuQ_ACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDianniuQ_ACell.h; sourceTree = "<group>"; };
 		98E4BC631DEEB30D00F805B5 /* DNDianniuQ_ACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDianniuQ_ACell.m; sourceTree = "<group>"; };
+		98EA91FC1E373D20008E4D58 /* DNRecruitDetailViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitDetailViewC.h; sourceTree = "<group>"; };
+		98EA91FD1E373D20008E4D58 /* DNRecruitDetailViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitDetailViewC.m; sourceTree = "<group>"; };
+		98EA91FE1E373D20008E4D58 /* DNRecruitDetailViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNRecruitDetailViewC.xib; sourceTree = "<group>"; };
+		98EA92011E37439B008E4D58 /* DNRecruitDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitDetailRequest.h; sourceTree = "<group>"; };
+		98EA92021E37439B008E4D58 /* DNRecruitDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitDetailRequest.m; sourceTree = "<group>"; };
+		98EA92041E374A85008E4D58 /* DNRecruitPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitPostCell.h; sourceTree = "<group>"; };
+		98EA92051E374A85008E4D58 /* DNRecruitPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitPostCell.m; sourceTree = "<group>"; };
+		98EA92061E374A85008E4D58 /* DNRecruitPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNRecruitPostCell.xib; sourceTree = "<group>"; };
+		98EA92091E379AF7008E4D58 /* DNRecruitInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitInfoCell.h; sourceTree = "<group>"; };
+		98EA920A1E379AF7008E4D58 /* DNRecruitInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitInfoCell.m; sourceTree = "<group>"; };
+		98EA920B1E379AF7008E4D58 /* DNRecruitInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNRecruitInfoCell.xib; sourceTree = "<group>"; };
+		98EA920E1E37B2F8008E4D58 /* DNRecruitDesciptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitDesciptionCell.h; sourceTree = "<group>"; };
+		98EA920F1E37B2F8008E4D58 /* DNRecruitDesciptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitDesciptionCell.m; sourceTree = "<group>"; };
+		98EA92101E37B2F8008E4D58 /* DNRecruitDesciptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNRecruitDesciptionCell.xib; sourceTree = "<group>"; };
+		98EA92131E37C0A3008E4D58 /* DNRecruitAddRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitAddRequest.h; sourceTree = "<group>"; };
+		98EA92141E37C0A3008E4D58 /* DNRecruitAddRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNRecruitAddRequest.m; sourceTree = "<group>"; };
 		98ED49011DFFC8C700C4A47E /* DNAnonymityQ_ACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAnonymityQ_ACell.h; sourceTree = "<group>"; };
 		98ED49021DFFC8C700C4A47E /* DNAnonymityQ_ACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAnonymityQ_ACell.m; sourceTree = "<group>"; };
 		98ED49031DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNAnonymityQ_ACell.xib; sourceTree = "<group>"; };
@@ -280,12 +464,17 @@
 		98EEC78C1E11053A0060B7C5 /* DNReportViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNReportViewC.m; sourceTree = "<group>"; };
 		98EEC78E1E11279D0060B7C5 /* DNReportRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNReportRequest.h; sourceTree = "<group>"; };
 		98EEC78F1E11279D0060B7C5 /* DNReportRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNReportRequest.m; sourceTree = "<group>"; };
+		98F3A9BA1E50AC1C00D73C52 /* DNActivityDetailViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityDetailViewC.h; sourceTree = "<group>"; };
+		98F3A9BB1E50AC1C00D73C52 /* DNActivityDetailViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityDetailViewC.m; sourceTree = "<group>"; };
+		98F3A9BC1E50AC1C00D73C52 /* DNActivityDetailViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNActivityDetailViewC.xib; sourceTree = "<group>"; };
 		98F6C1401E236830003C533C /* DNArea.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DNArea.plist; sourceTree = "<group>"; };
 		98F6C1421E236E7F003C533C /* DNSelectControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSelectControl.h; sourceTree = "<group>"; };
 		98F6C1431E236E7F003C533C /* DNSelectControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSelectControl.m; sourceTree = "<group>"; };
 		98F6C1451E238F40003C533C /* DNMoreLabelViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMoreLabelViewC.h; sourceTree = "<group>"; };
 		98F6C1461E238F40003C533C /* DNMoreLabelViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMoreLabelViewC.m; sourceTree = "<group>"; };
 		98F6C1471E238F40003C533C /* DNMoreLabelViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNMoreLabelViewC.xib; sourceTree = "<group>"; };
+		98F813BC1E4EECBF0020521A /* DNActivityListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNActivityListRequest.h; sourceTree = "<group>"; };
+		98F813BD1E4EECBF0020521A /* DNActivityListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNActivityListRequest.m; sourceTree = "<group>"; };
 		98FA304E1E1F3E3700F59168 /* DNNicknameModifyViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNNicknameModifyViewC.h; sourceTree = "<group>"; };
 		98FA304F1E1F3E3700F59168 /* DNNicknameModifyViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNNicknameModifyViewC.m; sourceTree = "<group>"; };
 		98FA30501E1F3E3700F59168 /* DNNicknameModifyViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNNicknameModifyViewC.xib; sourceTree = "<group>"; };
@@ -395,7 +584,9 @@
 		9818C1031DDAE345001B16E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				987005FC1E273A640046BEBC /* webResource */,
 				98F6C1401E236830003C533C /* DNArea.plist */,
+				98E358EC1E348EF1001A2BF8 /* DNCitys.plist */,
 				98B9643D1DE8016200E6ABF6 /* Dianniu.entitlements */,
 				9818C1151DDAE345001B16E9 /* Assets.xcassets */,
 				98717C7E1DE29907009C357B /* DNPrefixHeader.pch */,
@@ -452,27 +643,21 @@
 		9818C1251DDAE5E6001B16E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				987005FF1E2761D00046BEBC /* information */,
+				987005FE1E2761A80046BEBC /* setting */,
 				98B9642A1DE7DC3000E6ABF6 /* DNProfileViewC.h */,
 				98B9642B1DE7DC3000E6ABF6 /* DNProfileViewC.m */,
 				98B9642C1DE7DC3000E6ABF6 /* DNProfileViewC.xib */,
-				9846DACB1E1E21690082CAD0 /* DNInformationViewC.h */,
-				9846DACC1E1E21690082CAD0 /* DNInformationViewC.m */,
-				9846DACD1E1E21690082CAD0 /* DNInformationViewC.xib */,
-				98FA304E1E1F3E3700F59168 /* DNNicknameModifyViewC.h */,
-				98FA304F1E1F3E3700F59168 /* DNNicknameModifyViewC.m */,
-				98FA30501E1F3E3700F59168 /* DNNicknameModifyViewC.xib */,
-				98FA30531E1F63C900F59168 /* DNDescriptionModifyViewC.h */,
-				98FA30541E1F63C900F59168 /* DNDescriptionModifyViewC.m */,
-				98FA30551E1F63C900F59168 /* DNDescriptionModifyViewC.xib */,
-				98FA30581E1F685F00F59168 /* DNSexModifyViewC.h */,
-				98FA30591E1F685F00F59168 /* DNSexModifyViewC.m */,
-				98FA305A1E1F685F00F59168 /* DNSexModifyViewC.xib */,
-				98FA305D1E1F75B900F59168 /* DNLabelSetViewC.h */,
-				98FA305E1E1F75B900F59168 /* DNLabelSetViewC.m */,
-				98FA305F1E1F75B900F59168 /* DNLabelSetViewC.xib */,
-				98F6C1451E238F40003C533C /* DNMoreLabelViewC.h */,
-				98F6C1461E238F40003C533C /* DNMoreLabelViewC.m */,
-				98F6C1471E238F40003C533C /* DNMoreLabelViewC.xib */,
+				987006001E27620F0046BEBC /* DNMyCollectViewC.h */,
+				987006011E27620F0046BEBC /* DNMyCollectViewC.m */,
+				9870060F1E278A080046BEBC /* DNAboutMeViewC.h */,
+				987006101E278A080046BEBC /* DNAboutMeViewC.m */,
+				98939AC51E3066D000A67182 /* DNMyQuestingViewC.h */,
+				98939AC61E3066D000A67182 /* DNMyQuestingViewC.m */,
+				98939AC81E3070EF00A67182 /* DNMyAnswerViewC.h */,
+				98939AC91E3070EF00A67182 /* DNMyAnswerViewC.m */,
+				98939ADB1E3090A600A67182 /* DNBlacklistViewC.h */,
+				98939ADC1E3090A600A67182 /* DNBlacklistViewC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -490,6 +675,15 @@
 				98FA30621E1FA6AD00F59168 /* DNLabelSetCell.h */,
 				98FA30631E1FA6AD00F59168 /* DNLabelSetCell.m */,
 				98FA30641E1FA6AD00F59168 /* DNLabelSetCell.xib */,
+				987006031E27702E0046BEBC /* DNCollectCell.h */,
+				987006041E27702E0046BEBC /* DNCollectCell.m */,
+				987006051E27702E0046BEBC /* DNCollectCell.xib */,
+				98939ACB1E3071C200A67182 /* DNMyAnswerCell.h */,
+				98939ACC1E3071C200A67182 /* DNMyAnswerCell.m */,
+				98939ACD1E3071C200A67182 /* DNMyAnswerCell.xib */,
+				98939AD31E308E9800A67182 /* DNUserCell.h */,
+				98939AD41E308E9800A67182 /* DNUserCell.m */,
+				98939AD51E308E9800A67182 /* DNUserCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -507,9 +701,13 @@
 		9818C1291DDAE5F2001B16E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				98D76D661E4A172100744727 /* Activity */,
+				989E38F51E35E47600FA7B61 /* Recruit */,
 				98B964251DE7DC1500E6ABF6 /* DNDiscoverViewC.h */,
 				98B964261DE7DC1500E6ABF6 /* DNDiscoverViewC.m */,
 				98B964271DE7DC1500E6ABF6 /* DNDiscoverViewC.xib */,
+				98E358E91E348BB7001A2BF8 /* DNCitySelectViewC.h */,
+				98E358EA1E348BB7001A2BF8 /* DNCitySelectViewC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -517,6 +715,8 @@
 		9818C12A1DDAE5F2001B16E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				98E358EE1E3491FA001A2BF8 /* DNCitysViewModel.h */,
+				98E358EF1E3491FA001A2BF8 /* DNCitysViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -524,6 +724,32 @@
 		9818C12B1DDAE5F2001B16E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				981DBF3F1E34A7000035C025 /* DNCitySelectTableHederView.xib */,
+				981DBF411E34A8E60035C025 /* DNCitySelectTableHederView.h */,
+				981DBF421E34A8E60035C025 /* DNCitySelectTableHederView.m */,
+				989E39011E361D8000FA7B61 /* DNDiscoverCollectionView.h */,
+				989E39021E361D8000FA7B61 /* DNDiscoverCollectionView.m */,
+				986B4CA51E36FF8700541557 /* DNJobCell.h */,
+				986B4CA61E36FF8700541557 /* DNJobCell.m */,
+				986B4CA71E36FF8700541557 /* DNJobCell.xib */,
+				98EA92041E374A85008E4D58 /* DNRecruitPostCell.h */,
+				98EA92051E374A85008E4D58 /* DNRecruitPostCell.m */,
+				98EA92061E374A85008E4D58 /* DNRecruitPostCell.xib */,
+				98EA92091E379AF7008E4D58 /* DNRecruitInfoCell.h */,
+				98EA920A1E379AF7008E4D58 /* DNRecruitInfoCell.m */,
+				98EA920B1E379AF7008E4D58 /* DNRecruitInfoCell.xib */,
+				98EA920E1E37B2F8008E4D58 /* DNRecruitDesciptionCell.h */,
+				98EA920F1E37B2F8008E4D58 /* DNRecruitDesciptionCell.m */,
+				98EA92101E37B2F8008E4D58 /* DNRecruitDesciptionCell.xib */,
+				98D473591E47796700381DA1 /* DNApplyRecordCell.h */,
+				98D4735A1E47796700381DA1 /* DNApplyRecordCell.m */,
+				98D4735B1E47796700381DA1 /* DNApplyRecordCell.xib */,
+				984CB7541E4C936C007CFFF1 /* DNActivityCell.h */,
+				984CB7551E4C936C007CFFF1 /* DNActivityCell.m */,
+				984CB7561E4C936C007CFFF1 /* DNActivityCell.xib */,
+				98DD7FBE1E51F36200E957AC /* DNActivityJoinCell.h */,
+				98DD7FBF1E51F36200E957AC /* DNActivityJoinCell.m */,
+				98DD7FC01E51F36200E957AC /* DNActivityJoinCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -556,6 +782,8 @@
 				98160E6A1E1210530009C869 /* DNAskquestionViewC.h */,
 				98160E6B1E1210530009C869 /* DNAskquestionViewC.m */,
 				98160E6C1E1210530009C869 /* DNAskquestionViewC.xib */,
+				9862F3981E31B731007B493A /* DNSearchViewC.h */,
+				9862F3991E31B731007B493A /* DNSearchViewC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -726,6 +954,10 @@
 			children = (
 				98F6C1421E236E7F003C533C /* DNSelectControl.h */,
 				98F6C1431E236E7F003C533C /* DNSelectControl.m */,
+				984CB74B1E4C40CA007CFFF1 /* DNSingleSelectControl.h */,
+				984CB74C1E4C40CA007CFFF1 /* DNSingleSelectControl.m */,
+				98646B841E54A4C6005342D6 /* DNDateSelectControl.h */,
+				98646B851E54A4C6005342D6 /* DNDateSelectControl.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -791,8 +1023,97 @@
 				9817FBCB1E1B5A0200213948 /* DNAddAnswerRequest.m */,
 				9846DAD01E1E4AA90082CAD0 /* DNProfileModifyRequest.h */,
 				9846DAD11E1E4AA90082CAD0 /* DNProfileModifyRequest.m */,
+				987006081E27763C0046BEBC /* DNCollectListRequest.h */,
+				987006091E27763C0046BEBC /* DNCollectListRequest.m */,
+				98939AD01E308B4200A67182 /* DNMyAnswersRequest.h */,
+				98939AD11E308B4200A67182 /* DNMyAnswersRequest.m */,
+				98939ADE1E3095C400A67182 /* DNShieldListRequest.h */,
+				98939ADF1E3095C400A67182 /* DNShieldListRequest.m */,
+				9862F39B1E31BC85007B493A /* DNQuestionsSearchRequest.h */,
+				9862F39C1E31BC85007B493A /* DNQuestionsSearchRequest.m */,
+				986B4C9F1E36FA7A00541557 /* DNJobListRequest.h */,
+				986B4CA01E36FA7A00541557 /* DNJobListRequest.m */,
+				986B4CAA1E37339500541557 /* DNRecruitListRequest.h */,
+				986B4CAB1E37339500541557 /* DNRecruitListRequest.m */,
+				98EA92011E37439B008E4D58 /* DNRecruitDetailRequest.h */,
+				98EA92021E37439B008E4D58 /* DNRecruitDetailRequest.m */,
+				98EA92131E37C0A3008E4D58 /* DNRecruitAddRequest.h */,
+				98EA92141E37C0A3008E4D58 /* DNRecruitAddRequest.m */,
+				98D473531E4773DB00381DA1 /* DNRecruitApplyListRequest.h */,
+				98D473541E4773DB00381DA1 /* DNRecruitApplyListRequest.m */,
+				984CB74E1E4C590D007CFFF1 /* DNAddJobRecruitRequest.h */,
+				984CB74F1E4C590D007CFFF1 /* DNAddJobRecruitRequest.m */,
+				98F813BC1E4EECBF0020521A /* DNActivityListRequest.h */,
+				98F813BD1E4EECBF0020521A /* DNActivityListRequest.m */,
+				98DD7FC31E51F94500E957AC /* DNActivityDetailRequest.h */,
+				98DD7FC41E51F94500E957AC /* DNActivityDetailRequest.m */,
+				986677B81E534E890062CCF5 /* DNActivityJoinRequest.h */,
+				986677B91E534E890062CCF5 /* DNActivityJoinRequest.m */,
 			);
 			name = NetWorkModel;
+			sourceTree = "<group>";
+		};
+		987005FE1E2761A80046BEBC /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				987005F01E26097C0046BEBC /* DNSettingViewC.h */,
+				987005F11E26097C0046BEBC /* DNSettingViewC.m */,
+				987005F31E2617510046BEBC /* DNAccountSetingViewC.h */,
+				987005F41E2617510046BEBC /* DNAccountSetingViewC.m */,
+				987005F61E261B400046BEBC /* DNPrivacySettingViewC.h */,
+				987005F71E261B400046BEBC /* DNPrivacySettingViewC.m */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
+		987005FF1E2761D00046BEBC /* information */ = {
+			isa = PBXGroup;
+			children = (
+				9846DACB1E1E21690082CAD0 /* DNInformationViewC.h */,
+				9846DACC1E1E21690082CAD0 /* DNInformationViewC.m */,
+				9846DACD1E1E21690082CAD0 /* DNInformationViewC.xib */,
+				98FA304E1E1F3E3700F59168 /* DNNicknameModifyViewC.h */,
+				98FA304F1E1F3E3700F59168 /* DNNicknameModifyViewC.m */,
+				98FA30501E1F3E3700F59168 /* DNNicknameModifyViewC.xib */,
+				98FA30531E1F63C900F59168 /* DNDescriptionModifyViewC.h */,
+				98FA30541E1F63C900F59168 /* DNDescriptionModifyViewC.m */,
+				98FA30551E1F63C900F59168 /* DNDescriptionModifyViewC.xib */,
+				98FA30581E1F685F00F59168 /* DNSexModifyViewC.h */,
+				98FA30591E1F685F00F59168 /* DNSexModifyViewC.m */,
+				98FA305A1E1F685F00F59168 /* DNSexModifyViewC.xib */,
+				98FA305D1E1F75B900F59168 /* DNLabelSetViewC.h */,
+				98FA305E1E1F75B900F59168 /* DNLabelSetViewC.m */,
+				98FA305F1E1F75B900F59168 /* DNLabelSetViewC.xib */,
+				98F6C1451E238F40003C533C /* DNMoreLabelViewC.h */,
+				98F6C1461E238F40003C533C /* DNMoreLabelViewC.m */,
+				98F6C1471E238F40003C533C /* DNMoreLabelViewC.xib */,
+			);
+			name = information;
+			sourceTree = "<group>";
+		};
+		989E38F51E35E47600FA7B61 /* Recruit */ = {
+			isa = PBXGroup;
+			children = (
+				989E38F61E35E49C00FA7B61 /* DNRecruitBaseViewC.h */,
+				989E38F71E35E49C00FA7B61 /* DNRecruitBaseViewC.m */,
+				989E38F81E35E49C00FA7B61 /* DNRecruitBaseViewC.xib */,
+				989E38FB1E35E51900FA7B61 /* DNJobViewC.h */,
+				989E38FC1E35E51900FA7B61 /* DNJobViewC.m */,
+				989E38FE1E35E53E00FA7B61 /* DNRecruitViewC.h */,
+				989E38FF1E35E53E00FA7B61 /* DNRecruitViewC.m */,
+				98EA91FC1E373D20008E4D58 /* DNRecruitDetailViewC.h */,
+				98EA91FD1E373D20008E4D58 /* DNRecruitDetailViewC.m */,
+				98EA91FE1E373D20008E4D58 /* DNRecruitDetailViewC.xib */,
+				985CCF7C1E3847A400EAD4A3 /* DNRecruitRecordViewC.h */,
+				985CCF7D1E3847A400EAD4A3 /* DNRecruitRecordViewC.m */,
+				985CCF7F1E38505200EAD4A3 /* DNMyRecruitList.h */,
+				985CCF801E38505200EAD4A3 /* DNMyRecruitList.m */,
+				98D473561E4776E300381DA1 /* DNApplyRecordViewC.h */,
+				98D473571E4776E300381DA1 /* DNApplyRecordViewC.m */,
+				98D76D631E49DE9D00744727 /* DNReleaseRecruitViewC.h */,
+				98D76D641E49DE9D00744727 /* DNReleaseRecruitViewC.m */,
+			);
+			name = Recruit;
 			sourceTree = "<group>";
 		};
 		98B3F1281DF813E700DAED69 /* Controllers */ = {
@@ -809,8 +1130,28 @@
 				982607B11E078CEE0056FAFD /* DNUserDetailC.h */,
 				982607B21E078CEE0056FAFD /* DNUserDetailC.m */,
 				982607B31E078CEE0056FAFD /* DNUserDetailC.xib */,
+				987005F91E272E4D0046BEBC /* DNWebViewController.h */,
+				987005FA1E272E4D0046BEBC /* DNWebViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98D76D661E4A172100744727 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				98D76D671E4A174F00744727 /* DNActivityBaseViewC.h */,
+				98D76D681E4A174F00744727 /* DNActivityBaseViewC.m */,
+				98D76D691E4A174F00744727 /* DNActivityBaseViewC.xib */,
+				984CB7511E4C8A8A007CFFF1 /* DNActivityTableViewC.h */,
+				984CB7521E4C8A8A007CFFF1 /* DNActivityTableViewC.m */,
+				98F3A9BA1E50AC1C00D73C52 /* DNActivityDetailViewC.h */,
+				98F3A9BB1E50AC1C00D73C52 /* DNActivityDetailViewC.m */,
+				98F3A9BC1E50AC1C00D73C52 /* DNActivityDetailViewC.xib */,
+				986677BB1E5352060062CCF5 /* DNReleaseActivityViewC.h */,
+				986677BC1E5352060062CCF5 /* DNReleaseActivityViewC.m */,
+				986677BD1E5352060062CCF5 /* DNReleaseActivityViewC.xib */,
+			);
+			name = Activity;
 			sourceTree = "<group>";
 		};
 		F0E0EE20B1AFED2F8EBAB44F /* Pods */ = {
@@ -856,7 +1197,7 @@
 				TargetAttributes = {
 					9818C0FF1DDAE345001B16E9 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = E65EHHBW35;
+						DevelopmentTeam = 64QVSKL2QT;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -890,27 +1231,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				9846DACF1E1E21690082CAD0 /* DNInformationViewC.xib in Resources */,
+				981DBF401E34A7000035C025 /* DNCitySelectTableHederView.xib in Resources */,
 				98B964331DE7DC4A00E6ABF6 /* DNMessageViewC.xib in Resources */,
 				98BF786B1DEF1E7400C8B49C /* DNDianniuQ_ACell.xib in Resources */,
+				98D4735D1E47796700381DA1 /* DNApplyRecordCell.xib in Resources */,
+				98939ACF1E3071C200A67182 /* DNMyAnswerCell.xib in Resources */,
 				98B613B51DE44B8C000F79B8 /* RigisterViewC.xib in Resources */,
+				98EA92121E37B2F9008E4D58 /* DNRecruitDesciptionCell.xib in Resources */,
+				98D76D6B1E4A174F00744727 /* DNActivityBaseViewC.xib in Resources */,
 				98F6C1491E238F40003C533C /* DNMoreLabelViewC.xib in Resources */,
+				98EA920D1E379AF7008E4D58 /* DNRecruitInfoCell.xib in Resources */,
 				98B9642E1DE7DC3000E6ABF6 /* DNProfileViewC.xib in Resources */,
 				98FA30611E1F75B900F59168 /* DNLabelSetViewC.xib in Resources */,
 				9818C1161DDAE345001B16E9 /* Assets.xcassets in Resources */,
 				98346CAB1E03EFFF001C5A45 /* DNAnswerCell.xib in Resources */,
 				982607B51E078CEE0056FAFD /* DNUserDetailC.xib in Resources */,
+				987006071E27702E0046BEBC /* DNCollectCell.xib in Resources */,
 				98FA30521E1F3E3700F59168 /* DNNicknameModifyViewC.xib in Resources */,
+				98F3A9BE1E50AC1C00D73C52 /* DNActivityDetailViewC.xib in Resources */,
 				98FA305C1E1F685F00F59168 /* DNSexModifyViewC.xib in Resources */,
+				984CB7581E4C936C007CFFF1 /* DNActivityCell.xib in Resources */,
 				98ED49051DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib in Resources */,
+				98EA92001E373D20008E4D58 /* DNRecruitDetailViewC.xib in Resources */,
 				98160E6E1E1210530009C869 /* DNAskquestionViewC.xib in Resources */,
+				98939AD71E308E9800A67182 /* DNUserCell.xib in Resources */,
 				98B964291DE7DC1500E6ABF6 /* DNDiscoverViewC.xib in Resources */,
 				98FA30571E1F63C900F59168 /* DNDescriptionModifyViewC.xib in Resources */,
 				9818C13E1DDAE961001B16E9 /* LoginViewC.xib in Resources */,
+				98E358ED1E348EF1001A2BF8 /* DNCitys.plist in Resources */,
 				98D2F0B31E01452B001CD57D /* DNQ_ADetailViewC.xib in Resources */,
 				98FA30661E1FA6AD00F59168 /* DNLabelSetCell.xib in Resources */,
 				98D2F0B81E015637001CD57D /* DNQ_ADetailHederView.xib in Resources */,
+				986B4CA91E36FF8700541557 /* DNJobCell.xib in Resources */,
+				986677BF1E5352060062CCF5 /* DNReleaseActivityViewC.xib in Resources */,
 				98F6C1411E236830003C533C /* DNArea.plist in Resources */,
+				98EA92081E374A85008E4D58 /* DNRecruitPostCell.xib in Resources */,
+				987005FD1E273A640046BEBC /* webResource in Resources */,
+				98DD7FC21E51F36200E957AC /* DNActivityJoinCell.xib in Resources */,
 				98B964241DE7DBF400E6ABF6 /* DNHomeViewC.xib in Resources */,
+				989E38FA1E35E49C00FA7B61 /* DNRecruitBaseViewC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,11 +1328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EA91FF1E373D20008E4D58 /* DNRecruitDetailViewC.m in Sources */,
 				98B3F1271DF7EED900DAED69 /* UIImage+imageWithColor.m in Sources */,
 				98B964401DE8382E00E6ABF6 /* DNHomeButton.m in Sources */,
 				98976EB51DF16104001355BC /* DNAliSDKManager.m in Sources */,
 				98EEC7841E10ADDE0060B7C5 /* DNCollectRequest.m in Sources */,
 				9846DACE1E1E21690082CAD0 /* DNInformationViewC.m in Sources */,
+				989E39001E35E53E00FA7B61 /* DNRecruitViewC.m in Sources */,
 				98D2F0B21E01452B001CD57D /* DNQ_ADetailViewC.m in Sources */,
 				98ED49081DFFD33300C4A47E /* DNAnonymityQ_AViewModel.m in Sources */,
 				98ED49041DFFC8C700C4A47E /* DNAnonymityQ_ACell.m in Sources */,
@@ -984,32 +1345,56 @@
 				98B964461DE83AB200E6ABF6 /* DNHomeListRequestModel.m in Sources */,
 				98B613B41DE44B8C000F79B8 /* RigisterViewC.m in Sources */,
 				98B9641C1DE7D87600E6ABF6 /* DNTabBarController.m in Sources */,
+				987006111E278A080046BEBC /* DNAboutMeViewC.m in Sources */,
+				98939AD21E308B4200A67182 /* DNMyAnswersRequest.m in Sources */,
+				9862F39A1E31B731007B493A /* DNSearchViewC.m in Sources */,
 				9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */,
+				986B4CAC1E37339500541557 /* DNRecruitListRequest.m in Sources */,
 				984495261DED363100DA8F38 /* DNDianniuQ_AModel.m in Sources */,
 				98ABD7101E0A21CE002C5E36 /* DNAddFirendRequest.m in Sources */,
 				98ABD7131E0A3423002C5E36 /* DNShareSDKManager.m in Sources */,
 				98FA30651E1FA6AD00F59168 /* DNLabelSetCell.m in Sources */,
+				987005FB1E272E4D0046BEBC /* DNWebViewController.m in Sources */,
 				98B9641F1DE7DBCF00E6ABF6 /* DNMainNavigationC.m in Sources */,
+				98E358F01E3491FA001A2BF8 /* DNCitysViewModel.m in Sources */,
+				9862F39D1E31BC85007B493A /* DNQuestionsSearchRequest.m in Sources */,
 				98B964281DE7DC1500E6ABF6 /* DNDiscoverViewC.m in Sources */,
+				98D4735C1E47796700381DA1 /* DNApplyRecordCell.m in Sources */,
 				98D2035C1E128AA700F55022 /* DNReleaseQuestRequest.m in Sources */,
+				985CCF7E1E3847A400EAD4A3 /* DNRecruitRecordViewC.m in Sources */,
+				986677BA1E534E890062CCF5 /* DNActivityJoinRequest.m in Sources */,
 				9809C17E1DE6C60D00050505 /* DNUser.m in Sources */,
+				986B4CA11E36FA7A00541557 /* DNJobListRequest.m in Sources */,
 				98FBE55B1DFFF22E00FF0311 /* DNQuestingPraiseRequestModel.m in Sources */,
+				98D76D651E49DE9D00744727 /* DNReleaseRecruitViewC.m in Sources */,
+				98D473581E4776E300381DA1 /* DNApplyRecordViewC.m in Sources */,
 				9844952C1DED657E00DA8F38 /* DNDianniuQ_AViewModel.m in Sources */,
 				986586EB1DE53FEF00562815 /* UIViewExt.m in Sources */,
+				98939AE01E3095C400A67182 /* DNShieldListRequest.m in Sources */,
+				984CB7531E4C8A8A007CFFF1 /* DNActivityTableViewC.m in Sources */,
 				98EEC7871E1100830060B7C5 /* DNShieldRequest.m in Sources */,
 				98346CAA1E03EFFF001C5A45 /* DNAnswerCell.m in Sources */,
 				98160E6D1E1210530009C869 /* DNAskquestionViewC.m in Sources */,
+				98DD7FC11E51F36200E957AC /* DNActivityJoinCell.m in Sources */,
 				9843C5071DE2C7C900B6CA61 /* DNPhone.m in Sources */,
+				98646B861E54A4C6005342D6 /* DNDateSelectControl.m in Sources */,
+				98EA92151E37C0A3008E4D58 /* DNRecruitAddRequest.m in Sources */,
+				98D473551E4773DB00381DA1 /* DNRecruitApplyListRequest.m in Sources */,
 				98346CAE1E03F7CD001C5A45 /* DNAnswerListRequest.m in Sources */,
 				98ABD70D1E0A2127002C5E36 /* DNFollowRequest.m in Sources */,
 				9817FBCC1E1B5A0200213948 /* DNAddAnswerRequest.m in Sources */,
 				982607BE1E07D8930056FAFD /* DNUserDetailModel.m in Sources */,
 				9809C17B1DE6BD9700050505 /* DNRigisterModel.m in Sources */,
 				98346CA61E03E74F001C5A45 /* DNQ_ATableViewC.m in Sources */,
+				98939ACA1E3070EF00A67182 /* DNMyAnswerViewC.m in Sources */,
+				98939ADD1E3090A600A67182 /* DNBlacklistViewC.m in Sources */,
+				9870060A1E27763C0046BEBC /* DNCollectListRequest.m in Sources */,
 				98EEC78A1E11010E0060B7C5 /* DNBlacklistRequest.m in Sources */,
 				9888B5761E0BCF090077CE9A /* DNShareCountRequest.m in Sources */,
 				98346CB11E03FB7B001C5A45 /* DNAnswerViewModel.m in Sources */,
 				9846DAD21E1E4AA90082CAD0 /* DNProfileModifyRequest.m in Sources */,
+				984CB7501E4C590D007CFFF1 /* DNAddJobRecruitRequest.m in Sources */,
+				987005F21E26097C0046BEBC /* DNSettingViewC.m in Sources */,
 				98FA30601E1F75B900F59168 /* DNLabelSetViewC.m in Sources */,
 				98346CB41E040F71001C5A45 /* DNAnswerPraiseRequest.m in Sources */,
 				98F6C1441E236E7F003C533C /* DNSelectControl.m in Sources */,
@@ -1018,28 +1403,53 @@
 				9843C50A1DE2CC1700B6CA61 /* DNWebServiceBaseModel.m in Sources */,
 				982607B41E078CEE0056FAFD /* DNUserDetailC.m in Sources */,
 				98BF78781DEF3B2500C8B49C /* DNAnonymityQ_ATableViewC.m in Sources */,
+				985CCF811E38505200EAD4A3 /* DNMyRecruitList.m in Sources */,
+				984CB74D1E4C40CA007CFFF1 /* DNSingleSelectControl.m in Sources */,
 				98FA30511E1F3E3700F59168 /* DNNicknameModifyViewC.m in Sources */,
 				98EEC7791E0BDA390060B7C5 /* DNAddQuestionView.m in Sources */,
 				982607C31E07F25F0056FAFD /* NSArray+FixNilBug.m in Sources */,
+				98DD7FC51E51F94500E957AC /* DNActivityDetailRequest.m in Sources */,
 				98B3F12B1DF8149E00DAED69 /* DNPicturebrowsingC.m in Sources */,
 				98B964231DE7DBF400E6ABF6 /* DNHomeViewC.m in Sources */,
 				98FA30561E1F63C900F59168 /* DNDescriptionModifyViewC.m in Sources */,
+				986B4CA81E36FF8700541557 /* DNJobCell.m in Sources */,
 				98E4BC651DEEB30D00F805B5 /* DNDianniuQ_ACell.m in Sources */,
 				98EEC78D1E11053A0060B7C5 /* DNReportViewC.m in Sources */,
 				9843C50D1DE2D15D00B6CA61 /* DNWebServiceConfig.m in Sources */,
+				989E39031E361D8000FA7B61 /* DNDiscoverCollectionView.m in Sources */,
 				986586EE1DE54AE600562815 /* DNKit.m in Sources */,
 				9818C1081DDAE345001B16E9 /* DNAppDelegate.m in Sources */,
 				98B613B01DE42794000F79B8 /* DNLoginModel.m in Sources */,
+				98EA92071E374A85008E4D58 /* DNRecruitPostCell.m in Sources */,
+				98F3A9BD1E50AC1C00D73C52 /* DNActivityDetailViewC.m in Sources */,
+				989E38FD1E35E51900FA7B61 /* DNJobViewC.m in Sources */,
+				989E38F91E35E49C00FA7B61 /* DNRecruitBaseViewC.m in Sources */,
 				9809C1811DE6D16100050505 /* DNUserModel.m in Sources */,
+				98EA92111E37B2F8008E4D58 /* DNRecruitDesciptionCell.m in Sources */,
 				98B964321DE7DC4A00E6ABF6 /* DNMessageViewC.m in Sources */,
+				98F813BE1E4EECBF0020521A /* DNActivityListRequest.m in Sources */,
 				98B9642D1DE7DC3000E6ABF6 /* DNProfileViewC.m in Sources */,
+				98939AC71E3066D000A67182 /* DNMyQuestingViewC.m in Sources */,
+				98E358EB1E348BB7001A2BF8 /* DNCitySelectViewC.m in Sources */,
 				986586F51DE571AC00562815 /* DNVerifyCodeModel.m in Sources */,
+				98D76D6A1E4A174F00744727 /* DNActivityBaseViewC.m in Sources */,
 				98D2F0B61E015628001CD57D /* DNQ_ADetailHederView.m in Sources */,
 				9818C1051DDAE345001B16E9 /* main.m in Sources */,
+				984CB7571E4C936C007CFFF1 /* DNActivityCell.m in Sources */,
+				981DBF431E34A8E70035C025 /* DNCitySelectTableHederView.m in Sources */,
+				987006021E27620F0046BEBC /* DNMyCollectViewC.m in Sources */,
 				98EEC7901E11279D0060B7C5 /* DNReportRequest.m in Sources */,
+				98939AD61E308E9800A67182 /* DNUserCell.m in Sources */,
 				9818C13D1DDAE961001B16E9 /* LoginViewC.m in Sources */,
 				98FA305B1E1F685F00F59168 /* DNSexModifyViewC.m in Sources */,
+				98939ACE1E3071C200A67182 /* DNMyAnswerCell.m in Sources */,
+				987006061E27702E0046BEBC /* DNCollectCell.m in Sources */,
+				987005F51E2617510046BEBC /* DNAccountSetingViewC.m in Sources */,
+				987005F81E261B400046BEBC /* DNPrivacySettingViewC.m in Sources */,
 				98F6C1481E238F40003C533C /* DNMoreLabelViewC.m in Sources */,
+				986677BE1E5352060062CCF5 /* DNReleaseActivityViewC.m in Sources */,
+				98EA920C1E379AF7008E4D58 /* DNRecruitInfoCell.m in Sources */,
+				98EA92031E37439B008E4D58 /* DNRecruitDetailRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1147,9 +1557,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Dianniu/Dianniu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Qfpay Technology Company Limited";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jianjun ye (6BV6AZ84B6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E65EHHBW35;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1165,9 +1575,8 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycherry.dianniu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ycherry.dianniua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -1181,9 +1590,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Dianniu/Dianniu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Qfpay Technology Company Limited (V7WST9CUNZ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yiwu Wangbao Network Technology Co., Ltd. (64QVSKL2QT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E65EHHBW35;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1199,9 +1608,8 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycherry.dianniu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ycherry.dianniua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};

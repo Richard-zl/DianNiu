@@ -253,7 +253,7 @@
                 <outlet property="praiseValueLb" destination="z6N-PK-1HD" id="jSU-fu-pF5"/>
                 <outlet property="tagLb" destination="TwN-Mr-JtX" id="3bU-ix-Rrx"/>
             </connections>
-            <point key="canvasLocation" x="29" y="-187.5"/>
+            <point key="canvasLocation" x="-2" y="-192"/>
         </view>
         <tapGestureRecognizer id="hDP-Qx-joC">
             <connections>
@@ -263,6 +263,6 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="default_head_icon" width="51" height="51"/>
+        <image name="default_head_icon" width="60" height="60"/>
     </resources>
 </document>

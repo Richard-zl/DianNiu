@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DNDescriptionCell" rowHeight="296" id="KGk-i7-Jjw" customClass="DNRecruitDesciptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="296"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="295.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPk-cz-e4R">
+                        <rect key="frame" x="8" y="8" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o35-sS-0c3">
+                        <rect key="frame" x="8" y="37" width="100" height="172"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Qc7-6Z-ISX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdY-IW-yzl">
+                        <rect key="frame" x="8" y="224.5" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfafafafafasdfadfasdfafadfdaf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc4-vl-Ead">
+                        <rect key="frame" x="8" y="253.5" width="233" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xPk-cz-e4R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="3QN-3F-vgT"/>
+                    <constraint firstItem="oc4-vl-Ead" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="6Jg-OB-GSD"/>
+                    <constraint firstItem="o35-sS-0c3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="abk-hX-eoA"/>
+                    <constraint firstItem="kdY-IW-yzl" firstAttribute="top" secondItem="o35-sS-0c3" secondAttribute="bottom" constant="15.5" id="eNm-Sj-sfg"/>
+                    <constraint firstItem="xPk-cz-e4R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fCM-65-Z2j"/>
+                    <constraint firstItem="oc4-vl-Ead" firstAttribute="top" secondItem="kdY-IW-yzl" secondAttribute="bottom" constant="8" id="q6C-ac-SbQ"/>
+                    <constraint firstItem="kdY-IW-yzl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qhN-xc-jXm"/>
+                    <constraint firstItem="o35-sS-0c3" firstAttribute="top" secondItem="xPk-cz-e4R" secondAttribute="bottom" constant="8" id="yBn-Za-yff"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contactLb" destination="oc4-vl-Ead" id="blY-AM-1g9"/>
+                <outlet property="descriptionKeyLb" destination="xPk-cz-e4R" id="TaS-qh-qel"/>
+                <outlet property="descriptionLbWidthCons" destination="Qc7-6Z-ISX" id="5lz-7Z-9oV"/>
+                <outlet property="descriptionValueLb" destination="o35-sS-0c3" id="LXf-2T-uxq"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="191"/>
+        </tableViewCell>
+    </objects>
+</document>

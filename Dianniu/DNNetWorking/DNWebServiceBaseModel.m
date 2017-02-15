@@ -32,7 +32,6 @@
         });
         return;
     }
-    
     [mutableRequest setTimeoutInterval:timeout];
     
     __block NSURLSessionDataTask *sessionTask = [manager dataTaskWithRequest:mutableRequest completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
@@ -127,6 +126,7 @@
         case 800:
         //这儿做退出登录 并且回到登录页的逻辑
         DNEvent(kDNKeyNoticeLogout, nil);
+        DNAlert(@"提示", @"登陆已过期，请重新登陆", @"确定", nil);
         break;
         
         default:

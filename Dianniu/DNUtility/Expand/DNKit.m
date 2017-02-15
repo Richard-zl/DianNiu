@@ -20,7 +20,7 @@ id DNAlert(NSString *title, NSString *msg, NSString *buttonText, void (^cancelBl
                 cancelBlock();
             }
         }];
-        [cancelAction setValue:DNThemeColor forKey:@"_titleTextColor"];
+        [cancelAction setValue:[UIColor blackColor] forKey:@"_titleTextColor"];
         [alertController addAction:cancelAction];
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
         return alertController;
@@ -49,7 +49,7 @@ id DNTextAlert(NSString *title, NSString *msg, NSArray *texts, void(^actionBlock
                     actionBlock([texts indexOfObject:text]);
                 }
             }];
-            [action setValue:DNThemeColor forKey:@"_titleTextColor"];
+            [action setValue:[UIColor blackColor] forKey:@"_titleTextColor"];
             [alertController addAction:action];
         }
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];

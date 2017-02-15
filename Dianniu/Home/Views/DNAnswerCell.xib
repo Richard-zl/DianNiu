@@ -16,14 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JTF-1h-DQs">
-                        <rect key="frame" x="20" y="8" width="27" height="27"/>
+                        <rect key="frame" x="20" y="8" width="32" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="27" id="JHD-cv-FPw"/>
-                            <constraint firstAttribute="height" constant="27" id="k6C-5c-afF"/>
+                            <constraint firstAttribute="width" constant="32" id="JHD-cv-FPw"/>
+                            <constraint firstAttribute="height" constant="32" id="k6C-5c-afF"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -33,19 +33,22 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隔壁小刘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="49.5" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-Cu-7Oy">
-                        <rect key="frame" x="55" y="8" width="53.5" height="16"/>
+                        <rect key="frame" x="60" y="8" width="53.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ODG-ej-XcM"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淘宝/母婴/店长|浙江杭州" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="124" translatesAutoresizingMaskIntoConstraints="NO" id="uUh-BK-QyW">
-                        <rect key="frame" x="55" y="21" width="124" height="14"/>
+                        <rect key="frame" x="60" y="26" width="124" height="14"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSF-gc-gvi">
-                        <rect key="frame" x="262" y="12" width="45" height="19"/>
+                        <rect key="frame" x="262" y="14.5" width="45" height="19"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="45" id="NCC-k2-v1p"/>
                         </constraints>
@@ -67,7 +70,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是可以自适应的内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="180" translatesAutoresizingMaskIntoConstraints="NO" id="C3W-Km-5e5">
-                        <rect key="frame" x="55" y="43" width="180" height="20.5"/>
+                        <rect key="frame" x="60" y="48" width="180" height="15.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="180" id="rF6-ip-V6E"/>
                         </constraints>
@@ -98,6 +101,7 @@
                 <outlet property="contentLbWidthCons" destination="rF6-ip-V6E" id="9O0-ux-nQ6"/>
                 <outlet property="hedaerImageView" destination="JTF-1h-DQs" id="v7T-wl-hz2"/>
                 <outlet property="nameLb" destination="y1z-Cu-7Oy" id="fEO-oU-ytM"/>
+                <outlet property="nameLbHeightCons" destination="ODG-ej-XcM" id="UTC-kg-Skj"/>
                 <outlet property="praiseBut" destination="tSF-gc-gvi" id="MZc-3o-LE9"/>
                 <outlet property="tagLb" destination="uUh-BK-QyW" id="bKK-HZ-TqI"/>
             </connections>
@@ -105,7 +109,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="default_head_icon" width="51" height="51"/>
+        <image name="default_head_icon" width="60" height="60"/>
         <image name="home_click_praise_icon_nor" width="20" height="19"/>
         <image name="home_click_praise_icon_sel" width="20" height="19"/>
     </resources>

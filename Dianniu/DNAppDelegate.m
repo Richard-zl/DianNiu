@@ -11,6 +11,8 @@
 #import "DNWebServiceConfig.h"
 #import <ALBBMediaService/ALBBMediaService.h>
 #import "DNShareSDKManager.h"
+#import "DNPhone.h"
+#import <AFNetworking.h>
 @interface DNAppDelegate ()
 
 @end
@@ -64,7 +66,8 @@
 - (void)configurGlobal{
     [[DNWebServiceConfig shared] confirmENV:DNWebServiceENV_product];
     [[DNShareSDKManager shared] configurSDK];
-    [SVProgressHUD setBackgroundColor:[DNThemeColor colorWithAlphaComponent:0.9]];
+    [DNPhone shared];
+    [SVProgressHUD setBackgroundColor:[RGBColor(33, 33, 33) colorWithAlphaComponent:0.9]];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
 
 }
@@ -80,7 +83,6 @@
 - (void)logout{
     [[DNUser sheared] clearDNUser];
     [self showLoginViewC];
-    DNAlert(@"提示", @"登陆已过期，请重新登陆", @"确定", nil);
 }
 
 

@@ -128,17 +128,13 @@
 
 }
 
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
-- (id)objectForKey:(id)aKey{
+- (id)DNObjectForKey:(id)aKey{
     id value = [self valueForKey:aKey];
     if ([value isKindOfClass:[NSNull class]]) {
         return nil;
     }
     return value;
 }
-#pragma clang diagnostic pop
 
 
 - (NSString *)jsonString

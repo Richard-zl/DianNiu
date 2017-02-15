@@ -18,6 +18,8 @@
 @property (nonatomic, copy) NSString *label;
 @property (nonatomic, copy) NSNumber *mobile;
 @property (nonatomic, assign) NSInteger authLevel;
+@property (nonatomic, assign) NSInteger dataPrivacy; //0所有人可见，1好友可见
+@property (nonatomic, assign) NSInteger beFriend;    //0所有人可加好友，1不可加好友
 
 + (instancetype)modelWithUserDictionary:(NSDictionary *)dict;
 

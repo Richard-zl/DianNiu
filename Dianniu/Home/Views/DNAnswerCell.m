@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *praiseBut;
 @property (weak, nonatomic) IBOutlet UILabel *contentLb;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentLbWidthCons;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *nameLbHeightCons;
+
 
 @end
 
@@ -50,6 +52,7 @@
 - (void)configurDianniuAnswerViews{
     self.tagLb.hidden = NO;
     self.tagLb.text = _viewModel.label;
+    self.nameLbHeightCons.constant = 16.0;
     self.nameLb.text = _viewModel.realName;
     NSURL *hederURL = [NSURL URLWithString:[DNAliSDKManager aliMediaSDKImagePath:_viewModel.headPic]];
     [self.hedaerImageView sd_setImageWithURL:hederURL placeholderImage:[UIImage imageNamed:@"default_head_icon"]];
@@ -57,6 +60,7 @@
 
 - (void)configurAnonymityAnswerViews{
     self.tagLb.hidden = YES;
+    self.nameLbHeightCons.constant = 32.0;
     self.nameLb.text = _viewModel.aliasName;
     NSURL *hederURL = [NSURL URLWithString:[DNAliSDKManager aliMediaSDKImagePath:_viewModel.aliasHeadPic]];
     [self.hedaerImageView sd_setImageWithURL:hederURL placeholderImage:[UIImage imageNamed:@"default_head_icon"]];

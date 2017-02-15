@@ -8,6 +8,7 @@ target ‘Dianniu’ do
     pod 'SVProgressHUD', '~> 1.1.3'
     pod 'MJRefresh', '~> 3.1.0'
     pod 'AFNetworking'
+    pod 'Masonry'
 
     pod 'ShareSDK2'
     pod 'MOBFoundation'

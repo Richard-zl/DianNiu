@@ -57,7 +57,6 @@
 }
 
 #pragma mark private
-
 - (void)creatAccessoryView{
     UIToolbar *toolBar = [[UIToolbar alloc] init];
     toolBar.barStyle = UIBarStyleDefault;
@@ -105,9 +104,14 @@
     }else{
         NSInteger section = [pickerView selectedRowInComponent:0];
         if (section >= 0 && section < self.dataSource.count) {
-           return self.dataSource[section][@"citys"][row][@"city"];
+            NSArray *citysArr = self.dataSource[section][@"citys"];
+            if (row < citysArr.count) {
+                return citysArr[row][@"city"];
+            }else{
+                return @"";
+            }
         }else{
-            return nil;
+            return @"";
         }
     }
 }
