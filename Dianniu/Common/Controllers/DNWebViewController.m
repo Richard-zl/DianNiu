@@ -50,6 +50,8 @@
     }
 }
 
+
+
 #pragma public
 - (void)executeScript:(NSString *)script delay:(NSInteger)second{
     if (self.webView) {

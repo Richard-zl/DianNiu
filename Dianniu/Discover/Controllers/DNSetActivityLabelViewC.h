@@ -1,0 +1,13 @@
+//
+//  DNSetActivityLabelViewC.h
+//  Dianniu
+//
+//  Created by RIMI on 2017/2/17.
+//  Copyright © 2017年 Dianniu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface DNSetActivityLabelViewC : UIViewController
+@property (nonatomic, copy) void(^didSelectedLabel)(NSString *labelText);
+@end

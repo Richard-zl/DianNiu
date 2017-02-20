@@ -10,6 +10,8 @@
 #import "DNActivityJoinCell.h"
 #import "DNActivityDetailRequest.h"
 #import "DNActivityJoinRequest.h"
+#import <CoreLocation/CoreLocation.h>
+#import "DNMapViewC.h"
 
 #define DNActivityJoinCellHeight 25.0
 @interface DNActivityDetailViewC ()<UITableViewDelegate,UITableViewDataSource>
@@ -17,9 +19,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *joinButton;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableviewHeightCons;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeightCons;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *joinButHeightCons;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *desriptionLbHeightCons;
+
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *detailButton;//详情button
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, assign) CLLocationCoordinate2D coord;
 
 //text
 @property (weak, nonatomic) IBOutlet UILabel *joinNumberLb;//参加人数
@@ -67,6 +75,9 @@
     request.activityId = self.activityId;
     [request httpRequest:15 success:^(NSURLSessionDataTask *sessionTask, id respondObj) {
         NSDictionary *detailDict = [respondObj DNObjectForKey:@"detail"];
+        double longitude = [[detailDict DNObjectForKey:@"longitude"] doubleValue];
+        double latitude  = [[detailDict DNObjectForKey:@"latitude"] doubleValue];
+        self.coord = CLLocationCoordinate2DMake(latitude, longitude);
         NSInteger state = [[detailDict DNObjectForKey:@"status"] integerValue];
         NSInteger accountId = [[detailDict DNObjectForKey:@"accountId"] integerValue];
         if ([[DNUser sheared].userId integerValue] == accountId) {
@@ -77,9 +88,18 @@
         [self changeButtonTextWithState:state];
         [self changeTableViewHeight];
         [self changeTextWithDetailDict:detailDict];
+        [self changeContentViewheightWithDetailDict:detailDict];
     } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
         [self.navigationController popViewControllerAnimated:YES];
     }];
+}
+
+- (void)changeContentViewheightWithDetailDict:(NSDictionary *)detailDict{
+    NSString *contentStr = [detailDict DNObjectForKey:@"content"];
+    CGFloat labelHeight  = [contentStr boundingRectWithSize:CGSizeMake(self.activityDesriptionLb.width, 800) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.activityDesriptionLb.font} context:nil].size.height + 1;
+    self.desriptionLbHeightCons.constant = labelHeight;
+    [self.scrollView layoutIfNeeded];
+    self.contentViewHeightCons.constant = self.activityDesriptionLb.bottom + 10;
 }
 
 - (void)changeTextWithDetailDict:(NSDictionary *)detailDict{
@@ -134,7 +154,7 @@
         buttonText = @"已拒绝";
     }else{
         //本人发布的需要隐藏
-        [self.joinButton removeFromSuperview];
+        self.joinButHeightCons.constant = 0;
     }
     [self.joinButton setTitle:buttonText forState:UIControlStateNormal];
 }
@@ -155,6 +175,13 @@
     } failed:^(NSURLSessionDataTask *sessionTask, NSError *error) {
         sender.enabled = YES;
     }];
+}
+- (IBAction)locationButtionAction:(UIButton *)sender {
+    if (self.coord.longitude && self.coord.latitude) {
+        DNMapViewC *mapViewC = [[DNMapViewC alloc] init];
+        mapViewC.currentCoord = self.coord;
+        [self.navigationController pushViewController:mapViewC animated:YES];
+    }
 }
 
 

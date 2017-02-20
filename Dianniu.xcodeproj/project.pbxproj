@@ -51,6 +51,19 @@
 		9862F39D1E31BC85007B493A /* DNQuestionsSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9862F39C1E31BC85007B493A /* DNQuestionsSearchRequest.m */; };
 		9863B5011DE2F4E800375CD0 /* DNWebServiceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */; };
 		98646B861E54A4C6005342D6 /* DNDateSelectControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 98646B851E54A4C6005342D6 /* DNDateSelectControl.m */; };
+		98646BAC1E54B144005342D6 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BA71E54B144005342D6 /* BaiduMapAPI_Base.framework */; };
+		98646BAD1E54B144005342D6 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BA81E54B144005342D6 /* BaiduMapAPI_Location.framework */; };
+		98646BAE1E54B144005342D6 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BA91E54B144005342D6 /* BaiduMapAPI_Map.framework */; };
+		98646BAF1E54B144005342D6 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BAA1E54B144005342D6 /* BaiduMapAPI_Search.framework */; };
+		98646BB01E54B144005342D6 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BAB1E54B144005342D6 /* BaiduMapAPI_Utils.framework */; };
+		98646BB31E54B162005342D6 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BB11E54B162005342D6 /* libcrypto.a */; };
+		98646BB41E54B162005342D6 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BB21E54B162005342D6 /* libssl.a */; };
+		98646BB61E54B22C005342D6 /* DNBaiduMapConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98646BB51E54B22C005342D6 /* DNBaiduMapConfig.mm */; };
+		98646BB81E54B2BE005342D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BB71E54B2BE005342D6 /* QuartzCore.framework */; };
+		98646BBA1E54B2CB005342D6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BB91E54B2CB005342D6 /* OpenGLES.framework */; };
+		98646BBC1E54B2F6005342D6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BBB1E54B2F6005342D6 /* libsqlite3.0.tbd */; };
+		98646BBE1E54B319005342D6 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98646BBD1E54B319005342D6 /* libstdc++.6.0.9.tbd */; };
+		98646BC11E54B398005342D6 /* DNMapViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98646BC01E54B398005342D6 /* DNMapViewC.m */; };
 		986586EB1DE53FEF00562815 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586EA1DE53FEF00562815 /* UIViewExt.m */; };
 		986586EE1DE54AE600562815 /* DNKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586ED1DE54AE600562815 /* DNKit.m */; };
 		986586F51DE571AC00562815 /* DNVerifyCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 986586F41DE571AC00562815 /* DNVerifyCodeModel.m */; };
@@ -146,6 +159,9 @@
 		98E358EB1E348BB7001A2BF8 /* DNCitySelectViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E358EA1E348BB7001A2BF8 /* DNCitySelectViewC.m */; };
 		98E358ED1E348EF1001A2BF8 /* DNCitys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98E358EC1E348EF1001A2BF8 /* DNCitys.plist */; };
 		98E358F01E3491FA001A2BF8 /* DNCitysViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E358EF1E3491FA001A2BF8 /* DNCitysViewModel.m */; };
+		98E401441E55875300D306B3 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 98E401431E55875300D306B3 /* mapapi.bundle */; };
+		98E401471E56054100D306B3 /* DNSetActivityLabelViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E401461E56054100D306B3 /* DNSetActivityLabelViewC.m */; };
+		98E4014A1E5613A600D306B3 /* DNReleaseActivityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E401491E5613A600D306B3 /* DNReleaseActivityRequest.m */; };
 		98E4BC651DEEB30D00F805B5 /* DNDianniuQ_ACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E4BC631DEEB30D00F805B5 /* DNDianniuQ_ACell.m */; };
 		98EA91FF1E373D20008E4D58 /* DNRecruitDetailViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA91FD1E373D20008E4D58 /* DNRecruitDetailViewC.m */; };
 		98EA92001E373D20008E4D58 /* DNRecruitDetailViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EA91FE1E373D20008E4D58 /* DNRecruitDetailViewC.xib */; };
@@ -270,6 +286,25 @@
 		9863B5001DE2F4E800375CD0 /* DNWebServiceKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNWebServiceKeys.m; sourceTree = "<group>"; };
 		98646B841E54A4C6005342D6 /* DNDateSelectControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDateSelectControl.h; sourceTree = "<group>"; };
 		98646B851E54A4C6005342D6 /* DNDateSelectControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDateSelectControl.m; sourceTree = "<group>"; };
+		98646B871E54AFD9005342D6 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Base.framework; path = ../../Downloads/BaiduMap_IOSSDK_v3.2.1_Lib/BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		98646B881E54AFD9005342D6 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Location.framework; path = ../../Downloads/BaiduMap_IOSSDK_v3.2.1_Lib/BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		98646B891E54AFD9005342D6 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Map.framework; path = ../../Downloads/BaiduMap_IOSSDK_v3.2.1_Lib/BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		98646B8A1E54AFD9005342D6 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Search.framework; path = ../../Downloads/BaiduMap_IOSSDK_v3.2.1_Lib/BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		98646B8B1E54AFD9005342D6 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Utils.framework; path = ../../Downloads/BaiduMap_IOSSDK_v3.2.1_Lib/BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		98646BA71E54B144005342D6 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		98646BA81E54B144005342D6 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		98646BA91E54B144005342D6 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		98646BAA1E54B144005342D6 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		98646BAB1E54B144005342D6 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		98646BB11E54B162005342D6 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		98646BB21E54B162005342D6 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		98646BB51E54B22C005342D6 /* DNBaiduMapConfig.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DNBaiduMapConfig.mm; sourceTree = "<group>"; };
+		98646BB71E54B2BE005342D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		98646BB91E54B2CB005342D6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		98646BBB1E54B2F6005342D6 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		98646BBD1E54B319005342D6 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		98646BBF1E54B398005342D6 /* DNMapViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMapViewC.h; sourceTree = "<group>"; };
+		98646BC01E54B398005342D6 /* DNMapViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMapViewC.m; sourceTree = "<group>"; };
 		986586E91DE53FEF00562815 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		986586EA1DE53FEF00562815 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		986586EC1DE54AE600562815 /* DNKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNKit.h; path = Expand/DNKit.h; sourceTree = "<group>"; };
@@ -429,6 +464,11 @@
 		98E358EC1E348EF1001A2BF8 /* DNCitys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DNCitys.plist; sourceTree = "<group>"; };
 		98E358EE1E3491FA001A2BF8 /* DNCitysViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCitysViewModel.h; sourceTree = "<group>"; };
 		98E358EF1E3491FA001A2BF8 /* DNCitysViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCitysViewModel.m; sourceTree = "<group>"; };
+		98E401431E55875300D306B3 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		98E401451E56054100D306B3 /* DNSetActivityLabelViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSetActivityLabelViewC.h; sourceTree = "<group>"; };
+		98E401461E56054100D306B3 /* DNSetActivityLabelViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSetActivityLabelViewC.m; sourceTree = "<group>"; };
+		98E401481E5613A600D306B3 /* DNReleaseActivityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNReleaseActivityRequest.h; sourceTree = "<group>"; };
+		98E401491E5613A600D306B3 /* DNReleaseActivityRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNReleaseActivityRequest.m; sourceTree = "<group>"; };
 		98E4BC621DEEB30D00F805B5 /* DNDianniuQ_ACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDianniuQ_ACell.h; sourceTree = "<group>"; };
 		98E4BC631DEEB30D00F805B5 /* DNDianniuQ_ACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDianniuQ_ACell.m; sourceTree = "<group>"; };
 		98EA91FC1E373D20008E4D58 /* DNRecruitDetailViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNRecruitDetailViewC.h; sourceTree = "<group>"; };
@@ -501,6 +541,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98646BB31E54B162005342D6 /* libcrypto.a in Frameworks */,
+				98646BB41E54B162005342D6 /* libssl.a in Frameworks */,
+				98646BBE1E54B319005342D6 /* libstdc++.6.0.9.tbd in Frameworks */,
+				98646BBC1E54B2F6005342D6 /* libsqlite3.0.tbd in Frameworks */,
+				98646BBA1E54B2CB005342D6 /* OpenGLES.framework in Frameworks */,
+				98646BB81E54B2BE005342D6 /* QuartzCore.framework in Frameworks */,
+				98646BAC1E54B144005342D6 /* BaiduMapAPI_Base.framework in Frameworks */,
+				98646BAD1E54B144005342D6 /* BaiduMapAPI_Location.framework in Frameworks */,
+				98646BAE1E54B144005342D6 /* BaiduMapAPI_Map.framework in Frameworks */,
+				98646BAF1E54B144005342D6 /* BaiduMapAPI_Search.framework in Frameworks */,
+				98646BB01E54B144005342D6 /* BaiduMapAPI_Utils.framework in Frameworks */,
 				98DF837D1DF00C0D000B4E56 /* CoreGraphics.framework in Frameworks */,
 				98DF836C1DF0000E000B4E56 /* Security.framework in Frameworks */,
 				98DF837B1DF008FA000B4E56 /* libz.tbd in Frameworks */,
@@ -526,6 +577,15 @@
 		7DEE739CAB041440647388C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				98646BBD1E54B319005342D6 /* libstdc++.6.0.9.tbd */,
+				98646BBB1E54B2F6005342D6 /* libsqlite3.0.tbd */,
+				98646BB91E54B2CB005342D6 /* OpenGLES.framework */,
+				98646BB71E54B2BE005342D6 /* QuartzCore.framework */,
+				98646B871E54AFD9005342D6 /* BaiduMapAPI_Base.framework */,
+				98646B881E54AFD9005342D6 /* BaiduMapAPI_Location.framework */,
+				98646B891E54AFD9005342D6 /* BaiduMapAPI_Map.framework */,
+				98646B8A1E54AFD9005342D6 /* BaiduMapAPI_Search.framework */,
+				98646B8B1E54AFD9005342D6 /* BaiduMapAPI_Utils.framework */,
 				98DF837C1DF00C0D000B4E56 /* CoreGraphics.framework */,
 				98DF837A1DF008FA000B4E56 /* libz.tbd */,
 				98DF83751DF00046000B4E56 /* Foundation.framework */,
@@ -584,6 +644,7 @@
 		9818C1031DDAE345001B16E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				98646BA51E54B0F2005342D6 /* BaiduMap_IOSSDK_v3.2.1_Lib */,
 				987005FC1E273A640046BEBC /* webResource */,
 				98F6C1401E236830003C533C /* DNArea.plist */,
 				98E358EC1E348EF1001A2BF8 /* DNCitys.plist */,
@@ -1049,8 +1110,34 @@
 				98DD7FC41E51F94500E957AC /* DNActivityDetailRequest.m */,
 				986677B81E534E890062CCF5 /* DNActivityJoinRequest.h */,
 				986677B91E534E890062CCF5 /* DNActivityJoinRequest.m */,
+				98E401481E5613A600D306B3 /* DNReleaseActivityRequest.h */,
+				98E401491E5613A600D306B3 /* DNReleaseActivityRequest.m */,
 			);
 			name = NetWorkModel;
+			sourceTree = "<group>";
+		};
+		98646BA51E54B0F2005342D6 /* BaiduMap_IOSSDK_v3.2.1_Lib */ = {
+			isa = PBXGroup;
+			children = (
+				98E401431E55875300D306B3 /* mapapi.bundle */,
+				98646BA71E54B144005342D6 /* BaiduMapAPI_Base.framework */,
+				98646BA81E54B144005342D6 /* BaiduMapAPI_Location.framework */,
+				98646BA91E54B144005342D6 /* BaiduMapAPI_Map.framework */,
+				98646BAA1E54B144005342D6 /* BaiduMapAPI_Search.framework */,
+				98646BAB1E54B144005342D6 /* BaiduMapAPI_Utils.framework */,
+				98646BA61E54B0F2005342D6 /* thirdlibs */,
+				98646BB51E54B22C005342D6 /* DNBaiduMapConfig.mm */,
+			);
+			path = BaiduMap_IOSSDK_v3.2.1_Lib;
+			sourceTree = "<group>";
+		};
+		98646BA61E54B0F2005342D6 /* thirdlibs */ = {
+			isa = PBXGroup;
+			children = (
+				98646BB11E54B162005342D6 /* libcrypto.a */,
+				98646BB21E54B162005342D6 /* libssl.a */,
+			);
+			path = thirdlibs;
 			sourceTree = "<group>";
 		};
 		987005FE1E2761A80046BEBC /* setting */ = {
@@ -1132,6 +1219,8 @@
 				982607B31E078CEE0056FAFD /* DNUserDetailC.xib */,
 				987005F91E272E4D0046BEBC /* DNWebViewController.h */,
 				987005FA1E272E4D0046BEBC /* DNWebViewController.m */,
+				98646BBF1E54B398005342D6 /* DNMapViewC.h */,
+				98646BC01E54B398005342D6 /* DNMapViewC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1150,6 +1239,8 @@
 				986677BB1E5352060062CCF5 /* DNReleaseActivityViewC.h */,
 				986677BC1E5352060062CCF5 /* DNReleaseActivityViewC.m */,
 				986677BD1E5352060062CCF5 /* DNReleaseActivityViewC.xib */,
+				98E401451E56054100D306B3 /* DNSetActivityLabelViewC.h */,
+				98E401461E56054100D306B3 /* DNSetActivityLabelViewC.m */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -1197,8 +1288,7 @@
 				TargetAttributes = {
 					9818C0FF1DDAE345001B16E9 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 64QVSKL2QT;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1251,6 +1341,7 @@
 				98F3A9BE1E50AC1C00D73C52 /* DNActivityDetailViewC.xib in Resources */,
 				98FA305C1E1F685F00F59168 /* DNSexModifyViewC.xib in Resources */,
 				984CB7581E4C936C007CFFF1 /* DNActivityCell.xib in Resources */,
+				98E401441E55875300D306B3 /* mapapi.bundle in Resources */,
 				98ED49051DFFC8C700C4A47E /* DNAnonymityQ_ACell.xib in Resources */,
 				98EA92001E373D20008E4D58 /* DNRecruitDetailViewC.xib in Resources */,
 				98160E6E1E1210530009C869 /* DNAskquestionViewC.xib in Resources */,
@@ -1356,6 +1447,7 @@
 				98FA30651E1FA6AD00F59168 /* DNLabelSetCell.m in Sources */,
 				987005FB1E272E4D0046BEBC /* DNWebViewController.m in Sources */,
 				98B9641F1DE7DBCF00E6ABF6 /* DNMainNavigationC.m in Sources */,
+				98E4014A1E5613A600D306B3 /* DNReleaseActivityRequest.m in Sources */,
 				98E358F01E3491FA001A2BF8 /* DNCitysViewModel.m in Sources */,
 				9862F39D1E31BC85007B493A /* DNQuestionsSearchRequest.m in Sources */,
 				98B964281DE7DC1500E6ABF6 /* DNDiscoverViewC.m in Sources */,
@@ -1397,6 +1489,7 @@
 				987005F21E26097C0046BEBC /* DNSettingViewC.m in Sources */,
 				98FA30601E1F75B900F59168 /* DNLabelSetViewC.m in Sources */,
 				98346CB41E040F71001C5A45 /* DNAnswerPraiseRequest.m in Sources */,
+				98646BB61E54B22C005342D6 /* DNBaiduMapConfig.mm in Sources */,
 				98F6C1441E236E7F003C533C /* DNSelectControl.m in Sources */,
 				98B3F1241DF7B0DF00DAED69 /* DNContentImageCollectionView.m in Sources */,
 				98B964391DE7E40400E6ABF6 /* DNKeychain.m in Sources */,
@@ -1409,9 +1502,11 @@
 				98EEC7791E0BDA390060B7C5 /* DNAddQuestionView.m in Sources */,
 				982607C31E07F25F0056FAFD /* NSArray+FixNilBug.m in Sources */,
 				98DD7FC51E51F94500E957AC /* DNActivityDetailRequest.m in Sources */,
+				98E401471E56054100D306B3 /* DNSetActivityLabelViewC.m in Sources */,
 				98B3F12B1DF8149E00DAED69 /* DNPicturebrowsingC.m in Sources */,
 				98B964231DE7DBF400E6ABF6 /* DNHomeViewC.m in Sources */,
 				98FA30561E1F63C900F59168 /* DNDescriptionModifyViewC.m in Sources */,
+				98646BC11E54B398005342D6 /* DNMapViewC.m in Sources */,
 				986B4CA81E36FF8700541557 /* DNJobCell.m in Sources */,
 				98E4BC651DEEB30D00F805B5 /* DNDianniuQ_ACell.m in Sources */,
 				98EEC78D1E11053A0060B7C5 /* DNReportViewC.m in Sources */,
@@ -1564,12 +1659,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dianniu/DNUtility/External",
+					"$(PROJECT_DIR)/Dianniu/BaiduMap_IOSSDK_v3.2.1_Lib",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Dianniu/DNPrefixHeader.pch;
 				INFOPLIST_FILE = Dianniu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dianniu/BaiduMap_IOSSDK_v3.2.1_Lib/thirdlibs",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1591,18 +1691,23 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Dianniu/Dianniu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Yiwu Wangbao Network Technology Co., Ltd. (64QVSKL2QT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 64QVSKL2QT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dianniu/DNUtility/External",
+					"$(PROJECT_DIR)/Dianniu/BaiduMap_IOSSDK_v3.2.1_Lib",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Dianniu/DNPrefixHeader.pch;
 				INFOPLIST_FILE = Dianniu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dianniu/BaiduMap_IOSSDK_v3.2.1_Lib/thirdlibs",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1610,7 +1715,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ycherry.dianniua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "9578f934-d9de-44ba-b097-0bacb992dc9b";
+				PROVISIONING_PROFILE_SPECIFIER = dianniu_ADHoc;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

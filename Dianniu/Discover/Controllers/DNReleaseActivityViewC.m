@@ -9,6 +9,9 @@
 #import "DNReleaseActivityViewC.h"
 #import "DNSingleSelectControl.h"
 #import "DNDateSelectControl.h"
+#import "DNMapViewC.h"
+#import "DNSetActivityLabelViewC.h"
+#import "DNReleaseActivityRequest.h"
 
 @interface DNReleaseActivityViewC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -17,6 +20,7 @@
 @property (nonatomic, strong) DNSingleSelectControl *numberSlectControl;
 @property (nonatomic, strong) DNDateSelectControl *dateControl;
 
+@property (nonatomic, assign)CLLocationCoordinate2D coord;
 @property (nonatomic, weak) UITextField *titleTf;
 @property (nonatomic, weak) UIButton *typeButton;
 @property (nonatomic, weak) UITextField *amountTf;
@@ -33,11 +37,14 @@
 
 - (void)dealloc{
     NSLog(@"发布活动页面被销毁");
+    DNForgetEvent(UIKeyboardWillShowNotification, self);
+    DNForgetEvent(UIKeyboardWillHideNotification, self);
 }
 
 #pragma mark - UI Method
 
 - (void)configurSubViews{
+    [self registerNotification];
     [self configurTableView];
     [self.view addSubview:self.numberSlectControl];
     [self.view addSubview:self.dateControl];
@@ -55,9 +62,48 @@
     [self.numberSlectControl showData:@[@"1人",@"2-3人",@"3-5人",@"5-8人",@"8-10人"] andParam:0];
 }
 
+- (void)registerNotification{
+    DNListenEvent(UIKeyboardWillShowNotification, self, @selector(changeContentViewPosition:));
+    DNListenEvent(UIKeyboardWillHideNotification, self, @selector(changeContentViewPosition:));
+}
+
+- (BOOL)verifyParam{
+    BOOL verfy = YES;
+    if (self.titleTf.text.length < 1 ||
+        (self.typeButton.isSelected && self.amountTf.text.length < 1) ||
+        self.textView.text.length < 1 ||
+        [((NSString *)[self.keyDict objectForKey:@"人数"]) isEqualToString:@"必填"] ||
+        [((NSString *)[self.keyDict objectForKey:@"时间"]) isEqualToString:@"选择活动开始时间"] ||
+        [((NSString *)[self.keyDict objectForKey:@"地点"]) isEqualToString:@"活动地点"] ||
+        [((NSString *)[self.keyDict objectForKey:@"报名要求"]) isEqualToString:@"必填"]) {
+        [SVProgressHUD showErrorWithStatus:@"请填写完整"];
+        verfy = NO;
+    }
+    return verfy;
+}
+
 #pragma mark - Event
 - (IBAction)releaseButtonAction:(UIButton *)sender {
-  
+    if ([self verifyParam]) {
+        DNReleaseActivityRequest *request = [[DNReleaseActivityRequest alloc] init];
+        request.title = self.titleTf.text;
+        request.number = [self.keyDict objectForKey:@"人数"];
+        request.startDate = [self.keyDict objectForKey:@"时间"];
+        request.address = [self.keyDict objectForKey:@"地点"];
+        if (self.typeButton.isSelected) {
+            request.amount = self.amountTf.text;
+            request.payType = @(1);
+        }else{
+            request.payType = @(2);
+        }
+        request.tags = [self.keyDict objectForKey:@"报名要求"];
+        request.coord = self.coord;
+        request.content = self.textView.text;
+        [request httpRequest:15 success:^(NSURLSessionDataTask *sessionTask, id respondObj) {
+            [SVProgressHUD showSuccessWithStatus:@"发布成功"];
+            [self.navigationController popViewControllerAnimated:YES];
+        } failed:nil];
+    }
 }
 
 - (void)typeButtonAction:(UIButton *)sender{
@@ -68,6 +114,26 @@
         [self.titleArr removeObjectAtIndex:5];
     }
     [self.tableView reloadData];
+}
+
+- (void)changeContentViewPosition:(NSNotification *)notification{
+    if ([self.textView isFirstResponder]) {
+        NSDictionary *userInfo = [notification userInfo];
+        NSValue *value         = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+        CGFloat keyBoardEndY   = value.CGRectValue.origin.y;
+        CGFloat keyBoardHeight = value.CGRectValue.size.height;
+        CGFloat viewY = 0;
+        if (keyBoardEndY < ScreenHeight) {
+            //键盘收起
+            viewY = 0 - keyBoardHeight;
+        }else{
+            //键盘弹出
+            viewY = 0;
+        }
+        [UIView animateWithDuration:0.25 animations:^{
+            self.view.top = viewY;
+        }];
+    }
 }
 
 //人数回调
@@ -89,6 +155,23 @@
             [weakSelf.keyDict setObject:dateStr forKey:@"时间"];
             [weakSelf.tableView reloadData];
         }
+    };
+}
+
+//地址回调
+- (void(^)(NSString *address,CLLocationCoordinate2D coord))didSelectedLocation{
+    return ^(NSString *address,CLLocationCoordinate2D coord){
+        [self.keyDict setObject:address forKey:@"地点"];
+        self.coord = coord;
+        [self.tableView reloadData];
+    };
+}
+
+//选择标签回调
+- (void(^)(NSString *labelText))didSelectedLabel{
+    return ^(NSString *labelText){
+        [self.keyDict setObject:labelText forKey:@"报名要求"];
+        [self.tableView reloadData];
     };
 }
 
@@ -161,6 +244,7 @@
             self.amountTf = amountTf;
         }else if ([title isEqualToString:@"活动内容简介"]){
             cell = [tableView dequeueReusableCellWithIdentifier:@"DNTextCell" forIndexPath:indexPath];
+            self.textView =((DNReleaseActiTextCell *)cell).textView;
         }
     }
     return cell;
@@ -176,6 +260,14 @@
             [self showNumberControl];
         }else if ([title isEqualToString:@"时间"]){
             [self.dateControl show];
+        }else if ([title isEqualToString:@"地点"]){
+            DNMapViewC *mapViewC = [[DNMapViewC alloc] init];
+            mapViewC.mapViewResult = [self didSelectedLocation];
+            [self.navigationController pushViewController:mapViewC animated:YES];
+        }else if ([title isEqualToString:@"报名要求"]){
+            DNSetActivityLabelViewC *labelViewC = [[DNSetActivityLabelViewC alloc] init];
+            labelViewC.didSelectedLabel = [self didSelectedLabel];
+            [self.navigationController pushViewController:labelViewC animated:YES];
         }
     }
 }

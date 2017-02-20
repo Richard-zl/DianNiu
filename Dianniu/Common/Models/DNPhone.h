@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface DNPhone : NSObject
 @property (nonatomic, copy) NSString *os;         //系统
@@ -18,6 +19,7 @@
 @property (nonatomic, copy) NSString *lat; //纬度
 @property (nonatomic, copy) NSString *city; //定位城市
 @property (nonatomic, copy) NSString *selectCity;
+@property (nonatomic, assign) CLLocationCoordinate2D coord; //坐标
 + (instancetype)shared;
 
 

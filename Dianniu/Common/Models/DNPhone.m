@@ -8,7 +8,6 @@
 
 #import "DNPhone.h"
 #import <AdSupport/AdSupport.h>
-#import <CoreLocation/CoreLocation.h>
 static DNPhone *inst = nil;
 @interface DNPhone ()<CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;
@@ -42,7 +41,6 @@ static DNPhone *inst = nil;
         self.locationManager.desiredAccuracy=kCLLocationAccuracyBest;
         //定位频率,每隔多少米定位一次
         CLLocationDistance distance = 1000.0;//100米定位一次
-        
         self.locationManager.distanceFilter=distance;
         self.geoCoder = [[CLGeocoder alloc] init];
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -118,6 +116,7 @@ static DNPhone *inst = nil;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
     CLLocationCoordinate2D coor = newLocation.coordinate;
+    self.coord = coor;
     [DNPhone shared].lon = [NSString stringWithFormat:@"%@", @(coor.longitude)];
     [DNPhone shared].lat = [NSString stringWithFormat:@"%@", @(coor.latitude)];
     //将更新过的GPS信息写入到NSUserDefaults中

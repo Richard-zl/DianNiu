@@ -13,7 +13,7 @@
 #import "DNShareSDKManager.h"
 #import "DNPhone.h"
 #import <AFNetworking.h>
-@interface DNAppDelegate ()
+@interface DNAppDelegate ()<BMKGeneralDelegate>
 
 @end
 
@@ -66,10 +66,18 @@
 - (void)configurGlobal{
     [[DNWebServiceConfig shared] confirmENV:DNWebServiceENV_product];
     [[DNShareSDKManager shared] configurSDK];
+    [self configurMap];
     [DNPhone shared];
     [SVProgressHUD setBackgroundColor:[RGBColor(33, 33, 33) colorWithAlphaComponent:0.9]];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+}
 
+- (void)configurMap{
+    _mapManager = [[BMKMapManager alloc] init];
+    BOOL ret = [_mapManager start:@"XpNIoSGDuMM25m5II3XG8TrBneZ30kiW" generalDelegate:self];
+    if (!ret) {
+        NSLog(@"baiduMap start failed!");
+    }
 }
 
 - (void)listenNotifications{
@@ -85,5 +93,12 @@
     [self showLoginViewC];
 }
 
+
+#pragma mark - 百度地图代理
+- (void)onGetNetworkState:(int)iError{
+    if (iError != 0) {
+        [SVProgressHUD showErrorWithStatus:@"网络不好，请稍后再试"];
+    }
+}
 
 @end
